@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Bw Seido Raw";
+  src: url("../../fonts/Seido/Bw\ Seido\ Raw\ Regular.otf");
+  /* Outros formatos e variações da fonte podem ser adicionados aqui */
+}
+
+.navbar {
+  //   border: 1px solid black;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+* {
+  font-family: "Bw Seido Raw";
+}
+
+.nav-link {
+  // border: 1px solid red;
+  font-family: "Bw Seido Raw";
+  color: #1d1d1d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.48px;
+  transition: 0.3s ease;
+  word-wrap: break-word;
+}
+
+.nav-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #8529e9;
+  transition: width 0.3s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  transition: 0.3s ease;
+  color: #8529e9;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  background-color: #8529e9;
+}
+
+.dropdown-item {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  transition: 0.7s ease;
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: #b381e8;
+}
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+
+  li {
+    margin: auto;
+  }
+}
+
+.navbar-items {
+  display: flex;
+  gap: 48px;
+}
+
+.btnSearch {
+  border: none;
+  background-color: transparent;
+}
+
+.btns-menu {
+  gap: 8px;
+  display: flex;
+}
+
+.btn1 {
+  background-color: #8529e9;
+  gap: 14px;
+
+  span {
+    color: white;
+  }
+}
+
+.btn2 {
+  background-color: #010101;
+  gap: 14px;
+
+  span {
+    color: white;
+  }
+}
+
+.btns-items {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  //   justify-content: center;
+}
