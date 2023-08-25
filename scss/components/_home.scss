@@ -10,8 +10,58 @@
   padding-bottom: 32px;
 }
 
+.content-carrosel-home {
+  display: flex;
+  width: 100%;
+  height: 801px;
+
+  img {
+    aspect-ratio: 9/16;
+    flex: 1 1 10px;
+    min-width: 0;
+
+    filter: saturate(0) blur(1px);
+    object-fit: cover;
+    transition: 0.5s;
+  }
+
+  img:hover {
+    transition: 0.5s;
+    filter: saturate(100%);
+    flex: 1 1 300px;
+  }
+}
+
 * {
   font-family: "Bw Seido Raw";
+}
+
+.container-investir-home {
+  display: flex;
+  padding-top: 180px;
+  // border: 1px solid red;
+
+  img {
+    width: 35px;
+    height: 100%;
+  }
+
+  .txt-investir-home {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+
+    h1 {
+      // Porque investir<br/>com a Pandhora
+      color: #8529e9;
+      font-size: 72px;
+      font-family: Bennet Banner Extra Condensed;
+      font-weight: 700;
+      line-height: 86.4px;
+      word-wrap: break-word;
+    }
+  }
 }
 
 .nav-link {
