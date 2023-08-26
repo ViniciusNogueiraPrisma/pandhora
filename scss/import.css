@@ -5014,6 +5014,7 @@ body.open-menu::after {
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 80px;
+  gap: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -5076,7 +5077,7 @@ body.open-menu::after {
 .content-carrosel-fundo-home {
   height: 700px;
   position: relative;
-  right: 200px;
+  right: 7.416667vw;
   top: 46px;
 }
 
