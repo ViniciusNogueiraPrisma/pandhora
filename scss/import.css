@@ -129,32 +129,33 @@
 :root {
   --font-text-1: "Lato";
   --font-text-2: "Inter";
+  --fonto-text-3: "Bw Seido Raw";
   --font-icomoon: "Icomoon";
   --text-color: #666666;
-  --text-white: #FFFFFF;
-  --text-black: #111111;
-  --text-primary-01-default: #00649C;
+  --text-white: #ffffff;
+  --text-black: #1d1d1d;
+  --text-primary-01-default: #00649c;
   --text-primary-01-var-1: #004166;
   --text-primary-01-var-2: #005280;
-  --text-primary-01-var-3: #0072B2;
-  --text-primary-01-var-4: #0083CC;
-  --text-primary-01-var-5: #0093E5;
-  --text-secondary-01-default: #008BD2;
-  --text-secondary-01-var-1: #00699E;
-  --text-secondary-01-var-2: #007AB8;
-  --text-secondary-01-var-3: #3FA0D2;
-  --text-secondary-01-var-4: #43A9DE;
-  --text-secondary-01-var-5: #49B8F2;
-  --text-tertiary-01-default: #29B8CE;
-  --text-tertiary-01-var-1: #1F8999;
-  --text-tertiary-01-var-2: #249FB2;
-  --text-tertiary-01-var-3: #29B6CC;
-  --text-tertiary-01-var-4: #2ECDE5;
-  --text-tertiary-01-var-5: #31D9F2;
-  --text-grey-scale-00: #FFFFFF;
-  --text-grey-scale-01: #EEEEEE;
-  --text-grey-scale-02: #DDDDDD;
-  --text-grey-scale-03: #BBBBBB;
+  --text-primary-01-var-3: #0072b2;
+  --text-primary-01-var-4: #0083cc;
+  --text-primary-01-var-5: #0093e5;
+  --text-secondary-01-default: #008bd2;
+  --text-secondary-01-var-1: #00699e;
+  --text-secondary-01-var-2: #007ab8;
+  --text-secondary-01-var-3: #3fa0d2;
+  --text-secondary-01-var-4: #43a9de;
+  --text-secondary-01-var-5: #49b8f2;
+  --text-tertiary-01-default: #29b8ce;
+  --text-tertiary-01-var-1: #1f8999;
+  --text-tertiary-01-var-2: #249fb2;
+  --text-tertiary-01-var-3: #29b6cc;
+  --text-tertiary-01-var-4: #2ecde5;
+  --text-tertiary-01-var-5: #31d9f2;
+  --text-grey-scale-00: #ffffff;
+  --text-grey-scale-01: #eeeeee;
+  --text-grey-scale-02: #dddddd;
+  --text-grey-scale-03: #bbbbbb;
   --text-grey-scale-04: #999999;
   --text-grey-scale-05: #666666;
   --text-grey-scale-06: #444444;
@@ -162,38 +163,38 @@
   --text-grey-scale-08: #222222;
   --text-grey-scale-09: #111111;
   --text-grey-scale-c4: #c4c4c4;
-  --text-system-disabled: #D9D9D9;
-  --text-system-link: #1A0DAB;
-  --text-system-focus: #2E82E5;
-  --text-system-link-visited: #1B1466;
-  --text-system-negative: #D23A20;
-  --text-system-alert: #ECB307;
-  --text-system-positive: #1E986F;
+  --text-system-disabled: #d9d9d9;
+  --text-system-link: #1a0dab;
+  --text-system-focus: #2e82e5;
+  --text-system-link-visited: #1b1466;
+  --text-system-negative: #d23a20;
+  --text-system-alert: #ecb307;
+  --text-system-positive: #1e986f;
   --color: #666666;
-  --pure-white: #FFFFFF;
+  --pure-white: #ffffff;
   --pure-black: #111111;
-  --primary-01-default: #00649C;
+  --primary-01-default: #00649c;
   --primary-01-var-1: #004166;
   --primary-01-var-2: #005280;
-  --primary-01-var-3: #0072B2;
-  --primary-01-var-4: #0083CC;
-  --primary-01-var-5: #0093E5;
-  --secondary-01-default: #008BD2;
-  --secondary-01-var-1: #00699E;
-  --secondary-01-var-2: #007AB8;
-  --secondary-01-var-3: #3FA0D2;
-  --secondary-01-var-4: #43A9DE;
-  --secondary-01-var-5: #49B8F2;
-  --tertiary-01-default: #29B8CE;
-  --tertiary-01-var-1: #1F8999;
-  --tertiary-01-var-2: #249FB2;
-  --tertiary-01-var-3: #29B6CC;
-  --tertiary-01-var-4: #2ECDE5;
-  --tertiary-01-var-5: #31D9F2;
-  --grey-scale-00: #FFFFFF;
-  --grey-scale-01: #EEEEEE;
-  --grey-scale-02: #DDDDDD;
-  --grey-scale-03: #BBBBBB;
+  --primary-01-var-3: #0072b2;
+  --primary-01-var-4: #0083cc;
+  --primary-01-var-5: #0093e5;
+  --secondary-01-default: #008bd2;
+  --secondary-01-var-1: #00699e;
+  --secondary-01-var-2: #007ab8;
+  --secondary-01-var-3: #3fa0d2;
+  --secondary-01-var-4: #43a9de;
+  --secondary-01-var-5: #49b8f2;
+  --tertiary-01-default: #29b8ce;
+  --tertiary-01-var-1: #1f8999;
+  --tertiary-01-var-2: #249fb2;
+  --tertiary-01-var-3: #29b6cc;
+  --tertiary-01-var-4: #2ecde5;
+  --tertiary-01-var-5: #31d9f2;
+  --grey-scale-00: #ffffff;
+  --grey-scale-01: #eeeeee;
+  --grey-scale-02: #dddddd;
+  --grey-scale-03: #bbbbbb;
   --grey-scale-04: #999999;
   --grey-scale-05: #666666;
   --grey-scale-06: #444444;
@@ -201,13 +202,13 @@
   --grey-scale-08: #222222;
   --grey-scale-09: #111111;
   --grey-scale-c4: #c4c4c4;
-  --system-disabled: #D9D9D9;
-  --system-link: #1A0DAB;
-  --system-focus: #2E82E5;
-  --system-link-visited: #1B1466;
-  --system-negative: #D23A20;
-  --system-alert: #ECB307;
-  --system-positive: #1E986F;
+  --system-disabled: #d9d9d9;
+  --system-link: #1a0dab;
+  --system-focus: #2e82e5;
+  --system-link-visited: #1b1466;
+  --system-negative: #d23a20;
+  --system-alert: #ecb307;
+  --system-positive: #1e986f;
 }
 
 h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -446,6 +447,20 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container-sm {
+  max-width: 1600px !important;
+  --mdb-gutter-x: 3.5rem !important;
+}
+
+h1 {
+  margin-bottom: 0px !important;
+}
+
+h4 {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 body {
@@ -1250,7 +1265,7 @@ svg {
 }
 
 .headerFixoMenu {
-  transition: 0.4s;
+  transition: 0.6s;
   width: 100%;
   z-index: 100;
 }
@@ -4907,7 +4922,7 @@ body.open-menu::after {
 .content-carrosel-home {
   display: flex;
   width: 100%;
-  height: 801px;
+  height: 73.806191vh;
 }
 .content-carrosel-home img {
   aspect-ratio: 9/16;
@@ -4915,7 +4930,7 @@ body.open-menu::after {
   min-width: 0;
   filter: saturate(0) blur(1px);
   object-fit: cover;
-  transition: 0.5s;
+  transition: 1s;
 }
 .content-carrosel-home img:hover {
   transition: 0.5s;
@@ -4927,18 +4942,38 @@ body.open-menu::after {
   font-family: "Bw Seido Raw";
 }
 
+.gestao-invest-home {
+  width: 50%;
+  top: 40px;
+  position: relative;
+}
+.gestao-invest-home span {
+  color: var(--text-black);
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+
 .container-investir-home {
   display: flex;
   padding-top: 180px;
+  gap: 40px;
 }
 .container-investir-home img {
   width: 35px;
   height: 100%;
+  position: relative;
+  top: 24px;
+}
+.container-investir-home span {
+  width: 50%;
+  height: fit-content;
 }
 .container-investir-home .txt-investir-home {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 .container-investir-home .txt-investir-home h1 {
   color: #8529e9;
@@ -4947,11 +4982,185 @@ body.open-menu::after {
   font-weight: 700;
   line-height: 86.4px;
   word-wrap: break-word;
+  margin-bottom: 0 !important;
+  padding-bottom: 50px;
+}
+.container-investir-home .txt-investir-home a {
+  width: fit-content;
+  padding: 16px;
+  word-wrap: break-word;
+  border-radius: 4px;
+  background-color: #010101;
+  color: var(--text-white);
+}
+.container-investir-home .txt-investir-home a span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+  color: var(--text-white);
+}
+
+.section-cards-home {
+  background-color: var(--text-grey-scale-00);
+  position: relative;
+  top: 200px;
+  margin: 0;
+}
+
+.content-fundo-home {
+  background-color: #8529e9;
+  border-radius: 4px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  gap: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-fundo-home .text-fundo-home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.content-fundo-home .text-fundo-home h1 {
+  color: var(--text-white);
+  font-family: var(--text-font-3);
+  font-weight: 800;
+  font-size: 62px;
+  padding-bottom: 40px !important;
+}
+.content-fundo-home .text-fundo-home h4 {
+  color: var(--text-white);
+  font-size: 21px;
+  font-family: var(--text-font-3);
+  font-weight: 700;
+  word-wrap: break-word;
+}
+.content-fundo-home .text-fundo-home h4 span {
+  font-size: 21px;
+  font-family: var(--text-font-3);
+  font-weight: 400;
+  line-height: 29.4px;
+}
+.content-fundo-home .text-fundo-home span {
+  padding-top: 24px;
+  padding-bottom: 80px;
+  color: #cdb8e5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  display: inline-flex;
+  width: 60%;
+}
+.content-fundo-home .text-fundo-home a {
+  background-color: var(--text-black);
+  border: none;
+  color: var(--text-white);
+  padding: 16px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.carrosel-fundo-home {
+  height: 100%;
+  width: 50%;
+}
+
+.slide-image {
+  height: 100%;
+  top: -200px;
+}
+
+.content-carrosel-fundo-home {
+  height: 700px;
+  position: relative;
+  right: 7.416667vw;
+  top: 46px;
+}
+
+.active-fundos {
+  background-color: var(--text-grey-scale-04);
+  transition: 0.6s;
+}
+
+.card-carrosel-home {
+  border: 1px solid var(--text-white);
+  border-radius: 4px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 20px 24px 20px;
+}
+.card-carrosel-home img {
+  width: 56px;
+}
+.card-carrosel-home span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+
+.mySwiper {
+  height: 100%;
+  position: relative;
+}
+.mySwiper .swiper-slide {
+  height: 107.2px !important;
+}
+
+.swiper-slide {
+  color: white;
+}
+
+.content-cards-home {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  position: relative;
+  top: -191px;
+}
+.content-cards-home .last-card-home {
+  background-color: var(--pure-black) !important;
+}
+.content-cards-home .last-card-home span {
+  color: var(--text-white) !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content-cards-home .last-card-home h5 {
+  color: var(--text-white);
+  font-weight: 700 !important;
+  font-size: 24px;
+  font-family: var(--text-font-3);
+}
+.content-cards-home .cards-home {
+  width: 232px;
+  height: auto;
+  padding: 32px 16px 32px 16px;
+  word-wrap: break-word;
+  background-color: var(--text-grey-scale-01);
+}
+.content-cards-home .cards-home span {
+  color: var(--text-grey-scale-09);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+.content-cards-home .cards-home img {
+  width: 56px;
+  padding-bottom: 32px;
 }
 
 .nav-link {
   font-family: "Bw Seido Raw";
-  color: #1d1d1d;
+  color: var(--text-black);
   font-size: 16px;
   font-weight: 400;
   line-height: 22.48px;

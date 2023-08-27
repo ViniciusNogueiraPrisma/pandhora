@@ -13,7 +13,7 @@
 .content-carrosel-home {
   display: flex;
   width: 100%;
-  height: 801px;
+  height: 73.806191vh;
 
   img {
     aspect-ratio: 9/16;
@@ -22,7 +22,7 @@
 
     filter: saturate(0) blur(1px);
     object-fit: cover;
-    transition: 0.5s;
+    transition: 1s;
   }
 
   img:hover {
@@ -34,23 +34,51 @@
 
 * {
   font-family: "Bw Seido Raw";
+  // border: 1px solid red;
+}
+
+.gestao-invest-home {
+  width: 50%;
+  top: 40px;
+  position: relative;
+
+  span {
+    color: var(--text-black);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
 }
 
 .container-investir-home {
   display: flex;
   padding-top: 180px;
+  gap: 40px;
   // border: 1px solid red;
 
   img {
     width: 35px;
     height: 100%;
+    position: relative;
+    top: 24px;
+  }
+
+  span {
+    // border: 1px solid red;
+    width: 50%;
+    height: fit-content;
+
+    // border: 1px solid red;
+    // top: 120px;
   }
 
   .txt-investir-home {
+    width: 50%;
     // border: 1px solid red;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     h1 {
       // Porque investir<br/>com a Pandhora
@@ -60,6 +88,211 @@
       font-weight: 700;
       line-height: 86.4px;
       word-wrap: break-word;
+      margin-bottom: 0 !important;
+      padding-bottom: 50px;
+    }
+
+    a {
+      width: fit-content;
+      padding: 16px;
+      word-wrap: break-word;
+      border-radius: 4px;
+      background-color: #010101;
+      color: var(--text-white);
+
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        word-wrap: break-word;
+        color: var(--text-white);
+      }
+    }
+  }
+}
+
+.section-cards-home {
+  // border: 1px solid red;
+  background-color: var(--text-grey-scale-00);
+  position: relative;
+  // top: 25vh;
+  top: 200px;
+  margin: 0;
+}
+
+.content-fundo-home {
+  background-color: #8529e9;
+  border-radius: 4px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  gap: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  .text-fundo-home {
+    // border: 1px solid red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    h1 {
+      color: var(--text-white);
+      font-family: var(--text-font-3);
+      font-weight: 800;
+      font-size: 62px;
+      padding-bottom: 40px !important;
+      // line-height: 86.40px;
+    }
+
+    h4 {
+      color: var(--text-white);
+      font-size: 21px;
+      font-family: var(--text-font-3);
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    h4 span {
+      font-size: 21px;
+      font-family: var(--text-font-3);
+      font-weight: 400;
+      line-height: 29.4px;
+    }
+
+    span {
+      padding-top: 24px;
+      padding-bottom: 80px;
+      color: #cdb8e5;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.6px;
+      word-wrap: break-word;
+      // border: 1px solid red;
+      display: inline-flex;
+      width: 60%;
+    }
+
+    a {
+      background-color: var(--text-black);
+      border: none;
+      color: var(--text-white);
+      padding: 16px;
+      border-radius: 4px;
+      width: fit-content;
+    }
+  }
+}
+
+.carrosel-fundo-home {
+  height: 100%;
+  width: 50%;
+  // border: 1px solid black;
+}
+
+.slide-image {
+  // border: 10px solid red;
+  // position: fixed;
+
+  height: 100%;
+  top: -200px;
+}
+
+.content-carrosel-fundo-home {
+  // border: 1px solid red;
+  height: 700px;
+  position: relative;
+  // right: 200px;
+  right: 7.416667vw;
+  top: 46px;
+}
+
+.active-fundos {
+  background-color: var(--text-grey-scale-04);
+  transition: 0.6s;
+}
+
+.card-carrosel-home {
+  border: 1px solid var(--text-white);
+  border-radius: 4px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 20px 24px 20px;
+
+  img {
+    width: 56px;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    word-wrap: break-word;
+  }
+}
+
+.mySwiper {
+  // border: 1px solid black;
+  height: 100%;
+  position: relative;
+
+  .swiper-slide {
+    // border: 1px solid red;
+    height: 107.2px !important;
+  }
+}
+
+.swiper-slide {
+  color: white;
+}
+
+.content-cards-home {
+  // border: 1px solid red;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  position: relative;
+  top: -191px;
+
+  .last-card-home {
+    background-color: var(--pure-black) !important;
+
+    span {
+      color: var(--text-white) !important;
+      font-weight: 400 !important;
+      font-size: 14px !important;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h5 {
+      color: var(--text-white);
+      font-weight: 700 !important;
+      font-size: 24px;
+      font-family: var(--text-font-3);
+    }
+  }
+
+  .cards-home {
+    width: 232px;
+    height: auto;
+    padding: 32px 16px 32px 16px;
+    word-wrap: break-word;
+    background-color: var(--text-grey-scale-01);
+
+    span {
+      color: var(--text-grey-scale-09);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25.2px;
+      word-wrap: break-word;
+    }
+
+    img {
+      width: 56px;
+      padding-bottom: 32px;
     }
   }
 }
@@ -67,7 +300,8 @@
 .nav-link {
   // border: 1px solid red;
   font-family: "Bw Seido Raw";
-  color: #1d1d1d;
+  // color: #1d1d1d;
+  color: var(--text-black);
   font-size: 16px;
   font-weight: 400;
   line-height: 22.48px;
