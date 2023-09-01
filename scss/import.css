@@ -4956,13 +4956,17 @@ body.open-menu::after {
   src: url("../../fonts/Neue_Haas_Unica/Linotype - Neue Haas Unica W1G Light.otf");
   /* Outros formatos e variações da fonte podem ser adicionados aqui */
 }
+* {
+  font-family: var(--font-text-3);
+}
+
 .navbar {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .text-carrosel-hover {
-  display: none !important;
+  display: none;
   width: 33.4583333333vw;
   position: absolute;
   z-index: 1;
@@ -5051,6 +5055,12 @@ body.open-menu::after {
   word-wrap: break-word;
 }
 
+.hover-effect {
+  transition: 0.5s;
+  filter: saturate(100%) !important;
+  flex: 1 1 300px !important;
+}
+
 .img-carrosel-home {
   aspect-ratio: 9/16;
   flex: 1 1 10px;
@@ -5091,14 +5101,6 @@ body.open-menu::after {
   min-width: 0;
   object-fit: cover;
   transition: 1s;
-}
-.content-carrosel-home img:hover {
-  transition: 0.5s;
-  flex: 1 1 300px;
-}
-
-* {
-  font-family: var(--font-text-3);
 }
 
 .gestao-invest-home {
@@ -6641,6 +6643,8 @@ footer {
 
 .fundos-carrosel {
   width: 50%;
+  border: 1px solid red;
+  height: 500px;
 }
 
 .fundos-text {
@@ -6998,18 +7002,6 @@ ul.container {
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
-}
-
-ul.container li {
-  color: #ddd;
-  list-style-type: none;
-  margin: 0;
-  transition: background-color 0.7s;
-}
-
-ul.container li:nth-child(2) {
-  color: #fff;
-  background: #8529e9;
 }
 
 /* Pages */
