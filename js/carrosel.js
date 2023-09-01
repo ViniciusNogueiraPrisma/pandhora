@@ -40,57 +40,29 @@ accordion_item.forEach((item) => {
   });
 });
 
-// function VerifyActive(item, content, content_actived) {
-//   const icon_item = item.querySelector(".icon");
-//   const icon_item_active = document.querySelectorAll(".icon");
+function VerifyActive(item, content, content_actived) {
+  const icon_item = item.querySelector(".icon");
+  const icon_item_active = document.querySelectorAll(".icon");
 
-//   icon_item_active.forEach(
-//     (item) => (item.innerHTML = "<i class='fa-solid fa-plus themas' ></i>")
-//   );
+  icon_item_active.forEach(
+    (item) => (item.innerHTML = "<i class='fa-solid fa-plus themas' ></i>")
+  );
 
-//   if (content_actived) {
-//     content_actived.style.height = 0;
-//     content_actived.classList.remove("active");
-//   }
+  if (content_actived) {
+    content_actived.style.height = 0;
+    content_actived.classList.remove("active");
+  }
 
-//   if (content !== content_actived) {
-//     icon_item.innerHTML = "<i class='fa-solid fa-minus themas' ></i>";
-//     content.classList.add("active");
-//     content.style.height = content.scrollHeight + 10 + "px";
-//   }
-// }
+  if (content !== content_actived) {
+    icon_item.innerHTML = "<i class='fa-solid fa-minus themas' ></i>";
+    content.classList.add("active");
+    content.style.height = content.scrollHeight + 10 + "px";
+  }
+}
 
-// const divsFilhas = document.querySelectorAll(
-//   ".cards-fundo-home > .card-carrosel-home"
-// );
-// let currentIndex = 0;
-
-// function alternarClasseAtiva() {
-//   divsFilhas.forEach((div) => div.classList.remove("active-fundos"));
-//   divsFilhas[currentIndex].classList.add("active-fundos");
-
-//   currentIndex = (currentIndex + 1) % divsFilhas.length;
-// }
-
-// setInterval(alternarClasseAtiva, 2000);
-
-// const divImagem = document.querySelector(".img-fundo-home");
-// const imagens = [
-//   "../images/Person/buka.png",
-//   "../images/Person/person2.png",
-//   "../images/Person/person3.png",
-// ];
-// let currentIndexImg = 0;
-
-// function alterarImagem() {
-//   divImagem.innerHTML = `<img src="${imagens[currentIndexImg]}" alt="Imagem">`;
-
-//   currentIndexImg = (currentIndexImg + 1) % imagens.length;
-// }
-
-// setInterval(alterarImagem, 2000);
-
-const divsFilhas = document.querySelectorAll(".cards-fundo-home > .card-carrosel-home");
+const divsFilhas = document.querySelectorAll(
+  ".cards-fundo-home > .card-carrosel-home"
+);
 let currentIndex = 0;
 
 function alternarClasseAtiva() {
@@ -125,5 +97,3 @@ document.addEventListener("scroll", () => {
 
 // Chame a função alterarImagem usando setInterval como você fez anteriormente
 setInterval(alterarImagem, 2000);
-
-
