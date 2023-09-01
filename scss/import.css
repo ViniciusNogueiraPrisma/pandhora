@@ -129,7 +129,8 @@
 :root {
   --font-text-1: "Lato";
   --font-text-2: "Inter";
-  --fonto-text-3: "Bw Seido Raw";
+  --font-text-3: "Bw Seido Raw";
+  --font-text-4: "Bennet Banner Extra Condensed";
   --font-icomoon: "Icomoon";
   --text-color: #666666;
   --text-white: #ffffff;
@@ -2003,6 +2004,16 @@ body.open-menu::after {
   z-index: 101;
 }
 
+.mobile-menu .institucional-and-language ul li:nth-child(1) a::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: url(../../images/icons/icon-site.svg) no-repeat center;
+  background-size: contain;
+  display: block;
+  filter: brightness(0) invert(12%) sepia(0%) saturate(62%) hue-rotate(152deg) brightness(97%) contrast(95%);
+}
+
 .mobile-menu {
   overflow-y: auto;
   top: 0px;
@@ -2023,12 +2034,15 @@ body.open-menu::after {
   height: 21px;
   width: 21px;
 }
+.mobile-menu .logo-mobile {
+  width: 200px;
+}
 .mobile-menu .header-menu {
   display: flex;
   justify-content: flex-end;
   justify-content: space-between;
-  padding: 16px 0 16px 0;
-  background-color: var(--secondary-01-default);
+  padding: 16px 35px 16px 35px;
+  background: var(--text-grey-scale-07);
 }
 .mobile-menu .header-menu .branding {
   display: flex;
@@ -2267,7 +2281,7 @@ body.open-menu::after {
   content: none;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-button:not(.collapsed) {
-  color: var(--text-primary-01-var-2);
+  color: #8529e9;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-button:not(.collapsed)::before {
   transform: rotate(180deg);
@@ -2283,7 +2297,7 @@ body.open-menu::after {
 .mobile-menu .nav-mobile .accordion-item .accordion-body .pages {
   padding-left: 0px;
   margin: 4px 0 0px;
-  background-color: var(--primary-01-var-2);
+  background-color: #8529e9;
   border-radius: 2px;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-body .pages li {
@@ -2408,7 +2422,8 @@ body.open-menu::after {
     margin: 24px 0 0 0;
   }
 }
-.list-downloads li a, .list-downloads li .link-inside {
+.list-downloads li a,
+.list-downloads li .link-inside {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2425,29 +2440,35 @@ body.open-menu::after {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important;
 }
 @media (max-width: 1024px) {
-  .list-downloads li a, .list-downloads li .link-inside {
+  .list-downloads li a,
+  .list-downloads li .link-inside {
     margin-left: 0px;
   }
 }
 @media (max-width: 991px) {
-  .list-downloads li a, .list-downloads li .link-inside {
+  .list-downloads li a,
+  .list-downloads li .link-inside {
     padding: 4px 0px 24px 0;
   }
 }
-.list-downloads li a .imgs-list-download, .list-downloads li .link-inside .imgs-list-download {
+.list-downloads li a .imgs-list-download,
+.list-downloads li .link-inside .imgs-list-download {
   position: relative;
 }
-.list-downloads li a .imgs-list-download img, .list-downloads li .link-inside .imgs-list-download img {
+.list-downloads li a .imgs-list-download img,
+.list-downloads li .link-inside .imgs-list-download img {
   width: 24px;
   transition: 0.3s ease-in-out;
 }
-.list-downloads li a .imgs-list-download img.img-download, .list-downloads li .link-inside .imgs-list-download img.img-download {
+.list-downloads li a .imgs-list-download img.img-download,
+.list-downloads li .link-inside .imgs-list-download img.img-download {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
-.list-downloads li a p, .list-downloads li .link-inside p {
+.list-downloads li a p,
+.list-downloads li .link-inside p {
   flex: 1;
   margin-bottom: 0;
   font-family: var(--font-text-2);
@@ -3024,9 +3045,6 @@ body.open-menu::after {
   padding: 16px;
   border-bottom: 1px solid var(--text-secondary-01-var-2);
 }
-.list-atuacao-saneago .item-atuacao img {
-  max-width: 64px;
-}
 .list-atuacao-saneago .item-atuacao h3 {
   margin-bottom: 0px;
   color: var(--text-grey-scale-04);
@@ -3181,9 +3199,11 @@ body.open-menu::after {
 }
 
 .list-nav-glossario {
-  padding: 0 25px;
   width: 100%;
-  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 550px) {
   .list-nav-glossario {
@@ -3218,6 +3238,12 @@ body.open-menu::after {
 }
 .list-nav-glossario .slick-arrow::before {
   content: url("../images/icons/icon-arrow-right.svg");
+}
+.list-nav-glossario .slick-track {
+  border: 1px solid red;
+  width: auto !important;
+  display: flex !important;
+  gap: 24px;
 }
 .list-nav-glossario .slick-track li div {
   margin: 0 6px;
@@ -3517,14 +3543,15 @@ body.open-menu::after {
   background-color: var(--pure-white);
 }
 .table thead tr th {
-  color: var(--text-primary-01-default);
-  padding: 8px 6px;
-  font-size: 0.875rem;
+  color: #1d1d1d;
+  font-size: 18px;
+  font-family: "Roboto";
   font-weight: 700;
+  line-height: 28.8px;
+  word-wrap: break-word;
+  padding: 8px 6px;
   vertical-align: middle;
-  border-top: 1px solid var(--text-primary-01-default);
-  border-bottom: 1px solid var(--text-primary-01-default);
-  text-align: center;
+  border-top: none !important;
 }
 .table thead tr th span {
   font-weight: 400;
@@ -4914,35 +4941,169 @@ body.open-menu::after {
   src: url("../../fonts/Seido/Bw Seido Raw Regular.otf");
   /* Outros formatos e variações da fonte podem ser adicionados aqui */
 }
+@font-face {
+  font-family: "Bennet Banner Extra Condensed";
+  src: url("../../fonts/Bennet_Banner_Condensed/Lipton Letter Design - Bennet Banner Extra Condensed Bold.otf");
+  /* Outros formatos e variações da fonte podem ser adicionados aqui */
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter/Inter-Regular.ttf");
+  /* Outros formatos e variações da fonte podem ser adicionados aqui */
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../fonts/Neue_Haas_Unica/Linotype - Neue Haas Unica W1G Light.otf");
+  /* Outros formatos e variações da fonte podem ser adicionados aqui */
+}
 .navbar {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.content-carrosel-home {
+.text-carrosel-hover {
+  display: none !important;
+  width: 33.4583333333vw;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
   display: flex;
-  width: 100%;
-  height: 73.806191vh;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: 0.7s;
 }
-.content-carrosel-home img {
+.text-carrosel-hover a {
+  background-color: #8529e9;
+  color: var(--text-white);
+  padding: 16px;
+  width: fit-content;
+  font-size: 16px;
+  font-family: "Bw Seido Raw";
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+.text-carrosel-hover h5 {
+  color: white;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 700;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.text-carrosel-hover h1 {
+  color: white;
+  font-size: 72px;
+  font-family: "Bennet Banner Extra Condensed";
+  font-weight: 700;
+  line-height: 86.4px;
+  word-wrap: break-word;
+}
+.text-carrosel-hover h3 {
+  color: #dddddd;
+  font-size: 24px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 31.68px;
+  word-wrap: break-word;
+  margin-bottom: 0 !important;
+}
+.text-carrosel-hover span {
+  color: #bbbbbb;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-top: 40px !important;
+  padding-top: 0 !important;
+  word-wrap: break-word;
+}
+
+.text-carrosel-home {
+  position: absolute;
+  z-index: 1;
+  height: 70.806191vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: 0.7s;
+}
+.text-carrosel-home span {
+  color: #bbbbbb;
+  font-size: 21px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+.text-carrosel-home h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Bennet Banner Extra Condensed";
+  font-weight: 700;
+  line-height: 52.8px;
+  word-wrap: break-word;
+}
+
+.img-carrosel-home {
   aspect-ratio: 9/16;
   flex: 1 1 10px;
   min-width: 0;
-  filter: saturate(0) blur(1px);
+  filter: saturate(0) blur(0);
   object-fit: cover;
-  transition: 1s;
+  transition: 0.7s;
 }
-.content-carrosel-home img:hover {
+.img-carrosel-home img {
+  height: 100%;
+  width: 100%;
+}
+
+.img-carrosel-home:hover {
   transition: 0.5s;
   filter: saturate(100%);
   flex: 1 1 300px;
 }
 
+.img-carrosel-home:hover > .text-carrosel-home {
+  transition: 0.7s;
+  display: none;
+}
+
+.img-carrosel-home:hover > .text-carrosel-hover {
+  display: flex !important;
+  transition: 0.7s;
+}
+
+.content-carrosel-home {
+  display: flex;
+  width: 100%;
+  height: 70.806191vh;
+}
+.content-carrosel-home img {
+  aspect-ratio: 9/16;
+  flex: 1 1 10px;
+  min-width: 0;
+  object-fit: cover;
+  transition: 1s;
+}
+.content-carrosel-home img:hover {
+  transition: 0.5s;
+  flex: 1 1 300px;
+}
+
 * {
-  font-family: "Bw Seido Raw";
+  font-family: var(--font-text-3);
 }
 
 .gestao-invest-home {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   top: 40px;
   position: relative;
@@ -4958,6 +5119,7 @@ body.open-menu::after {
 .container-investir-home {
   display: flex;
   padding-top: 180px;
+  padding-bottom: 200px;
   gap: 40px;
 }
 .container-investir-home img {
@@ -4967,8 +5129,13 @@ body.open-menu::after {
   top: 24px;
 }
 .container-investir-home span {
-  width: 50%;
   height: fit-content;
+  color: #010101;
+  font-size: 21px;
+  font-family: Bw Seido Raw;
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
 }
 .container-investir-home .txt-investir-home {
   width: 50%;
@@ -5002,18 +5169,63 @@ body.open-menu::after {
 }
 
 .section-cards-home {
-  background-color: var(--text-grey-scale-00);
+  background-color: var(--text-grey-scale-01);
   position: relative;
-  top: 200px;
   margin: 0;
+  padding-bottom: 0 !important;
+}
+
+.img-invista img {
+  margin-top: 155px;
+  position: absolute;
+  right: 0;
+  width: 60%;
+}
+
+.invista-fundos-home {
+  display: flex;
+  padding-top: 100px;
+}
+
+.text-invista-home {
+  padding-top: 312px;
+  position: relative;
+  width: 100%;
+  padding-right: 50%;
+}
+.text-invista-home h1 {
+  color: #1d1d1d;
+  font-size: 72px;
+  font-family: var(--font-text-4);
+  font-weight: 700;
+  line-height: 86.4px;
+  word-wrap: break-word;
+  padding-bottom: 24px;
+}
+.text-invista-home h1 span {
+  color: #1d1d1d;
+  font-size: 72px;
+  font-family: var(--font-text-4);
+  font-weight: 800;
+  line-height: 86.4px;
+  word-wrap: break-word;
+}
+.text-invista-home span {
+  color: #333333;
+  font-size: 21px;
+  font-family: var(--font-text-3);
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
 }
 
 .content-fundo-home {
   background-color: #8529e9;
   border-radius: 4px;
-  padding-top: 80px;
-  padding-bottom: 80px;
   padding-left: 80px;
+  position: relative;
+  z-index: 2;
+  align-items: flex-end;
   gap: 80px;
   display: flex;
   justify-content: space-between;
@@ -5022,14 +5234,26 @@ body.open-menu::after {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 80px;
+  padding-top: 80px;
   width: 50%;
+  margin: auto;
 }
 .content-fundo-home .text-fundo-home h1 {
   color: var(--text-white);
-  font-family: var(--text-font-3);
-  font-weight: 800;
-  font-size: 62px;
-  padding-bottom: 40px !important;
+  font-size: 18px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+.content-fundo-home .text-fundo-home h2 {
+  color: var(--text-white);
+  font-size: 72px;
+  font-family: "Bennet Banner Extra Condensed";
+  font-weight: 700;
+  line-height: 86.4px;
+  word-wrap: break-word;
 }
 .content-fundo-home .text-fundo-home h4 {
   color: var(--text-white);
@@ -5046,8 +5270,7 @@ body.open-menu::after {
 }
 .content-fundo-home .text-fundo-home span {
   padding-top: 24px;
-  padding-bottom: 80px;
-  color: #cdb8e5;
+  color: var(--text-white);
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
@@ -5062,10 +5285,587 @@ body.open-menu::after {
   padding: 16px;
   border-radius: 4px;
   width: fit-content;
+  margin-top: 80px;
+}
+
+.nossos-fundos-home {
+  position: relative;
+  padding-top: 262px;
+}
+.nossos-fundos-home h1 {
+  color: #1d1d1d;
+  padding-bottom: 40px;
+  font-size: 72px;
+  font-family: var(--font-text-4);
+  font-weight: 700;
+  line-height: 86.4px;
+  word-wrap: break-word;
+}
+.nossos-fundos-home h1 span {
+  color: #1d1d1d;
+  font-size: 72px;
+  font-family: var(--font-text-4);
+  font-weight: 800;
+  line-height: 86.4px;
+  word-wrap: break-word;
+}
+
+.img-fundo-home {
+  position: relative;
+  z-index: 10;
+  transition: 0.5s;
+}
+.img-fundo-home img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.images-fundos-home {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.data-infos-cards-fundos-home {
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+.slides-fundos {
+  display: flex;
+  gap: 24px;
+  width: 426px !important;
+}
+
+.swiper-pagination-fundos {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.swiper-pagination-fundos .swiper-pagination-bullet {
+  background-color: var(--text-grey-scale-09);
+  width: 12px;
+  border-radius: 4px;
+  height: 6px;
+}
+.swiper-pagination-fundos .swiper-pagination-bullet-active {
+  background-color: black;
+  width: 80px;
+  height: 6px;
+  border-radius: 4px;
+}
+
+.accordion_item:hover {
+  opacity: 0.9;
+  border-bottom: 1px solid #8529e9;
+  transition: 0.5s;
+}
+
+.accordion_content {
+  background-color: #fff;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease;
+  font-size: 14px;
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.accordion_content p {
+  margin: auto;
+}
+
+footer {
+  background-color: var(--pure-black);
+  top: 0 !important;
+  position: relative;
+  padding-top: 112px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.logo-footer-pandhora img {
+  width: 158px;
+}
+
+.footer-contato-title {
+  padding-top: 40px !important;
+}
+
+.footer-end {
+  padding-top: 40px;
+}
+
+.footer-sobre {
+  border-bottom: 1px solid gray;
+  padding-top: 24px;
+}
+
+.footer-sobre h5 {
+  color: #fafafa;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.prisma-title span {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.footer-prisma {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.voltar-topo {
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+}
+.voltar-topo span {
+  color: #bbbbbb;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 19.6px;
+  word-wrap: break-word;
+}
+
+.prisma-logo img {
+  width: 101px;
+}
+
+.infos-tc-footer {
+  position: relative;
+  z-index: 10;
+}
+.infos-tc-footer h1 {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+.infos-tc-footer span {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+
+.infos-tc-footer-imgs {
+  display: flex;
+  padding-top: 20px;
+  gap: 16px;
+}
+.infos-tc-footer-imgs img {
+  width: 146px;
+}
+
+.vector-quadro {
+  position: absolute;
+  background-image: url("../../images/Design_sem_nome__1_-removebg-preview.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  z-index: 0;
+  left: 207px;
+  right: 0;
+  width: 418px;
+  height: 341px;
+}
+.vector-quadro img {
+  bottom: 36px;
+  right: 75px;
+  position: relative;
+}
+
+.footer-quadro {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  border-radius: 4px;
+  top: -210px;
+  left: 0;
+  right: 0;
+  padding: 48px 120px 48px 120px;
+}
+
+.quadro-invest {
+  position: relative;
+  z-index: 10;
+}
+.quadro-invest h5 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  padding-bottom: 16px !important;
+  margin-bottom: 0 !important;
+  word-wrap: break-word;
+}
+.quadro-invest h1 {
+  color: #666666;
+  font-size: 28px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 36.96px;
+  word-wrap: break-word;
+  padding-bottom: 24px !important;
+}
+.quadro-invest h1 span {
+  color: #1d1d1d;
+  font-size: 28px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+.quadro-invest .span-invest {
+  color: #666666;
+  font-size: 21px !important;
+  font-family: "Bw Seido Raw";
+  font-weight: 400 !important;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+.quadro-invest .span-invest a {
+  text-decoration: underline;
+}
+
+.footer-texts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links h2 {
+  color: #fafafa;
+  font-size: 21px;
+  font-family: Helvetica;
+  font-weight: 700;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+.footer-links h4 {
+  color: #fafafa;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.footer-links h5 {
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+.footer-links span {
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 200;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  padding-bottom: 10px !important;
+}
+.footer-links a {
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 200;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+.footer-links small {
+  color: #bbbbbb;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 19.6px;
+  word-wrap: break-word;
+  padding-top: 16px;
+}
+
+.img-anbima {
+  padding-top: 16px;
+  width: 120px;
+}
+
+.input-text-footer {
+  padding: 12px 16px 12px 16px;
+  border-radius: 4px;
+  border: none;
+  color: #bbbbbb;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 19.6px;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+
+.input-submit-footer {
+  background: #8529e9;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 26px;
+  border-radius: 4px;
+  border: none;
+  color: #fafafa;
+  font-size: 14px;
+  font-family: "Bw Seido Raw";
+  font-weight: 500;
+  line-height: 17.5px;
+  word-wrap: break-word;
+}
+
+.logos-footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+}
+.logos-footer .icons-footer-pandhora {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logos-footer .icons-footer-pandhora img {
+  width: 24px;
+}
+
+.accordion_header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion_header span {
+  color: #333333;
+  font-size: 24px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 32.4px;
+  word-wrap: break-word;
+}
+
+.accordion_item {
+  border-bottom: 1px solid rgb(189, 188, 188);
+  transition: 0.5s;
+}
+
+.accordion_item span {
+  transition: 0.5s;
+}
+
+.accordion_item:hover span {
+  color: #8529e9;
+  transition: 0.5s;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion-home {
+  padding-top: 126px;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.accordion-home h1 {
+  color: #010101;
+  font-size: 40px;
+  font-family: "Bennet Banner Extra Condensed";
+  font-weight: 700;
+  line-height: 52.8px;
+  word-wrap: break-word;
+  padding-bottom: 64px !important;
+}
+.accordion-home h1 span {
+  color: #010101;
+  font-size: 40px;
+  font-family: "Bennet Banner Extra Condensed";
+  font-weight: 800;
+  line-height: 52.8px;
+  word-wrap: break-word;
+}
+
+.content-card-fundos-home:hover {
+  transition: 0.7s;
+  background-color: #8529e9;
+}
+.content-card-fundos-home:hover h1 {
+  color: var(--text-white);
+}
+.content-card-fundos-home:hover a {
+  background-color: var(--text-black);
+}
+.content-card-fundos-home:hover h5 {
+  color: #cdb8e5;
+}
+.content-card-fundos-home:hover span {
+  color: var(--text-white);
+}
+.content-card-fundos-home:hover .infos-card-fundos-home h5 {
+  color: var(--text-white);
+}
+.content-card-fundos-home:hover .infos-card-fundos-home span {
+  color: var(--text-white);
+}
+.content-card-fundos-home:hover .data-infos-cards-fundos-home {
+  transition: 0.5s;
+  gap: 50px;
+}
+.content-card-fundos-home:hover .data-infos-cards-fundos-home h5 {
+  color: var(--text-white);
+}
+.content-card-fundos-home:hover .data-infos-cards-fundos-home span {
+  color: var(--text-white);
+}
+
+.content-card-fundos-home {
+  transition: 0.7s;
+  background-color: var(--pure-white);
+  width: 426px;
+  height: 490px;
+  padding: 32px;
+  border-radius: 4px;
+}
+.content-card-fundos-home h5 {
+  color: #bc90f2;
+  font-size: 14px;
+  font-family: Neue Haas Unica W1G;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+  padding-bottom: 16px !important;
+  margin-bottom: 0 !important;
+}
+.content-card-fundos-home h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: var(--font-text-3);
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+  padding-bottom: 16px;
+}
+.content-card-fundos-home span {
+  color: #333333;
+  font-size: 14px;
+  font-family: Neue Haas Unica W1G;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.content-card-fundos-home .infos-card-fundos-home {
+  padding-top: 40px;
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid var(--text-grey-scale-03);
+}
+.content-card-fundos-home .infos-card-fundos-home h5 {
+  color: #999999;
+  font-size: 16px;
+  font-family: Neue Haas Unica W1G;
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+.content-card-fundos-home .infos-card-fundos-home h5 span {
+  color: #333333;
+  font-size: 16px;
+  font-family: Neue Haas Unica W1G;
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  padding-left: 8px;
+}
+.content-card-fundos-home .data-infos-cards-fundos-home {
+  transition: 0.5s;
+  display: flex;
+  gap: 45px;
+}
+.content-card-fundos-home .data-infos-cards-fundos-home h5 {
+  color: #999999;
+  font-size: 16px;
+  font-family: Neue Haas Unica W1G;
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+.content-card-fundos-home .data-infos-cards-fundos-home span {
+  color: #1d1d1d;
+  font-size: 21px;
+  font-family: var(--font-text-3);
+  font-weight: 700;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+.content-card-fundos-home a {
+  padding: 16px;
+  background-color: #8529e9;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-family: var(--font-text-3);
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.cards-fundo-home {
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  padding-bottom: 5.5%;
+  padding-left: 20%;
+  left: 0;
+  right: 0;
 }
 
 .carrosel-fundo-home {
   height: 100%;
+  position: absolute;
   width: 50%;
 }
 
@@ -5082,12 +5882,14 @@ body.open-menu::after {
 }
 
 .active-fundos {
-  background-color: var(--text-grey-scale-04);
+  background-color: transparent !important;
   transition: 0.6s;
 }
 
 .card-carrosel-home {
+  width: 533px;
   border: 1px solid var(--text-white);
+  background-color: var(--text-grey-scale-04);
   border-radius: 4px;
   display: flex;
   justify-content: start;
@@ -5140,11 +5942,11 @@ body.open-menu::after {
   font-family: var(--text-font-3);
 }
 .content-cards-home .cards-home {
-  width: 232px;
+  width: 100%;
   height: auto;
   padding: 32px 16px 32px 16px;
   word-wrap: break-word;
-  background-color: var(--text-grey-scale-01);
+  background-color: #e1e1e1;
 }
 .content-cards-home .cards-home span {
   color: var(--text-grey-scale-09);
@@ -5156,6 +5958,12 @@ body.open-menu::after {
 .content-cards-home .cards-home img {
   width: 56px;
   padding-bottom: 32px;
+}
+
+.section-pandhora {
+  padding-bottom: 320px;
+  background: #e7e7e7;
+  margin-top: -100px;
 }
 
 .nav-link {
@@ -5226,6 +6034,7 @@ body.open-menu::after {
 .btns-menu {
   gap: 8px;
   display: flex;
+  align-items: center;
 }
 
 .btn1 {
@@ -5249,6 +6058,958 @@ body.open-menu::after {
   display: flex;
   align-items: center;
   padding: 12px;
+}
+
+#img-home-last {
+  display: none;
+}
+
+#last-a-home {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .navbar-items {
+    display: none;
+  }
+  .list-menu {
+    display: none;
+  }
+  .search-btn {
+    display: none;
+  }
+  .navbar-after {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btnSearch {
+    display: none;
+  }
+  .btn-menu {
+    padding-left: 16px;
+  }
+}
+@media (max-width: 999px) {
+  #img-home-last {
+    display: block !important;
+  }
+  .content-cards-home {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+  }
+  .cards-home {
+    width: 45vw !important;
+    height: 227px !important;
+  }
+  #last-a-home {
+    display: block !important;
+    width: fit-content;
+    padding: 16px;
+    word-wrap: break-word;
+    border-radius: 4px;
+    background-color: #010101;
+  }
+  #last-a-home span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+    color: var(--text-white);
+  }
+  .container-investir-home {
+    flex-direction: column;
+    gap: 0;
+  }
+  .container-investir-home span {
+    padding-bottom: 40px !important;
+  }
+  .container-investir-home img {
+    display: none;
+  }
+  .container-investir-home .txt-investir-home {
+    width: 100%;
+  }
+  .container-investir-home .txt-investir-home h1 {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 0 !important;
+  }
+  .container-investir-home .txt-investir-home a {
+    display: none;
+  }
+  .container-investir-home .gestao-invest-home {
+    width: 100%;
+  }
+}
+.img-banner-interna {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.img-banner-interna img {
+  position: relative;
+  z-index: 0;
+  height: 24.0625vw;
+  object-fit: cover;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 24.0625vw;
+  z-index: 10;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 42%, transparent 100%);
+}
+
+.gestao-qs {
+  display: flex;
+  padding-top: 52px;
+  gap: 24px;
+}
+
+.gestao-1 {
+  width: 50%;
+}
+.gestao-1 h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+.gestao-1 h5 {
+  color: #010101;
+  font-size: 28px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+
+.gestao-2 {
+  width: 50%;
+  gap: 25px;
+}
+.gestao-2 h1 {
+  color: #8c36f1;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  padding-bottom: 16px !important;
+}
+.gestao-2 span {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+.gestao-2 h5 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  padding-top: 24px;
+}
+.gestao-2 h3 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.first-pagination {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.first-pagination img {
+  width: 15px;
+}
+.first-pagination .inactive-pagination {
+  color: var(--text-grey-scale-04);
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+.first-pagination .active-pagination {
+  color: #1d1d1d;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.pagination-internas {
+  padding-top: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagination-internas .second-pagination {
+  display: flex;
+  gap: 12px;
+}
+.pagination-internas .second-pagination img {
+  width: 17px;
+}
+
+.texts-banner-interna {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  padding-bottom: 104px;
+  left: 0;
+  right: 0;
+}
+.texts-banner-interna h1 {
+  color: white;
+  font-size: 72px;
+  font-family: "Bennet Banner Extra Condensed";
+  font-weight: 700;
+  line-height: 86.4px;
+  word-wrap: break-word;
+}
+.texts-banner-interna span {
+  color: #fafafa;
+  font-size: 21px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+
+/*************************************************************
+  HEADER
+**************************************************************/
+.parallax {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+  z-index: -1;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url(https://picsum.photos/g/1921/1081?random) top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.1);
+  min-height: 100%;
+  z-index: -2;
+}
+
+/*************************************************************
+  SECTIONS
+**************************************************************/
+.section-parallax {
+  padding-bottom: 0 !important;
+}
+
+.p-one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../images/bn-qs.png");
+}
+
+.parallax-inner {
+  position: relative;
+  min-height: 690px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.parallax-inner > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -20.5px;
+  width: 100%;
+  text-align: center;
+}
+
+.promessa-qs-container {
+  background-color: #1d1d1d;
+}
+
+.promessa-qs {
+  padding-top: 112px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.promessa-qs h1 {
+  color: white;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+  padding-bottom: 24px;
+}
+.promessa-qs h4 {
+  color: white;
+  font-size: 28px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+
+.card-promessas-container {
+  padding-top: 40px;
+  display: flex;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-promessas {
+  padding: 40px;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  width: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.card-promessas img {
+  width: 80px;
+}
+.card-promessas h1 {
+  color: #333333;
+  font-size: 28px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+  position: absolute;
+  padding-top: 120px;
+}
+.card-promessas span {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  padding-top: 135px;
+}
+
+.last-card-promessa {
+  background-color: #8529e9 !important;
+}
+.last-card-promessa h1 {
+  color: var(--text-white) !important;
+}
+.last-card-promessa span {
+  color: var(--text-white) !important;
+}
+
+.acreditamos-container {
+  background-color: var(--pure-white);
+  margin-top: -220px;
+  z-index: 1;
+  position: relative;
+}
+
+.acreditamos-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 352px;
+}
+.acreditamos-title h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.cards-acreditamos-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 54px;
+  padding-bottom: 80px;
+}
+
+.cards-acreditamos {
+  padding: 40px;
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
+  border-left: 1px solid #1d1d1d;
+}
+.cards-acreditamos img {
+  width: 80px;
+  padding-bottom: 24px;
+}
+.cards-acreditamos h1 {
+  color: #333333;
+  font-size: 28px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+  padding-bottom: 24px;
+}
+.cards-acreditamos span {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.last-card-acre {
+  border-right: 1px solid #1d1d1d;
+}
+
+.equipe-qs {
+  background-color: #1d1d1d;
+  padding-bottom: 112px;
+  padding-top: 112px;
+}
+
+.equipe-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.equipe-title h1 {
+  color: white;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.text-equipe-cards {
+  z-index: 2;
+  position: absolute;
+  padding: 24px 32px 24px 32px;
+}
+.text-equipe-cards h1 {
+  color: white;
+  font-size: 21px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+.text-equipe-cards span {
+  color: white;
+  font-size: 16px;
+  font-family: "Bw Seido Raw";
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.equipe-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.equipe-cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 24px;
+}
+
+.testimotionals {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 24px;
+}
+
+.testimotionals .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  background-color: #1d1d1d !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.testimotionals .card .layer {
+  z-index: 1;
+  position: absolute;
+  top: calc(100% - 2px);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to left, rgb(0, 0, 0), rgb(176, 176, 176));
+  transition: 0.5s;
+  opacity: 0.2;
+}
+
+.testimotionals .card:hover .layer {
+  top: 0;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.image::before {
+  content: "";
+  z-index: 1;
+  opacity: 0.7;
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 55%);
+  background: -webkit-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 55%);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 55%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+}
+
+.banner-internas-last {
+  height: 58.1516095535vh;
+}
+.banner-internas-last img {
+  height: 58.1516095535vh;
+}
+
+.texts-banner-last {
+  padding-bottom: 64px !important;
+}
+
+.percents-banner {
+  margin-top: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+}
+.percents-banner .percents-content {
+  display: flex;
+  flex-direction: column;
+}
+.percents-banner .percents-content h1 {
+  color: #fafafa;
+  font-size: 40px;
+  font-family: "Bennet Banner Extra Condensed";
+  font-weight: 700;
+  line-height: 52.8px;
+  word-wrap: break-word;
+}
+.percents-banner .percents-content span {
+  color: #fafafa;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.fundos-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.fundos-carrosel {
+  width: 50%;
+}
+
+.fundos-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.fundos-text h5 {
+  color: #010101;
+  font-size: 18px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+.fundos-text h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+  padding-bottom: 40px;
+}
+.fundos-text span {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  padding-bottom: 40px;
+}
+.fundos-text a {
+  background-color: #8529e9;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+  font-family: "Bw Seido Raw";
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.container-fundos-infos {
+  padding-top: 50px;
+}
+
+.banner-fundos {
+  height: auto;
+  padding-top: 353px;
+}
+.banner-fundos img {
+  width: 100%;
+  height: 71.6510903427vh;
+}
+
+.historico-fundos {
+  padding-top: 80px;
+}
+
+.historico-fundos-text {
+  padding-right: 50%;
+  padding-bottom: 80px;
+}
+.historico-fundos-text h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+.historico-fundos-text h5 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+.historico-fundos-text span {
+  color: #010101;
+  font-size: 28px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+
+.trade-content-fundos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trade-a {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 40px;
+}
+.trade-a a {
+  padding: 8px 16px 8px 16px;
+  background-color: #8529e9;
+  border-radius: 2px;
+  color: #fafafa;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 19.6px;
+  word-wrap: break-word;
+}
+
+.beneficios-title h1 {
+  color: white;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+.beneficios-title h5 {
+  color: white;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.trade-chart {
+  padding-bottom: 80px;
+}
+
+.beneficios-fundos {
+  background-color: #1d1d1d;
+  padding-top: 80px;
+}
+
+.beneficios-title {
+  padding-bottom: 64px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.cards-beneficios-container {
+  margin-bottom: -150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.cards-beneficios-container .cards-beneficios {
+  padding: 24px 40px 24px 40px;
+  height: auto;
+  width: 100%;
+  background-color: var(--text-grey-scale-01);
+}
+.cards-beneficios-container .cards-beneficios h1 {
+  color: #333333;
+  font-size: 21px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 29.4px;
+  word-wrap: break-word;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.cards-beneficios-container .cards-beneficios span {
+  color: #333333;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.cards-beneficios-container .cards-beneficios img {
+  width: 40px;
+}
+
+.last-cards-beneficios {
+  background-color: #8529e9 !important;
+}
+.last-cards-beneficios h1 {
+  color: var(--text-white) !important;
+}
+.last-cards-beneficios span {
+  color: var(--text-white) !important;
+}
+
+.resultados-fundos {
+  margin-top: 180px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.resultados-title h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.infos-resultados {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: var(--text-grey-scale-01);
+}
+
+.infos-title {
+  padding-bottom: 64px;
+}
+.infos-title h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.content-infos {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.download-infos {
+  width: 50%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.download-texts {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+}
+.download-texts img {
+  background-color: white;
+  padding: 6px;
+  border-radius: 4px;
+  width: 35px;
+}
+
+.texts-infos {
+  width: 50%;
+}
+
+.texts-infos-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-grey-scale-03);
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.texts-infos-content span {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+.texts-infos-content h1 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.comparativos-fundos {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: rgb(233, 233, 233);
+}
+
+.comparativos-title {
+  padding-bottom: 30px;
+}
+.comparativos-title h1 {
+  color: #8529e9;
+  font-size: 34px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.comparativos-table tr {
+  border-bottom: 1px solid var(--text-grey-scale-05);
+}
+.comparativos-table tr th {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+  text-align: start !important;
+}
+.comparativos-table tr td {
+  color: #333333;
+  font-size: 18px !important;
+  font-family: "Roboto" !important;
+  font-weight: 400 !important;
+  line-height: 27px !important;
+  word-wrap: break-word !important;
+  text-align: start !important;
+}
+
+.comparativos-table-row {
+  background-color: #8529e9 !important;
+}
+.comparativos-table-row th {
+  color: var(--text-white) !important;
+}
+.comparativos-table-row td {
+  color: var(--text-white) !important;
+}
+
+ul.container {
+  height: 494px !important;
+}
+
+.content-list-fundo {
+  padding: 24px;
+  display: flex;
+}
+.content-list-fundo h1 {
+  color: white;
+  font-size: 24px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 31.68px;
+  word-wrap: break-word;
+}
+.content-list-fundo span {
+  color: white;
+  font-size: 16px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+ul.container li {
+  color: #ddd;
+  list-style-type: none;
+  margin: 0;
+  transition: background-color 0.7s;
+}
+
+ul.container li:nth-child(2) {
+  color: #fff;
+  background: #8529e9;
 }
 
 /* Pages */

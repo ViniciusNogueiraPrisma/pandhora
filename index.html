@@ -18,10 +18,22 @@
       media="all"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
       rel="stylesheet"
     />
+
+    <script
+      src="https://kit.fontawesome.com/8c2d2553fe.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -120,7 +132,7 @@
     </div>
 
     <div class="navbar headerFixoMenu">
-      <div class="container container-responsivo-full">
+      <div class="container-sm navbar-after">
         <div class="logo">
           <img src="./images/icons/logo-pandhora.png" alt="" />
         </div>
@@ -251,6 +263,16 @@
             </a>
             <img src="./images/icons/profile-bold.svg" alt="" />
           </div>
+
+          <div class="btn-menu">
+            <button
+              type="button"
+              class="toggle-mobile-menu"
+              aria-label="Abrir Menu"
+            >
+              <span class="icon-nav" title="Abrir Menu"></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -284,7 +306,7 @@
     <!-- Mobile Menu -->
 
     <aside class="mobile-menu-div">
-      <div class="container container-responsivo-full">
+      <div class="">
         <div class="mobile-menu">
           <div class="header-menu">
             <div class="div-menu-open">
@@ -308,180 +330,155 @@
               <picture class="branding">
                 <img
                   class="logo-mobile"
-                  src="./images/new-images/logo-white.png"
+                  src="./images/logo-white-pandhora-tc.png"
                   alt="TC"
                 />
               </picture>
             </a>
           </div>
-          <div class="middle-header">
-            <div class="menu-tools">
-              <div class="div-pesquisar-mobile">
-                <!-- <button
-                  type="button"
-                  class="pesquisar-button"
-                  data-bs-toggle="tooltip"
-                  data-bs-trigger="hover"
-                  data-bs-placement="bottom"
-                  title="Pesquisar"
-                  aria-label="Pesquisar"
-                >
-                  <img src="./images/icons/icon-busca.svg" alt="Pesquisar" />
-                </button> -->
-                <input
-                  name="ctl00$searchId"
-                  type="text"
-                  id="searchId"
-                  class="inputBuscaMobile"
-                  placeholder="Digite aqui a sua busca"
-                />
+          <div class="container-sm">
+            <div class="middle-header">
+              <div class="menu-tools">
+                <div class="div-pesquisar-mobile">
+                  <!-- <button
+                    type="button"
+                    class="pesquisar-button"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="hover"
+                    data-bs-placement="bottom"
+                    title="Pesquisar"
+                    aria-label="Pesquisar"
+                  >
+                    <img src="./images/icons/icon-busca.svg" alt="Pesquisar" />
+                  </button> -->
+                  <input
+                    name="ctl00$searchId"
+                    type="text"
+                    id="searchId"
+                    class="inputBuscaMobile"
+                    placeholder="Digite aqui a sua busca"
+                  />
+                </div>
+                <p>Aperte Enter para pesquisar</p>
               </div>
-              <p>Aperte Enter para pesquisar</p>
-            </div>
-            <!-- <div class="flex-institucional-language">
-              <a href="#" class="link-site-institucional">Institucional</a>
               <div class="institucional-and-language">
+                <div class="flex-relacoes-institucional">
+                  <p>Relações com Investidores</p>
+                  <a href="" target="_blank"> Institucional </a>
+                </div>
+
                 <ul>
-                  <li><a href="#" class="active">PT</a></li>
-                  <li><a href="#">EN</a></li>
+                  <li id="btnPt" class="active">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaPtBr','')"
+                    >
+                      PT
+                    </a>
+                  </li>
+                  <li id="btnEn">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaEnUS','')"
+                    >
+                      EN
+                    </a>
+                  </li>
                 </ul>
               </div>
-            </div> -->
-          </div>
+            </div>
 
-          <div class="menu-body">
-            <nav class="accordion nav-mobile" id="accordionMenuMobile">
-              <div class="accordion-item">
-                <h3>
-                  <button
-                    type="button"
-                    class="accordion-button collapsed"
-                    aria-expanded="false"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mobile-menu-1"
-                    aria-controls="mobile-menu-1"
+            <div class="menu-body">
+              <nav class="accordion nav-mobile" id="accordionMenuMobile">
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-1"
+                      aria-controls="mobile-menu-1"
+                    >
+                      Sobre a Pandhora
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
                   >
-                    Sobre o PNB
-                  </button>
-                </h3>
-
-                <div
-                  id="mobile-menu-1"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionMenuMobile"
-                >
-                  <div class="accordion-body">
-                    <ul class="pages">
-                      <li class="item link-externo">
-                        <a href="nossos-produtos.html">Suporte Extendido</a>
-                      </li>
-
-                      <li class="item">
-                        <a href="cursos.html">Cursos PNB</a>
-                      </li>
-
-                      <li class="item">
-                        <a href="plugin.html">Plugin PNB</a>
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item link-externo">
+                          <a href="nossos-produtos.html">Quem Somos</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="accordion-item">
-                <h3>
-                  <button
-                    type="button"
-                    class="accordion-button collapsed"
-                    aria-expanded="false"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mobile-menu-2"
-                    aria-controls="mobile-menu-2"
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-2"
+                      aria-controls="mobile-menu-2"
+                    >
+                      Nossos Fundos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
                   >
-                    Nossos Produtos
-                  </button>
-                </h3>
-
-                <div
-                  id="mobile-menu-2"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionMenuMobile"
-                >
-                  <div class="accordion-body">
-                    <ul class="pages">
-                      <li class="item">
-                        <a href="conselho-de-adm.html">Suporte Estendido</a>
-                      </li>
-                      <li class="item">
-                        <a href="diretoria-executiva.html">Cursos PNB</a>
-                      </li>
-
-                      <li class="item">
-                        <a href="diretoria-executiva.html">Plugin</a>
-                      </li>
-
-                      <li class="item link-menu-dropdown-after">
-                        <a href="diretoria-executiva.html"
-                          >Day Trade - Youtube</a
-                        >
-                        <img
-                          src="./images/new-images/external-link.svg"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="diretoria-executiva.html">teste</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="accordion-item">
-                <h3>
-                  <button
-                    type="button"
-                    class="accordion-button collapsed"
-                    aria-expanded="false"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mobile-menu-3"
-                    aria-controls="mobile-menu-3"
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-3"
+                      aria-controls="mobile-menu-3"
+                    >
+                      Documentos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
                   >
-                    Investment Banking
-                  </button>
-                </h3>
-
-                <div
-                  id="mobile-menu-3"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionMenuMobile"
-                >
-                  <div class="accordion-body">
-                    <ul class="pages">
-                      <li class="item">
-                        <a href="central-resultados.html">Créditos</a>
-                      </li>
-                      <li class="item">
-                        <a href="documentos-cvm.html">Pagamentos</a>
-                      </li>
-                      <li class="item">
-                        <a href="graficos-cotacoes.html">Câmbio</a>
-                      </li>
-                      <li class="item">
-                        <a href="tc-news.html">Fusões</a>
-                      </li>
-                      <li class="item">
-                        <a href="tc-news.html">Aquisiçõess</a>
-                      </li>
-                    </ul>
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="central-resultados.html">Créditos</a>
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html">Pagamentos</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="search-talk-mobile">
-                <button id="btn-mobile-talk">
-                  <span>Fale com um especialista</span
-                  ><img src="./images/new-images/icons/icon-talk.svg" alt="" />
-                </button>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -489,28 +486,94 @@
 
     <div class="container-carrosel-home">
       <div class="content-carrosel-home">
-        <img src="./images/carrosel-home/_Fundo.svg" alt="" />
-        <img src="./images/carrosel-home/fundo2.png" alt="" />
-        <img src="./images/carrosel-home/fundo3.png" alt="" />
+        <div class="img-carrosel-home">
+          <div class="text-carrosel-home">
+            <span>Renda variável longo prazo</span>
+            <h1>Tc Cosmos</h1>
+          </div>
+
+          <div class="text-carrosel-hover">
+            <h5>Renda variável longo prazo</h5>
+            <h1>TC Cosmos</h1>
+            <h3>Um fundo da TC Pandhora</h3>
+
+            <span
+              >TC Cosmos é um fundo multimercado macro de maior volatilidade,
+              que através de diferentes classes de ativos, procura boas
+              oportunidades de curto, médio ou longo prazo.</span
+            >
+
+            <a href="">Investir no TC Cosmos</a>
+          </div>
+          <img src="./images/carrosel-home/fundo1.png" alt="" />
+        </div>
+
+        <div class="img-carrosel-home">
+          <div class="text-carrosel-home">
+            <span>Regressivo Longo prazo</span>
+            <h1>Essential</h1>
+          </div>
+
+          <div class="text-carrosel-hover">
+            <h5>Renda variável longo prazo</h5>
+            <h1>Essencial</h1>
+            <h3>Um fundo da TC Pandhora</h3>
+
+            <span
+              >TC Cosmos é um fundo multimercado macro de maior volatilidade,
+              que através de diferentes classes de ativos, procura boas
+              oportunidades de curto, médio ou longo prazo.</span
+            >
+
+            <a href="">Investir no Essential</a>
+          </div>
+          <img src="./images/carrosel-home/fundo2.png" alt="" />
+        </div>
+
+        <div class="img-carrosel-home">
+          <div class="text-carrosel-home">
+            <span>Renda variável</span>
+            <h1>Digital Assets</h1>
+          </div>
+
+          <div class="text-carrosel-hover">
+            <h5>Renda variável longo prazo</h5>
+            <h1>Digital Assets</h1>
+            <h3>Um fundo da TC Pandhora</h3>
+
+            <span
+              >TC Cosmos é um fundo multimercado macro de maior volatilidade,
+              que através de diferentes classes de ativos, procura boas
+              oportunidades de curto, médio ou longo prazo.</span
+            >
+
+            <a href="">Investir no Digital Assets</a>
+          </div>
+          <img src="./images/carrosel-home/fundo1.png" alt="" />
+        </div>
       </div>
     </div>
 
     <div class="container-sm container-investir-home">
       <img src="./images/vector1.png" alt="" />
       <div class="txt-investir-home">
-        <h1>Porque investir com a Pandhora</h1>
+        <h1>
+          <img id="img-home-last" src="./images/vector1.png" alt="" />Porque
+          investir com a Pandhora
+        </h1>
         <a href=""><span>Por que a Pandhora</span></a>
       </div>
 
       <div class="gestao-invest-home">
+        <span style="color: #8c36f1; font-weight: 400; padding-bottom: 40px"
+          >A Pandhora nasceu com tecnologia em seu DNA.</span
+        >
         <span
-          ><span style="color: #8c36f1; font-weight: 700"
-            >Unimos Gestão e Tecnologia</span
-          >
-          criando fundos ideais para construção de patrimônio, com segurança
-          <br />
-          e diversificação.
-        </span>
+          >Somos uma empresa de investimentos, focada em entregar produtos mais
+          eficientes, através da aplicação de tecnologia de ponta e ciência
+          financeira.</span
+        >
+        <a id="last-a-home" href=""><span>Por que a Pandhora</span></a>
       </div>
     </div>
 
@@ -562,10 +625,9 @@
 
         <div class="content-fundo-home">
           <div class="text-fundo-home">
-            <h1>
-              Um fundo da <br />
-              TC Pandhora
-            </h1>
+            <h1>Um fundo da TC Pandhora</h1>
+
+            <h2>TC Cosmos</h2>
 
             <h4>
               <span>Com todo o expertise</span> <br />
@@ -584,53 +646,505 @@
             <a href="">Quero investir no TC Cosmos</a>
           </div>
 
-          <div class="carrosel-fundo-home">
-            <div class="content-carrosel-fundo-home">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="card-carrosel-home">
-                      <img src="./images/icons/icon-invest.png" alt="" />
-                      <span>Gestão Especializada</span>
-                    </div>
-                  </div>
+          <div class="container-sm cards-fundo-home">
+            <div class="card-carrosel-home">
+              <img src="./images/icons/icon-invest.png" alt="" />
+              <span>Gestão Especializada</span>
+            </div>
 
-                  <div class="swiper-slide">
-                    <div class="card-carrosel-home">
-                      <img src="./images/icons/icon-start.png" alt="" />
-                      <span>Altamente Especializada</span>
-                    </div>
-                  </div>
+            <div class="card-carrosel-home">
+              <img src="./images/icons/icon-start.png" alt="" />
+              <span>Altamente Especializada</span>
+            </div>
 
-                  <div class="swiper-slide">
-                    <div class="card-carrosel-home">
-                      <img src="./images/icons/icon-study.png" alt="" />
-                      <span>Prático</span>
-                    </div>
-                  </div>
+            <div class="card-carrosel-home">
+              <img src="./images/icons/icon-study.png" alt="" />
+              <span>Prático</span>
+            </div>
 
-                  <div class="swiper-slide">
-                    <div class="card-carrosel-home">
-                      <img src="./images/icons/icon-hands.png" alt="" />
-                      <span>Aberto para investidores</span>
-                    </div>
-                  </div>
+            <div class="card-carrosel-home">
+              <img src="./images/icons/icon-hands.png" alt="" />
+              <span>Aberto para investidores</span>
+            </div>
 
-                  <div class="swiper-slide">
-                    <div class="card-carrosel-home">
-                      <img src="./images/icons/icon-rocket.png" alt="" />
-                      <span>Estratégia Vencedora</span>
+            <div class="card-carrosel-home">
+              <img src="./images/icons/icon-rocket.png" alt="" />
+              <span>Estratégia Vencedora</span>
+            </div>
+          </div>
+
+          <div class="img-fundo-home">
+            <img src="./images/Person/buka.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="section-pandhora">
+        <div class="container-sm invista-fundos-home">
+          <div class="text-invista-home">
+            <h1>
+              Invista nos fundos <br />
+              <span>da Pandhora</span>
+            </h1>
+
+            <span>
+              Fundo de risco moderado e liquidez alta. Sua maior exposição é no
+              Brasil, mas conta com uma estratégia global que negocia cerca de
+              <span
+                style="
+                  color: #8c36f1;
+                  font-weight: 700;
+                  line-height: 29.4px;
+                  font-size: 21px;
+                "
+                >150 ativos</span
+              >
+              em
+              <span
+                style="
+                  color: #8c36f1;
+                  font-weight: 700;
+                  line-height: 29.4px;
+                  font-size: 21px;
+                "
+                >40 países</span
+              >.
+            </span>
+          </div>
+          <div class="img-invista">
+            <img src="./images/bg_home_essencial_mapa.png" alt="" />
+          </div>
+        </div>
+
+        <div class="container-sm nossos-fundos-home">
+          <h1>Nossos <span>Fundos</span></h1>
+
+          <div class="card-fundos-home">
+            <div class="swiper mySwiper-fundos">
+              <div class="swiper-wrapper wrapper-fundos">
+                <div class="swiper-slide slides-fundos">
+                  <div class="content-card-fundos-home">
+                    <h5>Moderado</h5>
+                    <h1>TC Cosmos</h1>
+
+                    <span
+                      >TC Cosmos é um fundo multimercado macro de maior
+                      volatilidade, que através de diferentes classes de ativos,
+                      procura boas oportunidades de curto, médio ou longo
+                      prazo.</span
+                    >
+
+                    <div class="infos-card-fundos-home">
+                      <h5>Perfil: <span>Geral</span></h5>
+                      <h5>PL: <span>R$0.00</span></h5>
+                    </div>
+
+                    <div class="data-infos-cards-fundos-home">
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Dia: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Mês: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Ano: <span>00%</span></h5>
+                      </div>
+                    </div>
+
+                    <div class="btn-investir-fundos-home">
+                      <a href="">Quero investir</a>
                     </div>
                   </div>
                 </div>
 
-                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-slide slides-fundos">
+                  <div class="content-card-fundos-home">
+                    <h5>Moderado</h5>
+                    <h1>TC Cosmos</h1>
+
+                    <span
+                      >TC Cosmos é um fundo multimercado macro de maior
+                      volatilidade, que através de diferentes classes de ativos,
+                      procura boas oportunidades de curto, médio ou longo
+                      prazo.</span
+                    >
+
+                    <div class="infos-card-fundos-home">
+                      <h5>Perfil: <span>Geral</span></h5>
+                      <h5>PL: <span>R$0.00</span></h5>
+                    </div>
+
+                    <div class="data-infos-cards-fundos-home">
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Dia: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Mês: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Ano: <span>00%</span></h5>
+                      </div>
+                    </div>
+
+                    <div class="btn-investir-fundos-home">
+                      <a href="">Quero investir</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide slides-fundos">
+                  <div class="content-card-fundos-home">
+                    <h5>Moderado</h5>
+                    <h1>TC Cosmos</h1>
+
+                    <span
+                      >TC Cosmos é um fundo multimercado macro de maior
+                      volatilidade, que através de diferentes classes de ativos,
+                      procura boas oportunidades de curto, médio ou longo
+                      prazo.</span
+                    >
+
+                    <div class="infos-card-fundos-home">
+                      <h5>Perfil: <span>Geral</span></h5>
+                      <h5>PL: <span>R$0.00</span></h5>
+                    </div>
+
+                    <div class="data-infos-cards-fundos-home">
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Dia: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Mês: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Ano: <span>00%</span></h5>
+                      </div>
+                    </div>
+
+                    <div class="btn-investir-fundos-home">
+                      <a href="">Quero investir</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide slides-fundos">
+                  <div class="content-card-fundos-home">
+                    <h5>Moderado</h5>
+                    <h1>TC Cosmos</h1>
+
+                    <span
+                      >TC Cosmos é um fundo multimercado macro de maior
+                      volatilidade, que através de diferentes classes de ativos,
+                      procura boas oportunidades de curto, médio ou longo
+                      prazo.</span
+                    >
+
+                    <div class="infos-card-fundos-home">
+                      <h5>Perfil: <span>Geral</span></h5>
+                      <h5>PL: <span>R$0.00</span></h5>
+                    </div>
+
+                    <div class="data-infos-cards-fundos-home">
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Dia: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Mês: <span>00%</span></h5>
+                      </div>
+
+                      <div class="dia-infos-cards-fundos-home">
+                        <h5>Ano: <span>00%</span></h5>
+                      </div>
+                    </div>
+
+                    <div class="btn-investir-fundos-home">
+                      <a href="">Quero investir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination-fundos"></div>
+            </div>
+          </div>
+
+          <div class="accordion-home">
+            <h1>Perguntas <span>Frequentes</span></h1>
+
+            <div class="accordion_item">
+              <div class="accordion_header">
+                <span class="aumentarFontClass DiminuirFonteClass themas">
+                  Como posso investir nos fundos da Pandhora
+                </span>
+                <div class="icon">
+                  <i
+                    class="fa-solid fa-plus themas"
+                    style="color: var(--grey-scale-12)"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="accordion_content">
+                <p class="aumentarFontClass DiminuirFonteClass">
+                  Acessando o canal do Youtube
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion_item">
+              <div class="accordion_header">
+                <span class="aumentarFontClass DiminuirFonteClass themas">
+                  Como faço para criar uma conta na Pandhora
+                </span>
+                <div class="icon">
+                  <i
+                    class="fa-solid fa-plus themas"
+                    style="color: var(--grey-scale-12)"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="accordion_content">
+                <p class="aumentarFontClass DiminuirFonteClass">
+                  Acessando o canal do Youtube
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion_item">
+              <div class="accordion_header">
+                <span class="aumentarFontClass DiminuirFonteClass themas">
+                  Posso investir através de outras gestoras
+                </span>
+                <div class="icon">
+                  <i
+                    class="fa-solid fa-plus themas"
+                    style="color: var(--grey-scale-12)"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="accordion_content">
+                <p class="aumentarFontClass DiminuirFonteClass">
+                  Acessando o canal do Youtube
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion_item">
+              <div class="accordion_header">
+                <span class="aumentarFontClass DiminuirFonteClass themas">
+                  Quais são as políticas ESG
+                </span>
+                <div class="icon">
+                  <i
+                    class="fa-solid fa-plus themas"
+                    style="color: var(--grey-scale-12)"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="accordion_content">
+                <p class="aumentarFontClass DiminuirFonteClass">
+                  Acessando o canal do Youtube
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="container-sm footer-quadro">
+        <div class="quadro-invest">
+          <h5>Onde investir</h5>
+          <h1>
+            Abra sua conta e comece <br />
+            <span>a operar hoje pelo app TC</span>
+          </h1>
+          <span class="span-invest"
+            >Já é cliente ? <a href="">Acesse aqui</a></span
+          >
+        </div>
+
+        <div class="vector-quadro">
+          <img src="./images/phone-tc.png" alt="" />
+        </div>
+
+        <div class="infos-tc-footer">
+          <h1>
+            Baixe o aplicato da TC <br />
+            e <span>cadastre-se gratuitamente</span>
+          </h1>
+
+          <div class="infos-tc-footer-imgs">
+            <a href=""><img src="./images/appstore.png" alt="" /></a>
+            <a href=""><img src="./images/google-play.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-sm">
+        <div class="logos-footer">
+          <div class="logo-footer-pandhora">
+            <a href=""
+              ><img src="./images/logo-white-pandhora-tc.png" alt=""
+            /></a>
+          </div>
+
+          <div class="icons-footer-pandhora">
+            <a href=""> <img src="./images/icons/yt.png" alt="" /></a>
+            <a href=""
+              ><img src="./images/icons/linkedin-white.png" alt=""
+            /></a>
+            <a href=""><img src="./images/icons/insta-white.png" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="footer-texts">
+          <div class="footer-links">
+            <h5>
+              Sobre <br />
+              Pandhora
+            </h5>
+            <span><a href="#">Quem Somos</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Nossos Fundos</h5>
+            <span><a href="">Essencial</a></span>
+            <span><a href="">Long bias</a></span>
+            <span><a href="">TC Cosmos</a></span>
+            <span><a href="">Material de Divulgação Essencial</a></span>
+            <span><a href="">Material de Divulgação Long Bias</a></span>
+            <span><a href="">Material de Divulgação TC Cosmos</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Documentos</h5>
+            <span><a href="">Código de Ética</a></span>
+            <span><a href="">Formulário de Referência</a></span>
+            <span><a href="">Manual de Compliance</a></span>
+            <span><a href="">Política de Gestão de Risco</a></span>
+            <span><a href="">Política de Investimento Pessoal</a></span>
+            <span><a href="">Política de Rateio e Divisão de Ordens</a></span>
+            <span><a href="">Política de Seleção de Exchanges</a></span>
+            <span><a href="">Políticas de Privacidade</a></span>
+            <span><a href="">Política de Liquidez Anbima</a></span>
+            <span
+              ><a href="">Política de ESG & Investimento Responsável</a></span
+            >
+            <span
+              ><a href="">Política de Prevenção de Lavagem de Dinheiro</a></span
+            >
+            <span><a href="">Política de Exercício de Voto</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Fale Conosco</h5>
+            <span><a href="">Contato</a></span>
+            <span><a href="">Cadastre-se no mailing</a></span>
+            <span><a href="">Política de Privacidade</a></span>
+            <span><a href="">Termos e Condições</a></span>
+
+            <h5 class="footer-contato-title">Emails</h5>
+            <span><a href="">dpo@pandhora.com</a></span>
+            <span><a href="">contato@pandhora.com</a></span>
+            <span class="footer-end"
+              ><a href=""
+                >R. Leopoldo Couto Magalhães Júnior - Itaim Bibi, São Paulo
+                <br />
+                - SP, 04542-000</a
+              ></span
+            >
+          </div>
+
+          <div class="footer-links">
+            <h2>Saiba tudo em primeira mão.</h2>
+            <h4>
+              Assine à Pandhora News e receba conteúdo exclusivo sobre o mercado
+              financeiro.
+            </h4>
+
+            <small>Email: *</small>
+            <input
+              class="input-text-footer"
+              type="text"
+              placeholder="Digite seu e-mail @"
+            />
+            <input
+              class="input-submit-footer"
+              type="submit"
+              value="Cadastrar"
+            />
+
+            <span><a href="">Política de Privacidade</a></span>
+            <span><a href="">Termos e Condições</a></span>
+
+            <img class="img-anbima" src="./images/anbima.png" alt="" />
+          </div>
+        </div>
+
+        <div class="footer-sobre">
+          <h5>
+            A Pandhora Investimentos Ltda.(“Pandhora”) é uma gestora de recursos
+            devidamente credenciada na Comissão de Valores Mobiliários - CVM
+            como administradora de carteira, de acordo com o Ato Declaratório
+            CVM n.º 17.517 e constituída sob os moldes da Instrução CVM
+            Nº558/15. A gestora é aderente ao códigos ANBIMA de Regulação e
+            Melhores Práticas para Administração de Recursos de Terceiros e
+            código ANBIMA de Regulação e Melhores Práticas para o Programa de
+            Certificação Continuada. A Pandhora não comercializa ou distribui
+            quotas de fundos de investimento, portanto todas as informações
+            contidas neste website não devem ser consideradas como oferta de
+            venda de cotas de fundos de investimentos ou de qualquer título ou
+            valor mobiliário, recomendação de investimento e nem deve servir
+            como única base para tomada de decisões de investimento. Fundos de
+            investimentos não contam com a garantia do administrador do fundo,
+            do gestor da carteira, de qualquer mecanismo de seguro ou, ainda, do
+            Fundo Garantidor de Créditos - FGC. A rentabilidade obtida no
+            passado não representa garantia de rentabilidade futura. A
+            rentabilidade divulgada não é líquida de impostos. Ao investidor é
+            recomendada a leitura cuidadosa do prospecto e do regulamento do
+            fundo de investimento ao aplicar os seus recursos. O Fundo Pandhora
+            não se responsabiliza pela publicação acidental de informações
+            incorretas, nem por decisões de investimentos tomadas com base neste
+            material. O conteúdo deste website não pode ser reproduzido sem
+            prévia e expressa autorização. A Pandhora, seus sócios e
+            funcionários não se responsabilizam pelo uso indevido do conteúdo
+            deste website, pela publicação acidental de informações incorretas,
+            nem por decisões de investimentos tomadas com base neste material.
+            SUPERVISÃO E FISCALIZAÇÃO: Comissão de Valores Mobiliários – CVM.
+            Serviço de Atendimento ao Cidadão em www.cvm.gov.br
+          </h5>
+        </div>
+
+        <div class="footer-prisma">
+          <div class="prisma-title">
+            <span
+              >Pandhora Investimentos LTDA - Todos os direitos reservados
+              2023</span
+            >
+          </div>
+
+          <div class="prisma-logo">
+            <img src="./images/Selo Prisma.png" alt="" />
+          </div>
+
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <span>Voltar ao topo</span>
+            <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       type="text/javascript"

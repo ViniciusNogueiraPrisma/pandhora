@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link preload rel="stylesheet" href="./vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendor/basic-table.min.css" />
+
+    <link rel="stylesheet" href="./vendor/slick.min.css" />
+    <link rel="stylesheet" href="./vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="./vendor/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://template.riweb.com.br/prisma/css/stories.dist.min.css"
+      media="all"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8c2d2553fe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/import.dist.min.css" />
+
+    <link rel="stylesheet" href="./scss/import.css" />
+
+    <script src="vendor/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- <div class="acessibillity-bar">
+      <div class="container container-responsivo-full">
+        <div class="content">
+          <div class="right-top-header">
+            <div class="accessibility-tools">
+              <a href="/acessibilidade"> <small> Acessibilidade </small> </a>
+
+              <button
+                id="contrast-toggle"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Contraste"
+              >
+                <span class="icon-contraste"></span>
+              </button>
+
+              <button
+                id="increaseFont"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Aumentar o tamanho da fonte"
+              >
+                <span class="icon-aumentar-fonte" accesskey="4"></span>
+              </button>
+
+              <button
+                id="decreaseFont"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Diminuir o tamanho da fonte"
+              >
+                <span class="icon-diminuir-fonte" accesskey="5"></span>
+              </button>
+            </div>
+
+            <div class="idiomas">
+              <a
+                id="hlkCulturaPtBr"
+                accesskey="7"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                class="active"
+                href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
+                data-bs-original-title="Mudar para português"
+              >
+                <span>PT</span>
+              </a>
+              <a
+                id="hlkCulturaEnUS"
+                accesskey="8"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')"
+                data-bs-original-title="Mudar para inglês"
+              >
+                <span>EN</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="navbar headerFixoMenu">
+      <div class="container-sm navbar-after">
+        <div class="logo">
+          <img src="./images/icons/logo-pandhora.png" alt="" />
+        </div>
+
+        <div class="list-menu">
+          <ul class="navbar-nav">
+            <div class="navbar-items">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sobre a Pandhora
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Quem Somos</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nossos Fundos
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Essencial</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Long Bios</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">TC Cosmos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Digital Assets</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Documentos
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Fale Conosco
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Contato</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cadastre-se no mailing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Termos e Condições</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="search-btn">
+          <button
+            type="button"
+            class="open-searchbox btnSearch"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="2"
+            title=""
+            data-bs-original-title="Pesquisar"
+          >
+            <i class="icon-busca"></i>
+          </button>
+        </div>
+
+        <div class="btns-menu">
+          <div class="btns-items btn1">
+            <a href="" class="abrir-conta">
+              <span>Abrir conta</span>
+            </a>
+            <img src="./images/icons/icon-carteira.svg" alt="" />
+          </div>
+
+          <div class="btns-items btn2">
+            <a href="" class="abrir-conta">
+              <span>Login</span>
+            </a>
+            <img src="./images/icons/profile-bold.svg" alt="" />
+          </div>
+
+          <div class="btn-menu">
+            <button
+              type="button"
+              class="toggle-mobile-menu"
+              aria-label="Abrir Menu"
+            >
+              <span class="icon-nav" title="Abrir Menu"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="searchbox">
+      <div class="container container-responsivo-full">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite aqui a sua busca"
+          />
+
+          <div class="input-group-text">
+            <button
+              type="button"
+              class="close-searchbox"
+              aria-label="Fechar Modal de Pesquiasr"
+            >
+              <span class="icon-exibir"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-help">
+          <small>Aperte Enter para pesquisar</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <aside class="mobile-menu-div">
+      <div class="">
+        <div class="mobile-menu">
+          <div class="header-menu">
+            <div class="div-menu-open">
+              <!-- <div class="button-storys-open">
+                <button class="openStorys" type="button">
+                  <span class="text-stories">Stories RI</span>
+                  <span class="icon-button-stories">
+                    <i class="icon-stories"></i>
+                  </span>
+                </button>
+              </div> -->
+              <button
+                title="Fechar"
+                class="toggle-mobile-menu"
+                aria-label="Fechar Menu"
+              >
+                <span class="icon-nav"></span>
+              </button>
+            </div>
+            <a class="logo-header" href=":javascript">
+              <picture class="branding">
+                <img
+                  class="logo-mobile"
+                  src="./images/logo-white-pandhora-tc.png"
+                  alt="TC"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="container-sm">
+            <div class="middle-header">
+              <div class="menu-tools">
+                <div class="div-pesquisar-mobile">
+                  <!-- <button
+                    type="button"
+                    class="pesquisar-button"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="hover"
+                    data-bs-placement="bottom"
+                    title="Pesquisar"
+                    aria-label="Pesquisar"
+                  >
+                    <img src="./images/icons/icon-busca.svg" alt="Pesquisar" />
+                  </button> -->
+                  <input
+                    name="ctl00$searchId"
+                    type="text"
+                    id="searchId"
+                    class="inputBuscaMobile"
+                    placeholder="Digite aqui a sua busca"
+                  />
+                </div>
+                <p>Aperte Enter para pesquisar</p>
+              </div>
+              <div class="institucional-and-language">
+                <div class="flex-relacoes-institucional">
+                  <p>Relações com Investidores</p>
+                  <a href="" target="_blank"> Institucional </a>
+                </div>
+
+                <ul>
+                  <li id="btnPt" class="active">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaPtBr','')"
+                    >
+                      PT
+                    </a>
+                  </li>
+                  <li id="btnEn">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaEnUS','')"
+                    >
+                      EN
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-body">
+              <nav class="accordion nav-mobile" id="accordionMenuMobile">
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-1"
+                      aria-controls="mobile-menu-1"
+                    >
+                      Sobre a Pandhora
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item link-externo">
+                          <a href="nossos-produtos.html">Quem Somos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-2"
+                      aria-controls="mobile-menu-2"
+                    >
+                      Nossos Fundos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="diretoria-executiva.html">teste</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-3"
+                      aria-controls="mobile-menu-3"
+                    >
+                      Documentos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="central-resultados.html">Créditos</a>
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html">Pagamentos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="banner-internas">
+      <div class="img-banner-interna">
+        <div class="overlay"></div>
+        <div class="container-sm texts-banner-interna">
+          <h1>Quem Somos</h1>
+          <span>Um pouco sobre a história da Panhora e suas operações</span>
+        </div>
+        <img src="./images/quem_somos_header_interno.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="container-sm pagination-internas">
+      <div class="first-pagination">
+        <img src="./images/icons/icon-home.png" alt="" />
+        <img src="./images/icons/icon-arrow.png" alt="" />
+        <span class="inactive-pagination"> Sobre a Pandhora </span>
+        <img src="./images/icons/icon-arrow.png" alt="" />
+        <span class="active-pagination"> Quem Somos </span>
+      </div>
+
+      <div class="second-pagination">
+        <img src="./images/icons/icon-telegram.png" alt="" />
+        <img src="./images/icons/icon-wpp.png" alt="" />
+        <img src="./images/icons/icon-linkedin.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-sm">
+      <div class="gestao-qs">
+        <div class="gestao-1">
+          <h1>Unimos Gestão e Tecnologia</h1>
+          <h5>
+            Criando fundos ideais para construção de patrimônio, com segurança e
+            diversificação
+          </h5>
+        </div>
+
+        <div class="gestao-2">
+          <h1>A Pandhora nasceu com tecnologia em seu DNA.</h1>
+          <span class="span-tst"
+            >Somos uma empresa de investimentos, focada em entregar produtos
+            mais eficientes, através da aplicação de tecnologia de ponta e
+            ciência financeira.</span
+          >
+          <h5>
+            Por isso, nossa área de pesquisa e desenvolvimento é nosso core. O
+            espaço para inovação é inesgotável e nossa perenidade depende da
+            busca incessante por conhecimento, nos mantendo em constante
+            evolução.
+          </h5>
+
+          <h3>
+            Para atingir o máximo do nosso potencial, precisamos de uma equipe
+            inquieta, que desafie o status quo. Construímos relações
+            transparentes e ágeis por acreditarmos que ganhar junto com o
+            cliente é a única forma de crescer, colocando seus interesses acima
+            de qualquer desejo individual.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="banner-qs">
+      <img src="./images/bn-qs.png" alt="" />
+    </div> -->
+
+    <div>
+      <section class="section-parallax">
+        <div class="p-one parallax-inner"></div>
+      </section>
+    </div>
+
+    <div class="promessa-qs-container">
+      <div class="container-sm">
+        <div class="promessa-qs">
+          <h1>Nossa promessa</h1>
+          <h4>
+            Criando fundos ideais para construção de patrimônio, com segurança e
+            diversificação.
+          </h4>
+        </div>
+
+        <div class="card-promessas-container">
+          <div class="card-promessas">
+            <img src="./images/icons/icon-dolar.png" alt="" />
+            <h1>diversificação</h1>
+            <span
+              >Construir estratégias quantitativas que gerem ganhos de
+              diversificação para nossos clientes é central em nossa tomada de
+              decisão.</span
+            >
+          </div>
+
+          <div class="card-promessas">
+            <img src="./images/icons/icon-dolar-hand.png" alt="" />
+            <h1>
+              Preservação de <br />
+              capital
+            </h1>
+            <span
+              >Através da combinação de estratégias que podem ganhar dinheiro em
+              diferentes cenários, inclusive crises, buscamos preservar o
+              capital de perdas permanentes.</span
+            >
+          </div>
+
+          <div class="card-promessas last-card-promessa">
+            <img src="./images/icons/icon-idea.png" alt="" />
+            <h1>
+              Resultados <br />
+              consistentes
+            </h1>
+            <span
+              >Por sermos multiestratégia, buscamos construir produtos que
+              conseguem performar em diferentes cenários.</span
+            >
+          </div>
+
+          <div class="card-promessas">
+            <img src="./images/icons/icon-divers.png" alt="" />
+            <h1>ESG</h1>
+            <span
+              >Acreditamos que apenas preservar o capital não é o bastante,
+              precisamos gerar impacto positivo com nossas decisões de
+              investimento.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acreditamos-container">
+      <div class="container-sm">
+        <div class="acreditamos-title">
+          <h1>Acreditamos em</h1>
+        </div>
+
+        <div class="cards-acreditamos-container">
+          <div class="cards-acreditamos">
+            <img src="./images/icons/icon-finances.png" alt="" />
+            <h1>Crescer do jeito certo</h1>
+            <span
+              >sem atalhos e entregando uma experiência excepcional para nossa
+              equipe, parceiros e clientes. Buscamos gerar impacto positivo com
+              nossas decisões de investimento, por isso todos os nossos produtos
+              possuem filtros ambientais, sociais e de governança.​</span
+            >
+          </div>
+
+          <div class="cards-acreditamos">
+            <img src="./images/icons/icon-hand-finaces.png" alt="" />
+            <h1>Nosso partnership</h1>
+            <span
+              >onde todos têm a possibilidade de serem donos do negócio,
+              alinhando nossos interesses e de nossos clientes. Acreditamos que
+              em conjunto tomamos decisões melhor que individualmente, e por
+              isso precisamos de colaboração e diversidade de ideias.</span
+            >
+          </div>
+
+          <div class="cards-acreditamos last-card-acre">
+            <img src="./images/icons/icon-pencil-finances.png" alt="" />
+
+            <h1>Nada é escrito em pedra</h1>
+            <span
+              >nos adaptarmos e evoluirmos é essencial e, para isso, criamos
+              times com autonomia e capacidade de questionar o status quo.
+              Valorizamos pessoas que buscam desafios e estão dispostas trilhar
+              novos caminhos.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="equipe-qs">
+        <div class="container-sm">
+          <div class="equipe-title">
+            <h1>Equipe</h1>
+          </div>
+
+          <!-- <div class="equipe-cards-container">
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile1.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile2.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile3.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile4.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile5.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile6.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile7.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile8.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile9.png" alt="" />
+            </div>
+
+            <div class="equipe-cards">
+              <div class="text-equipe-cards">
+                <h1>Pedro Albuquerque</h1>
+                <span>Membro do Comitê de Investimentos</span>
+              </div>
+              <img src="./images/profiles/profile10.png" alt="" />
+            </div>
+          </div> -->
+
+          <div class="testimotionals">
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile1.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Isaías Lopes</h1>
+                  <span>CIO</span>
+                </div>
+                <img src="./images/profiles/profile2.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile3.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile4.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile5.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile6.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile7.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile8.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <div class="text-equipe-cards">
+                  <h1>Pedro Albuquerque</h1>
+                  <span>Membro do Comitê de Investimentos</span>
+                </div>
+                <img src="./images/profiles/profile9.png" alt="" />
+              </div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-sm">
+        <div class="logos-footer">
+          <div class="logo-footer-pandhora">
+            <a href=""
+              ><img src="./images/logo-white-pandhora-tc.png" alt=""
+            /></a>
+          </div>
+
+          <div class="icons-footer-pandhora">
+            <a href=""> <img src="./images/icons/yt.png" alt="" /></a>
+            <a href=""
+              ><img src="./images/icons/linkedin-white.png" alt=""
+            /></a>
+            <a href=""><img src="./images/icons/insta-white.png" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="footer-texts">
+          <div class="footer-links">
+            <h5>
+              Sobre <br />
+              Pandhora
+            </h5>
+            <span><a href="#">Quem Somos</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Nossos Fundos</h5>
+            <span><a href="">Essencial</a></span>
+            <span><a href="">Long bias</a></span>
+            <span><a href="">TC Cosmos</a></span>
+            <span><a href="">Material de Divulgação Essencial</a></span>
+            <span><a href="">Material de Divulgação Long Bias</a></span>
+            <span><a href="">Material de Divulgação TC Cosmos</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Documentos</h5>
+            <span><a href="">Código de Ética</a></span>
+            <span><a href="">Formulário de Referência</a></span>
+            <span><a href="">Manual de Compliance</a></span>
+            <span><a href="">Política de Gestão de Risco</a></span>
+            <span><a href="">Política de Investimento Pessoal</a></span>
+            <span><a href="">Política de Rateio e Divisão de Ordens</a></span>
+            <span><a href="">Política de Seleção de Exchanges</a></span>
+            <span><a href="">Políticas de Privacidade</a></span>
+            <span><a href="">Política de Liquidez Anbima</a></span>
+            <span
+              ><a href="">Política de ESG & Investimento Responsável</a></span
+            >
+            <span
+              ><a href="">Política de Prevenção de Lavagem de Dinheiro</a></span
+            >
+            <span><a href="">Política de Exercício de Voto</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Fale Conosco</h5>
+            <span><a href="">Contato</a></span>
+            <span><a href="">Cadastre-se no mailing</a></span>
+            <span><a href="">Política de Privacidade</a></span>
+            <span><a href="">Termos e Condições</a></span>
+
+            <h5 class="footer-contato-title">Emails</h5>
+            <span><a href="">dpo@pandhora.com</a></span>
+            <span><a href="">contato@pandhora.com</a></span>
+            <span class="footer-end"
+              ><a href=""
+                >R. Leopoldo Couto Magalhães Júnior - Itaim Bibi, São Paulo
+                <br />
+                - SP, 04542-000</a
+              ></span
+            >
+          </div>
+
+          <div class="footer-links">
+            <h2>Saiba tudo em primeira mão.</h2>
+            <h4>
+              Assine à Pandhora News e receba conteúdo exclusivo sobre o mercado
+              financeiro.
+            </h4>
+
+            <small>Email: *</small>
+            <input
+              class="input-text-footer"
+              type="text"
+              placeholder="Digite seu e-mail @"
+            />
+            <input
+              class="input-submit-footer"
+              type="submit"
+              value="Cadastrar"
+            />
+
+            <span><a href="">Política de Privacidade</a></span>
+            <span><a href="">Termos e Condições</a></span>
+
+            <img class="img-anbima" src="./images/anbima.png" alt="" />
+          </div>
+        </div>
+
+        <div class="footer-sobre">
+          <h5>
+            A Pandhora Investimentos Ltda.(“Pandhora”) é uma gestora de recursos
+            devidamente credenciada na Comissão de Valores Mobiliários - CVM
+            como administradora de carteira, de acordo com o Ato Declaratório
+            CVM n.º 17.517 e constituída sob os moldes da Instrução CVM
+            Nº558/15. A gestora é aderente ao códigos ANBIMA de Regulação e
+            Melhores Práticas para Administração de Recursos de Terceiros e
+            código ANBIMA de Regulação e Melhores Práticas para o Programa de
+            Certificação Continuada. A Pandhora não comercializa ou distribui
+            quotas de fundos de investimento, portanto todas as informações
+            contidas neste website não devem ser consideradas como oferta de
+            venda de cotas de fundos de investimentos ou de qualquer título ou
+            valor mobiliário, recomendação de investimento e nem deve servir
+            como única base para tomada de decisões de investimento. Fundos de
+            investimentos não contam com a garantia do administrador do fundo,
+            do gestor da carteira, de qualquer mecanismo de seguro ou, ainda, do
+            Fundo Garantidor de Créditos - FGC. A rentabilidade obtida no
+            passado não representa garantia de rentabilidade futura. A
+            rentabilidade divulgada não é líquida de impostos. Ao investidor é
+            recomendada a leitura cuidadosa do prospecto e do regulamento do
+            fundo de investimento ao aplicar os seus recursos. O Fundo Pandhora
+            não se responsabiliza pela publicação acidental de informações
+            incorretas, nem por decisões de investimentos tomadas com base neste
+            material. O conteúdo deste website não pode ser reproduzido sem
+            prévia e expressa autorização. A Pandhora, seus sócios e
+            funcionários não se responsabilizam pelo uso indevido do conteúdo
+            deste website, pela publicação acidental de informações incorretas,
+            nem por decisões de investimentos tomadas com base neste material.
+            SUPERVISÃO E FISCALIZAÇÃO: Comissão de Valores Mobiliários – CVM.
+            Serviço de Atendimento ao Cidadão em www.cvm.gov.br
+          </h5>
+        </div>
+
+        <div class="footer-prisma">
+          <div class="prisma-title">
+            <span
+              >Pandhora Investimentos LTDA - Todos os direitos reservados
+              2023</span
+            >
+          </div>
+
+          <div class="prisma-logo">
+            <img src="./images/Selo Prisma.png" alt="" />
+          </div>
+
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <span>Voltar ao topo</span>
+            <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script
+      defer
+      src="https://template.riprisma.com/prisma/js/storiesPrisma.min.js"
+    ></script>
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="js/carrosel.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

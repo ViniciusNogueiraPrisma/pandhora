@@ -4,40 +4,204 @@
   /* Outros formatos e variações da fonte podem ser adicionados aqui */
 }
 
+@font-face {
+  font-family: "Bennet Banner Extra Condensed";
+  src: url("../../fonts/Bennet_Banner_Condensed/Lipton\ Letter\ Design\ -\ Bennet\ Banner\ Extra\ Condensed\ Bold.otf");
+  /* Outros formatos e variações da fonte podem ser adicionados aqui */
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter/Inter-Regular.ttf");
+  /* Outros formatos e variações da fonte podem ser adicionados aqui */
+}
+
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../fonts/Neue_Haas_Unica/Linotype\ -\ Neue\ Haas\ Unica\ W1G\ Light.otf");
+  /* Outros formatos e variações da fonte podem ser adicionados aqui */
+}
+
 .navbar {
   //   border: 1px solid black;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
+.text-carrosel-hover {
+  display: none !important;
+  // width: 700px;
+  width: 33.458333333333336vw;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: 0.7s;
+
+  a {
+    background-color: #8529e9;
+    color: var(--text-white);
+    padding: 16px;
+
+    width: fit-content;
+
+    // Investir no TC Cosmos
+    // color: white;
+    font-size: 16px;
+    font-family: "Bw Seido Raw";
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+    border-radius: 4px;
+    margin-top: 40px;
+  }
+
+  h5 {
+    // Renda variável longo prazo
+    color: white;
+    font-size: 14px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 700;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    // TC Cosmos
+    color: white;
+    font-size: 72px;
+    font-family: "Bennet Banner Extra Condensed";
+    font-weight: 700;
+    line-height: 86.4px;
+    word-wrap: break-word;
+  }
+
+  h3 {
+    // Um fundo da TC Pandhora
+    color: #dddddd;
+    font-size: 24px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 31.68px;
+    word-wrap: break-word;
+    margin-bottom: 0 !important;
+  }
+
+  span {
+    // TC Cosmos é um fundo multimercado macro de maior volatilidade, que através de diferentes classes de ativos, procura boas oportunidades de curto, médio ou longo prazo.
+    color: #bbbbbb;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    margin-top: 40px !important;
+    padding-top: 0 !important;
+    word-wrap: break-word;
+  }
+}
+
+.text-carrosel-home {
+  position: absolute;
+  // border: 1px solid red;
+  z-index: 1;
+  // border: 1px solid red;
+  // height: 100%;
+  height: 70.806191vh;
+  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: 0.7s;
+
+  span {
+    // Regressivo Longo Prazo
+    color: #bbbbbb;
+    font-size: 21px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    // Essencial
+    color: white;
+    font-size: 40px;
+    font-family: "Bennet Banner Extra Condensed";
+    font-weight: 700;
+    line-height: 52.8px;
+    word-wrap: break-word;
+  }
+}
+
+.img-carrosel-home {
+  aspect-ratio: 9/16;
+  flex: 1 1 10px;
+  min-width: 0;
+
+  filter: saturate(0) blur(0);
+  object-fit: cover;
+  transition: 0.7s;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.img-carrosel-home:hover {
+  transition: 0.5s;
+  filter: saturate(100%);
+  flex: 1 1 300px;
+}
+
+.img-carrosel-home:hover > .text-carrosel-home {
+  transition: 0.7s;
+  display: none;
+}
+
+.img-carrosel-home:hover > .text-carrosel-hover {
+  display: flex !important;
+  transition: 0.7s;
+}
+
 .content-carrosel-home {
   display: flex;
   width: 100%;
-  height: 73.806191vh;
+  // height: 73.806191vh;
+  height: 70.806191vh;
 
   img {
     aspect-ratio: 9/16;
     flex: 1 1 10px;
     min-width: 0;
 
-    filter: saturate(0) blur(1px);
+    // filter: saturate(0) blur(0);
     object-fit: cover;
     transition: 1s;
   }
 
   img:hover {
     transition: 0.5s;
-    filter: saturate(100%);
     flex: 1 1 300px;
   }
 }
 
 * {
-  font-family: "Bw Seido Raw";
+  font-family: var(--font-text-3);
   // border: 1px solid red;
 }
 
 .gestao-invest-home {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   top: 40px;
   position: relative;
@@ -54,6 +218,7 @@
 .container-investir-home {
   display: flex;
   padding-top: 180px;
+  padding-bottom: 200px;
   gap: 40px;
   // border: 1px solid red;
 
@@ -65,12 +230,14 @@
   }
 
   span {
-    // border: 1px solid red;
-    width: 50%;
     height: fit-content;
-
-    // border: 1px solid red;
-    // top: 120px;
+    // Somos uma empresa de investimentos, focada em entregar produtos mais eficientes, através da aplicação de tecnologia de ponta e ciência financeira.
+    color: #010101;
+    font-size: 21px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 29.4px;
+    word-wrap: break-word;
   }
 
   .txt-investir-home {
@@ -112,38 +279,106 @@
 }
 
 .section-cards-home {
-  // border: 1px solid red;
-  background-color: var(--text-grey-scale-00);
+  background-color: var(--text-grey-scale-01);
   position: relative;
-  // top: 25vh;
-  top: 200px;
   margin: 0;
+  padding-bottom: 0 !important;
+
+  // padding-bottom: 320px;
+}
+
+.img-invista {
+  img {
+    // top: 155px;
+    margin-top: 155px;
+    position: absolute;
+    // border: 10px solid red;
+    right: 0;
+    width: 60%;
+  }
+}
+
+.invista-fundos-home {
+  display: flex;
+  padding-top: 100px;
+}
+
+.text-invista-home {
+  padding-top: 312px;
+  position: relative;
+  width: 100%;
+  padding-right: 50%;
+
+  h1 {
+    color: #1d1d1d;
+    font-size: 72px;
+    font-family: var(--font-text-4);
+    font-weight: 700;
+    line-height: 86.4px;
+    word-wrap: break-word;
+    padding-bottom: 24px;
+
+    span {
+      color: #1d1d1d;
+      font-size: 72px;
+      font-family: var(--font-text-4);
+      font-weight: 800;
+      line-height: 86.4px;
+      word-wrap: break-word;
+    }
+  }
+
+  span {
+    color: #333333;
+    font-size: 21px;
+    font-family: var(--font-text-3);
+    font-weight: 400;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
 }
 
 .content-fundo-home {
   background-color: #8529e9;
+  // height: 834px;
   border-radius: 4px;
-  padding-top: 80px;
-  padding-bottom: 80px;
   padding-left: 80px;
+  position: relative;
+  z-index: 2;
+
+  align-items: flex-end;
+
   gap: 80px;
   display: flex;
   justify-content: space-between;
 
   .text-fundo-home {
-    // border: 1px solid red;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-bottom: 80px;
+    padding-top: 80px;
     width: 50%;
+    margin: auto;
 
     h1 {
       color: var(--text-white);
-      font-family: var(--text-font-3);
-      font-weight: 800;
-      font-size: 62px;
-      padding-bottom: 40px !important;
-      // line-height: 86.40px;
+      // Um Fundo TC Pandhora
+
+      font-size: 18px;
+      font-family: "Bw Seido Raw";
+      font-weight: 400;
+      line-height: 25.2px;
+      word-wrap: break-word;
+    }
+
+    h2 {
+      color: var(--text-white);
+      font-size: 72px;
+      font-family: "Bennet Banner Extra Condensed";
+      font-weight: 700;
+      line-height: 86.4px;
+      word-wrap: break-word;
     }
 
     h4 {
@@ -163,8 +398,9 @@
 
     span {
       padding-top: 24px;
-      padding-bottom: 80px;
-      color: #cdb8e5;
+      // padding-bottom: 80px;
+      // color: #cdb8e5;
+      color: var(--text-white);
       font-size: 16px;
       font-weight: 400;
       line-height: 25.6px;
@@ -181,20 +417,704 @@
       padding: 16px;
       border-radius: 4px;
       width: fit-content;
+
+      margin-top: 80px;
     }
   }
 }
 
+.nossos-fundos-home {
+  // border: 10px solid red;
+
+  position: relative;
+  // top: 500px;
+  padding-top: 262px;
+
+  h1 {
+    color: #1d1d1d;
+    // border: 1px solid red;
+    padding-bottom: 40px;
+    font-size: 72px;
+    font-family: var(--font-text-4);
+    font-weight: 700;
+    line-height: 86.4px;
+    word-wrap: break-word;
+
+    span {
+      // Fundos
+      color: #1d1d1d;
+      font-size: 72px;
+      font-family: var(--font-text-4);
+      font-weight: 800;
+      line-height: 86.4px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.img-fundo-home {
+  position: relative;
+  z-index: 10;
+  transition: 0.5s;
+
+  img {
+    width: 100%;
+    transition: 0.5s;
+  }
+}
+
+.images-fundos-home {
+  position: absolute;
+  // border: 1px solid red;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.data-infos-cards-fundos-home {
+  // border: 1px solid red;
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+.slides-fundos {
+  display: flex;
+  gap: 24px;
+  width: 426px !important;
+}
+
+.swiper-pagination-fundos {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+  .swiper-pagination-bullet {
+    background-color: var(--text-grey-scale-09);
+    // border: 1px solid red;
+    width: 12px;
+    border-radius: 4px;
+    height: 6px;
+  }
+
+  .swiper-pagination-bullet-active {
+    // border: 1px solid red;
+    background-color: black;
+    width: 80px;
+    height: 6px;
+    border-radius: 4px;
+  }
+}
+
+.accordion_item:hover {
+  opacity: 0.9;
+  border-bottom: 1px solid #8529e9;
+  transition: 0.5s;
+}
+
+.accordion_content {
+  background-color: #fff;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease;
+  font-size: 14px;
+  display: grid;
+  justify-content: start;
+  align-items: center;
+
+  padding-left: 32px;
+  padding-right: 32px;
+
+  // margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  p {
+    // border: 1px solid red;
+    margin: auto;
+  }
+}
+
+footer {
+  background-color: var(--pure-black);
+  top: 0 !important;
+  position: relative;
+  padding-top: 112px;
+  padding-bottom: 40px;
+  // height: 1300px
+  color: white;
+}
+
+.logo-footer-pandhora {
+  img {
+    width: 158px;
+  }
+}
+
+.footer-contato-title {
+  padding-top: 40px !important;
+}
+
+.footer-end {
+  padding-top: 40px;
+}
+
+.footer-sobre {
+  border-bottom: 1px solid gray;
+  padding-top: 24px;
+  // padding-bottom: 24px !important;
+}
+
+.footer-sobre h5 {
+  // A Pandhora Investimentos Ltda.(“Pandhora”) é uma gestora de recursos devidamente credenciada na Comissão de Valores Mobiliários - CVM como administradora de carteira, de acordo com o Ato Declaratório CVM n.º 17.517 e constituída sob os moldes da Instrução CVM Nº558/15. A gestora é aderente ao códigos ANBIMA de Regulação e Melhores Práticas para Administração de Recursos de Terceiros e código ANBIMA de Regulação e Melhores Práticas para o Programa de Certificação Continuada. A Pandhora não comercializa ou distribui quotas de fundos de investimento, portanto todas as informações contidas neste website não devem ser consideradas como oferta de venda de cotas de fundos de investimentos ou de qualquer título ou valor mobiliário, recomendação de investimento e nem deve servir como única base para tomada de decisões de investimento. Fundos de investimentos não contam com a garantia do administrador do fundo, do gestor da carteira, de qualquer mecanismo de seguro ou, ainda, do Fundo Garantidor de Créditos - FGC. A rentabilidade obtida no passado não representa garantia de rentabilidade futura. A rentabilidade divulgada não é líquida de impostos. Ao investidor é recomendada a leitura cuidadosa do prospecto e do regulamento do fundo de investimento ao aplicar os seus recursos. O Fundo Pandhora não se responsabiliza pela publicação acidental de informações incorretas, nem por decisões de investimentos tomadas com base neste material. O conteúdo deste website não pode ser reproduzido sem prévia e expressa autorização. A Pandhora, seus sócios e funcionários não se responsabilizam pelo uso indevido do conteúdo deste website, pela publicação acidental de informações incorretas, nem por decisões de investimentos tomadas com base neste material. SUPERVISÃO E FISCALIZAÇÃO: Comissão de Valores Mobiliários – CVM. Serviço de Atendimento ao Cidadão em www.cvm.gov.br
+  color: #fafafa;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.prisma-title span {
+  // Pandhora Investimentos LTDA - Todos os direitos reservados 2023
+  color: #666666;
+  font-size: 14px;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.footer-prisma {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.voltar-topo {
+  cursor: pointer;
+  display: flex;
+  // align-items: center;
+  gap: 8px;
+
+  span {
+    // Voltar ao topo
+    color: #bbbbbb;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 19.6px;
+    word-wrap: break-word;
+  }
+}
+
+.prisma-logo {
+  img {
+    width: 101px;
+  }
+}
+
+.infos-tc-footer {
+  position: relative;
+  z-index: 10;
+
+  h1 {
+    color: #333333;
+    font-size: 18px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 25.2px;
+    word-wrap: break-word;
+  }
+
+  span {
+    color: #333333;
+    font-size: 18px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 25.2px;
+    word-wrap: break-word;
+  }
+}
+
+.infos-tc-footer-imgs {
+  display: flex;
+  padding-top: 20px;
+  gap: 16px;
+
+  img {
+    width: 146px;
+  }
+}
+
+.vector-quadro {
+  position: absolute;
+  background-image: url("../../images/Design_sem_nome__1_-removebg-preview.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  z-index: 0;
+
+  left: 207px;
+  right: 0;
+
+  width: 418px;
+  height: 341px;
+
+  img {
+    bottom: 36px;
+    right: 75px;
+    position: relative;
+  }
+}
+
+.footer-quadro {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  border-radius: 4px;
+  top: -210px;
+
+  left: 0;
+  right: 0;
+
+  padding: 48px 120px 48px 120px;
+}
+
+.quadro-invest {
+  position: relative;
+  z-index: 10;
+
+  h5 {
+    // Onde Investir
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    padding-bottom: 16px !important;
+    margin-bottom: 0 !important;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    // Abra sua conta e comece
+    color: #666666;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+    padding-bottom: 24px !important;
+    span {
+      // a operar hoje pelo app TC
+      color: #1d1d1d;
+      font-size: 28px;
+      font-family: "Bw Seido Raw";
+      font-weight: 700;
+      line-height: 36.96px;
+      word-wrap: break-word;
+    }
+  }
+
+  .span-invest {
+    // Já é cliente?
+    color: #666666;
+    font-size: 21px !important;
+    font-family: "Bw Seido Raw";
+    font-weight: 400 !important;
+    line-height: 29.4px;
+    word-wrap: break-word;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-texts {
+  // border: 1px solid red;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid gray;
+
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    // Saiba tudo em primeira mão.
+    color: #fafafa;
+    font-size: 21px;
+    font-family: Helvetica;
+    font-weight: 700;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
+
+  h4 {
+    // Assine à Pandhora News e receba conteúdo exclusivo sobre o mercado financeiro.
+    color: #fafafa;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+
+  h5 {
+    // Sobre a Pandhora
+    color: #fafafa;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 700;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // Quem Somos
+    color: #fafafa;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 200;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    padding-bottom: 10px !important;
+  }
+
+  a {
+    // Política de Privacidade
+    color: #fafafa;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 200;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+
+  small {
+    color: #bbbbbb;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 19.6px;
+    word-wrap: break-word;
+    padding-top: 16px;
+  }
+}
+
+.img-anbima {
+  padding-top: 16px;
+  width: 120px;
+}
+
+.input-text-footer {
+  // border: 10px solid red;
+  padding: 12px 16px 12px 16px;
+  border-radius: 4px;
+  border: none;
+
+  // Digite seu e-mail @
+  color: #bbbbbb;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 19.6px;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
+
+.input-submit-footer {
+  background: #8529e9;
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 26px;
+  border-radius: 4px;
+  border: none;
+
+  // Cadastrar
+  color: #fafafa;
+  font-size: 14px;
+  font-family: "Bw Seido Raw";
+  font-weight: 500;
+  line-height: 17.5px;
+  word-wrap: break-word;
+}
+
+.logos-footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+
+  .icons-footer-pandhora {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      width: 24px;
+    }
+  }
+}
+
+.accordion_header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    // Como posso investir nos fundos da Pandhora
+    color: #333333;
+    font-size: 24px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 32.4px;
+    word-wrap: break-word;
+  }
+}
+
+.accordion_item {
+  border-bottom: 1px solid rgb(189, 188, 188);
+  transition: 0.5s;
+}
+
+.accordion_item span {
+  transition: 0.5s;
+}
+
+.accordion_item:hover span {
+  color: #8529e9;
+  transition: 0.5s;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  // width: 100%;
+  // height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.accordion-home {
+  // border: 1px solid red;
+  padding-top: 126px;
+  padding-right: 150px;
+  padding-left: 150px;
+
+  h1 {
+    // Perguntas
+    color: #010101;
+    font-size: 40px;
+    font-family: "Bennet Banner Extra Condensed";
+    font-weight: 700;
+    line-height: 52.8px;
+    word-wrap: break-word;
+    padding-bottom: 64px !important;
+
+    span {
+      // border: 1px solid red;
+      // Frequentes
+      color: #010101;
+      font-size: 40px;
+      font-family: "Bennet Banner Extra Condensed";
+      font-weight: 800;
+      line-height: 52.8px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.content-card-fundos-home:hover {
+  transition: 0.7s;
+  background-color: #8529e9;
+
+  h1 {
+    color: var(--text-white);
+  }
+
+  a {
+    background-color: var(--text-black);
+  }
+
+  h5 {
+    color: #cdb8e5;
+  }
+
+  span {
+    color: var(--text-white);
+  }
+
+  .infos-card-fundos-home {
+    h5 {
+      color: var(--text-white);
+    }
+
+    span {
+      color: var(--text-white);
+    }
+  }
+
+  .data-infos-cards-fundos-home {
+    transition: 0.5s;
+    gap: 50px;
+    h5 {
+      color: var(--text-white);
+    }
+
+    span {
+      color: var(--text-white);
+    }
+  }
+}
+
+.content-card-fundos-home {
+  transition: 0.7s;
+  background-color: var(--pure-white);
+  // border: 1px solid red;
+  width: 426px;
+  height: 490px;
+  padding: 32px;
+  border-radius: 4px;
+
+  h5 {
+    // Moderado
+    color: #bc90f2;
+    font-size: 14px;
+    font-family: Neue Haas Unica W1G;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+    padding-bottom: 16px !important;
+    margin-bottom: 0 !important;
+  }
+
+  h1 {
+    // TC Cosmos
+    color: #8529e9;
+    font-size: 34px;
+    font-family: var(--font-text-3);
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+    padding-bottom: 16px;
+  }
+
+  span {
+    // TC Cosmos é um fundo multimercado macro de maior volatilidade, que através de diferentes classes de ativos, procura boas oportunidades de curto, médio ou longo prazo.
+    color: #333333;
+    font-size: 14px;
+    font-family: Neue Haas Unica W1G;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+
+  .infos-card-fundos-home {
+    padding-top: 40px;
+
+    display: flex;
+    gap: 8px;
+    border-bottom: 2px solid var(--text-grey-scale-03);
+
+    h5 {
+      // Perfil:
+      color: #999999;
+      font-size: 16px;
+      font-family: Neue Haas Unica W1G;
+      font-weight: 700;
+      line-height: 25.6px;
+      word-wrap: break-word;
+
+      span {
+        // R$ 0.00
+        color: #333333;
+        font-size: 16px;
+        font-family: Neue Haas Unica W1G;
+        font-weight: 400;
+        line-height: 25.6px;
+        word-wrap: break-word;
+        padding-left: 8px;
+      }
+    }
+  }
+
+  .data-infos-cards-fundos-home {
+    transition: 0.5s;
+    display: flex;
+    gap: 45px;
+
+    h5 {
+      // Dia:
+      color: #999999;
+      font-size: 16px;
+      font-family: Neue Haas Unica W1G;
+      font-weight: 400;
+      line-height: 25.6px;
+      word-wrap: break-word;
+    }
+
+    span {
+      // 00%
+      color: #1d1d1d;
+      font-size: 21px;
+      font-family: var(--font-text-3);
+      font-weight: 700;
+      line-height: 29.4px;
+      word-wrap: break-word;
+    }
+  }
+
+  a {
+    padding: 16px;
+    background-color: #8529e9;
+    border-radius: 4px;
+    // Quero investir
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-text-3);
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+}
+
+.cards-fundo-home {
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  padding-bottom: 5.5%;
+  padding-left: 20%;
+
+  left: 0;
+  right: 0;
+}
+
 .carrosel-fundo-home {
   height: 100%;
+  position: absolute;
   width: 50%;
   // border: 1px solid black;
 }
 
 .slide-image {
-  // border: 10px solid red;
-  // position: fixed;
-
   height: 100%;
   top: -200px;
 }
@@ -202,6 +1122,7 @@
 .content-carrosel-fundo-home {
   // border: 1px solid red;
   height: 700px;
+
   position: relative;
   // right: 200px;
   right: 7.416667vw;
@@ -209,12 +1130,16 @@
 }
 
 .active-fundos {
-  background-color: var(--text-grey-scale-04);
+  background-color: transparent !important;
   transition: 0.6s;
 }
 
 .card-carrosel-home {
+  width: 533px;
   border: 1px solid var(--text-white);
+
+  background-color: var(--text-grey-scale-04);
+
   border-radius: 4px;
   display: flex;
   justify-content: start;
@@ -276,11 +1201,12 @@
   }
 
   .cards-home {
-    width: 232px;
+    // width: 226px;
+    width: 100%;
     height: auto;
     padding: 32px 16px 32px 16px;
     word-wrap: break-word;
-    background-color: var(--text-grey-scale-01);
+    background-color: #e1e1e1;
 
     span {
       color: var(--text-grey-scale-09);
@@ -297,10 +1223,14 @@
   }
 }
 
+.section-pandhora {
+  padding-bottom: 320px;
+  background: #e7e7e7;
+  margin-top: -100px;
+}
+
 .nav-link {
-  // border: 1px solid red;
   font-family: "Bw Seido Raw";
-  // color: #1d1d1d;
   color: var(--text-black);
   font-size: 16px;
   font-weight: 400;
@@ -368,6 +1298,7 @@
 .btns-menu {
   gap: 8px;
   display: flex;
+  align-items: center;
 }
 
 .btn1 {
@@ -394,4 +1325,1116 @@
   align-items: center;
   padding: 12px;
   //   justify-content: center;
+}
+
+#img-home-last {
+  display: none;
+}
+
+#last-a-home {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .navbar-items {
+    display: none;
+  }
+
+  .list-menu {
+    display: none;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .navbar-after {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btnSearch {
+    display: none;
+  }
+
+  .btn-menu {
+    // border: 1px solid red;
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 999px) {
+  #img-home-last {
+    display: block !important;
+  }
+
+  .content-cards-home {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+  }
+
+  .cards-home {
+    width: 45vw !important;
+    height: 227px !important;
+  }
+
+  #last-a-home {
+    display: block !important;
+    width: fit-content;
+    padding: 16px;
+    word-wrap: break-word;
+    border-radius: 4px;
+    background-color: #010101;
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      word-wrap: break-word;
+      color: var(--text-white);
+    }
+  }
+
+  .container-investir-home {
+    flex-direction: column;
+    gap: 0;
+
+    span {
+      padding-bottom: 40px !important;
+    }
+
+    img {
+      display: none;
+    }
+
+    .txt-investir-home {
+      width: 100%;
+
+      h1 {
+        display: flex;
+        gap: 40px;
+        padding-bottom: 0 !important;
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+    .gestao-invest-home {
+      width: 100%;
+    }
+  }
+}
+
+.img-banner-interna {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+
+  img {
+    position: relative;
+    z-index: 0;
+    height: 24.0625vw;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 24.0625vw;
+
+  z-index: 10;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 42%, transparent 100%);
+}
+
+.gestao-qs {
+  display: flex;
+  padding-top: 52px;
+  gap: 24px;
+}
+
+.gestao-1 {
+  width: 50%;
+
+  h1 {
+    // Unimos Gestão e Tecnologia
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+
+  h5 {
+    // Criando fundos ideais para construção<br/>de patrimônio, com segurança<br/>e diversificação.
+    color: #010101;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+}
+
+.gestao-2 {
+  width: 50%;
+  gap: 25px;
+  h1 {
+    color: #8c36f1;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 700;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    padding-bottom: 16px !important;
+  }
+
+  span {
+    // Por isso, nossa área de pesquisa e desenvolvimento é nosso core.<br/>O espaço para inovação é inesgotável e nossa perenidade depende da busca incessante por conhecimento, nos mantendo em constante evolução.
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+
+  h5 {
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    padding-top: 24px;
+  }
+
+  h3 {
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.first-pagination {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  img {
+    width: 15px;
+  }
+
+  .inactive-pagination {
+    // Sobre a Pandhora
+    color: var(--text-grey-scale-04);
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+  }
+
+  .active-pagination {
+    // Quem Somos
+    color: #1d1d1d;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+  }
+}
+
+.pagination-internas {
+  padding-top: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .second-pagination {
+    display: flex;
+    gap: 12px;
+
+    img {
+      width: 17px;
+    }
+  }
+}
+
+.texts-banner-interna {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  padding-bottom: 104px;
+  left: 0;
+  right: 0;
+  // border: 1px solid red;
+
+  h1 {
+    // Quem Somos
+    color: white;
+    font-size: 72px;
+    font-family: "Bennet Banner Extra Condensed";
+    font-weight: 700;
+    line-height: 86.4px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // Um pouco sobre a história da Pandhora e suas operações
+    color: #fafafa;
+    font-size: 21px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
+}
+
+/*************************************************************
+  HEADER
+**************************************************************/
+.parallax {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+  z-index: -1;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url(https://picsum.photos/g/1921/1081?random) top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.1);
+  min-height: 100%;
+  z-index: -2;
+}
+
+/*************************************************************
+  SECTIONS
+**************************************************************/
+
+.section-parallax {
+  padding-bottom: 0 !important;
+}
+
+.p-one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url("../../images/bn-qs.png");
+  // background-image: url("../../images/bn-qs.png");
+}
+
+.parallax-inner {
+  position: relative;
+  min-height: 690px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.parallax-inner > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -20.5px;
+  width: 100%;
+  text-align: center;
+}
+
+.promessa-qs-container {
+  background-color: #1d1d1d;
+  // border: 1px solid red;
+}
+
+.promessa-qs {
+  padding-top: 112px;
+  padding-left: 150px;
+  padding-right: 150px;
+
+  h1 {
+    // Nossa promessa
+    color: white;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+    padding-bottom: 24px;
+  }
+
+  h4 {
+    // Criando fundos ideais para construção de patrimônio,<br/>com segurança e diversificação.
+    color: white;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+}
+
+.card-promessas-container {
+  padding-top: 40px;
+  display: flex;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-promessas {
+  padding: 40px;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  width: 351px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  img {
+    width: 80px;
+  }
+
+  h1 {
+    // Diversificação<br/>
+    color: #333333;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 36.96px;
+    word-wrap: break-word;
+    // padding-bottom: 100px;
+    position: absolute;
+    padding-top: 120px;
+  }
+
+  span {
+    // Construir estratégias quantitativas que gerem ganhos de diversificação para nossos clientes é central em nossa tomada de decisão.
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 700;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    padding-top: 135px;
+  }
+}
+
+.last-card-promessa {
+  background-color: #8529e9 !important;
+
+  h1 {
+    color: var(--text-white) !important;
+  }
+
+  span {
+    color: var(--text-white) !important;
+  }
+}
+
+.acreditamos-container {
+  background-color: var(--pure-white);
+  // top: -120px;
+  margin-top: -220px;
+  z-index: 1;
+  position: relative;
+}
+
+.acreditamos-title {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding-top: 352px;
+
+  h1 {
+    // Acreditamos em
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+}
+
+.cards-acreditamos-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 54px;
+  padding-bottom: 80px;
+}
+
+.cards-acreditamos {
+  padding: 40px;
+  border-top: 1px solid #1d1d1d;
+  border-bottom: 1px solid #1d1d1d;
+  border-left: 1px solid #1d1d1d;
+
+  img {
+    width: 80px;
+    padding-bottom: 24px;
+  }
+
+  h1 {
+    // Crescer do jeito certo
+    color: #333333;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 36.96px;
+    word-wrap: break-word;
+    padding-bottom: 24px;
+  }
+
+  span {
+    // sem atalhos e entregando uma experiência excepcional para nossa equipe, parceiros e clientes. Buscamos gerar impacto positivo com nossas decisões de investimento, por isso todos os nossos produtos possuem filtros ambientais, sociais e de governança.​
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.last-card-acre {
+  border-right: 1px solid #1d1d1d;
+}
+
+.equipe-qs {
+  background-color: #1d1d1d;
+  padding-bottom: 112px;
+  padding-top: 112px;
+}
+
+.equipe-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+
+  h1 {
+    // Equipe
+    color: white;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+}
+
+.text-equipe-cards {
+  z-index: 2;
+  position: absolute;
+  padding: 24px 32px 24px 32px;
+
+  h1 {
+    // Pedro Albuquerque
+    color: white;
+    font-size: 21px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // Membro do Comitê de Investimentos
+    color: white;
+    font-size: 16px;
+    font-family: "Bw Seido Raw";
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+}
+
+.equipe-cards {
+  // border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.equipe-cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 24px;
+}
+
+.testimotionals {
+  // border: 1px solid red;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 24px;
+}
+
+.testimotionals .card {
+  // border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  background-color: #1d1d1d !important;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.testimotionals .card .layer {
+  z-index: 1;
+  position: absolute;
+  top: calc(100% - 2px);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to left, rgb(0, 0, 0), rgb(176, 176, 176));
+  transition: 0.5s;
+  opacity: 0.2;
+}
+
+.testimotionals .card:hover .layer {
+  top: 0;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  // justify-content: center;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.image::before {
+  content: "";
+  z-index: 1;
+  opacity: 0.7;
+  width: 100%;
+  height: 90%;
+  position: absolute;
+
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 55%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 55%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 55%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+}
+
+.banner-internas-last {
+  height: 58.151609553478714vh;
+
+  img {
+    height: 58.151609553478714vh;
+  }
+}
+
+.texts-banner-last {
+  // border: 1px solid red;
+  padding-bottom: 64px !important;
+}
+
+.percents-banner {
+  margin-top: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+
+  .percents-content {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      // 6,3%
+      color: #fafafa;
+      font-size: 40px;
+      font-family: "Bennet Banner Extra Condensed";
+      font-weight: 700;
+      line-height: 52.8px;
+      word-wrap: break-word;
+    }
+
+    span {
+      // Mês
+      color: #fafafa;
+      font-size: 14px;
+      font-family: "Neue Haas Unica W1G";
+      font-weight: 400;
+      line-height: 22.4px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.fundos-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.fundos-carrosel {
+  width: 50%;
+  // border: 1px solid red;
+}
+
+.fundos-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  h5 {
+    // Um fundo da TC Pandhora
+    color: #010101;
+    font-size: 18px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 25.2px;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    // Com todo o expertise<br/>de Pedro Albuquerque
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 44.88px;
+    word-wrap: break-word;
+    padding-bottom: 40px;
+  }
+
+  span {
+    // O único fundo com Pedro Albuquerque, CEO do TC, no comitê de gestão. É para você que quer um trader multimilionário, com mais de 15 anos de atuação no mercado financeiro, tomando as melhores decisões em seu lugar.
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    padding-bottom: 40px;
+  }
+
+  a {
+    background-color: #8529e9;
+    padding: 16px;
+    // Quero Investir no TC Cosmos
+    color: white;
+    font-size: 16px;
+    font-family: "Bw Seido Raw";
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+    border-radius: 4px;
+    width: fit-content;
+  }
+}
+
+.container-fundos-infos {
+  padding-top: 50px;
+}
+
+.banner-fundos {
+  // border: 1px solid red;
+  height: auto;
+  padding-top: 353px;
+
+  img {
+    width: 100%;
+    height: 71.65109034267913vh;
+  }
+}
+
+.historico-fundos {
+  padding-top: 80px;
+}
+
+.historico-fundos-text {
+  // border: 1px solid red;
+  padding-right: 50%;
+  padding-bottom: 80px;
+
+  h1 {
+    // Histórico de Performance
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+
+  h5 {
+    // TC Cosmos
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // Criando fundos ideais para construção de patrimônio,<br/>com segurança e diversificação.
+    color: #010101;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+}
+
+.trade-content-fundos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trade-a {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 40px;
+
+  a {
+    padding: 8px 16px 8px 16px;
+    background-color: #8529e9;
+    border-radius: 2px;
+
+    // Início
+    color: #fafafa;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 19.6px;
+    word-wrap: break-word;
+  }
+}
+
+.beneficios-title {
+  h1 {
+    // Benefícios
+    color: white;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+
+  h5 {
+    // e o que esperar
+    color: white;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+}
+
+.trade-chart {
+  padding-bottom: 80px;
+}
+
+.beneficios-fundos {
+  background-color: #1d1d1d;
+  padding-top: 80px;
+}
+
+.beneficios-title {
+  padding-bottom: 64px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.cards-beneficios-container {
+  // border: 1px solid red;
+  margin-bottom: -150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+
+  .cards-beneficios {
+    padding: 24px 40px 24px 40px;
+    // width: 288px;
+    height: auto;
+    width: 100%;
+    background-color: var(--text-grey-scale-01);
+
+    h1 {
+      // INDICADORES<br/>TÉCNICOS
+      color: #333333;
+      font-size: 21px;
+      font-family: "Bw Seido Raw";
+      font-weight: 700;
+      line-height: 29.4px;
+      word-wrap: break-word;
+      padding-bottom: 24px;
+      padding-top: 24px;
+    }
+
+    span {
+      // Também são utilizadas análises de fluxo de mercado, notícias e de gráficos, para determinar os melhores momentos de entradas nas posições.
+      color: #333333;
+      font-size: 14px;
+      font-family: "Neue Haas Unica W1G";
+      font-weight: 400;
+      line-height: 22.4px;
+      word-wrap: break-word;
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.last-cards-beneficios {
+  background-color: #8529e9 !important;
+
+  h1 {
+    color: var(--text-white) !important;
+  }
+
+  span {
+    color: var(--text-white) !important;
+  }
+}
+
+.resultados-fundos {
+  margin-top: 180px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.resultados-title {
+  h1 {
+    // Resultados
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+}
+
+.infos-resultados {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: var(--text-grey-scale-01);
+}
+
+.infos-title {
+  padding-bottom: 64px;
+  h1 {
+    // Informações
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+}
+
+.content-infos {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.download-infos {
+  width: 50%;
+
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  // background-color: var(--text-grey-scale-02);
+  background-color: #e2e2e2;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.download-texts {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+
+  img {
+    background-color: white;
+    padding: 6px;
+    border-radius: 4px;
+    width: 35px;
+  }
+}
+
+.texts-infos {
+  width: 50%;
+}
+
+.texts-infos-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-grey-scale-03);
+  padding-top: 16px;
+  padding-bottom: 8px;
+
+  span {
+    // Razão Social:
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    // TC COSMOS FIC FIM
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 700;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.comparativos-fundos {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: rgb(233, 233, 233);
+}
+
+.comparativos-title {
+  padding-bottom: 30px;
+
+  h1 {
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+}
+
+.comparativos-table tr {
+  border-bottom: 1px solid var(--text-grey-scale-05);
+
+  th {
+    color: #333333;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+    text-align: start !important;
+  }
+
+  td {
+    // 1.4-1.5 a.a.
+    color: #333333;
+    font-size: 18px !important;
+    font-family: "Roboto" !important;
+    font-weight: 400 !important;
+    line-height: 27px !important;
+    word-wrap: break-word !important;
+
+    text-align: start !important;
+  }
+}
+
+.comparativos-table-row {
+  background-color: #8529e9 !important;
+
+  th {
+    color: var(--text-white) !important;
+  }
+
+  td {
+    color: var(--text-white) !important;
+  }
+}
+
+ul.container {
+  height: 494px !important;
+}
+
+.content-list-fundo {
+  padding: 24px;
+  display: flex;
+  
+  h1 {
+    // Altamente diversificado
+    color: white;
+    font-size: 24px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 31.68px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // Com um só aporte, você investe em bolsas globais e diversas classes de ativos, diminuindo o risco de se expor a apenas um mercado.
+    color: white;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+ul.container li {
+  // height: 158px;
+  // background: #f7f7f7;
+  color: #ddd;
+  list-style-type: none;
+  // padding: 1em;
+  margin: 0;
+  transition: background-color 0.7s;
+}
+
+ul.container li:nth-child(2) {
+  color: #fff;
+  background: #8529e9;
 }
