@@ -556,9 +556,7 @@
           <a href="">Quero investir no TC Cosmos</a>
         </div>
 
-        <div class="fundos-carrosel">
-         a
-        </div>
+        <div class="fundos-carrosel">a</div>
       </div>
     </div>
 
@@ -578,16 +576,21 @@
 
       <div class="container-sm trade-content-fundos">
         <div class="trade-a">
-          <a href="">Início</a>
-          <a href="">Ano</a>
-          <a href="">12 meses</a>
-          <a href="">24 meses</a>
-          <a href="">36 meses</a>
+          <a href="" class="tab-link" data-tab="tab1">Início</a>
+          <a href="" class="tab-link" data-tab="tab2">Ano</a>
+          <a href="" class="tab-link" data-tab="tab3">12 meses</a>
+          <a href="" class="tab-link" data-tab="tab4">24 meses</a>
+          <a href="" class="tab-link" data-tab="tab5">36 meses</a>
         </div>
 
-        <div class="trade-chart">
+        <div class="trade-chart tab-content" id="tab1">
           <img src="./images/Chart.png" alt="" />
         </div>
+
+        <div id="tab2" class="tab-content">Conteúdo da Tab 2</div>
+        <div id="tab3" class="tab-content">Conteúdo da Tab 3</div>
+        <div id="tab4" class="tab-content">Conteúdo da Tab 4</div>
+        <div id="tab5" class="tab-content">Conteúdo da Tab 5</div>
       </div>
     </div>
 
@@ -1069,6 +1072,7 @@
     <script defer src="js/carrosel_vertical.js"></script>
     <script defer src="js/carrosel.js"></script>
     <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="./js/troca_conteudo.js"></script>
     <script defer src="vendor/aos.js"></script>
     <script defer src="vendor/basic-table.min.js"></script>
     <script defer src="js/zoomScroll.js"></script>

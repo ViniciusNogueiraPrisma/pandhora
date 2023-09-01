@@ -21,6 +21,7 @@ $(document).ready(function () {
   });
 });
 
+
 // observes the input's :focus and :focusout event inside the search box and styles its parent element.
 
 $(".searchbox input").focus(function () {
