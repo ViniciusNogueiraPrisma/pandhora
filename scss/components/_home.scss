@@ -34,7 +34,8 @@
 
 .text-carrosel-hover {
   // width: 700px;
-  width: 33.458333333333336vw;
+  // width: 33.458333333333336vw;
+  width: 42.458333vw;
   position: absolute;
   z-index: 1;
   height: 100%;
@@ -51,6 +52,7 @@
     background-color: #8529e9;
     color: var(--text-white);
     padding: 16px;
+    cursor: pointer;
 
     width: fit-content;
 
@@ -147,7 +149,7 @@
   flex: 1 1 300px !important;
 }
 
-.pagination {
+.pagination-home-main {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -170,7 +172,7 @@
   }
 }
 
-.pagination .active {
+.pagination-home-main .active {
   background-color: #5c5c5c;
   transition: 0.7s;
   cursor: pointer;
@@ -229,8 +231,8 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(54, 54, 54, 0.09287464985994398) 100%
+    rgba(0, 0, 0, 0.6839110644257703) 0%,
+    rgba(255, 255, 255, 0) 83%
   );
 }
 
@@ -414,6 +416,10 @@
   display: flex;
   justify-content: space-between;
 
+  .btns-last-home {
+    display: none;
+  }
+
   .text-fundo-home {
     width: 50%;
     // border: 1px solid red;
@@ -551,6 +557,7 @@
   padding-top: 40px;
 
   .swiper-pagination-bullet {
+    transition: 0.5s ease-in-out;
     background-color: var(--text-grey-scale-09);
     // border: 1px solid red;
     width: 12px;
@@ -559,6 +566,7 @@
   }
 
   .swiper-pagination-bullet-active {
+    transition: 0.5s ease-in-out;
     // border: 1px solid red;
     background-color: black;
     width: 80px;
@@ -650,6 +658,10 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 24px;
+}
+
+.quadro-mobile {
+  display: none;
 }
 
 .voltar-topo {
@@ -926,6 +938,10 @@ footer {
   }
 }
 
+.footer-itensprisma-last {
+  display: none;
+}
+
 .accordion_header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -1156,6 +1172,10 @@ footer {
   }
 }
 
+.ghost-fundo-home-last {
+  display: none;
+}
+
 .cards-fundo-home {
   flex-direction: column;
   gap: 24px;
@@ -1233,7 +1253,7 @@ footer {
 
   span {
     font-size: 18px;
-    font-weight: 700;
+    // font-weight: 700;
     line-height: 25.2px;
     word-wrap: break-word;
     color: var(--text-white);
@@ -1391,6 +1411,10 @@ footer {
   }
 }
 
+.footer-last-texts {
+  display: none;
+}
+
 .btn2 {
   background-color: #010101;
   gap: 14px;
@@ -1445,20 +1469,38 @@ footer {
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1140px) {
   #img-home-last {
     display: block !important;
   }
 
-  .content-cards-home {
-    display: grid;
-    grid-template-columns: auto auto;
-    position: relative;
+  .gestao-invest-home {
+    padding-left: 79px;
   }
 
-  .cards-home {
-    width: 45vw !important;
-    height: 227px !important;
+  .container-investir-home {
+    padding-bottom: 100px;
+  }
+
+  .content-cards-home {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 180px;
+
+    .cards-home {
+      width: 100% !important;
+      height: 227px;
+    }
+  }
+
+  .content-cards-home {
+    top: 0;
   }
 
   #last-a-home {
@@ -2090,7 +2132,6 @@ footer {
 
 .fundos-carrosel {
   width: 50%;
-  border: 1px solid red;
   height: 500px;
 }
 
@@ -2607,6 +2648,10 @@ ul.container {
   }
 }
 
+.quadro-last {
+  display: none;
+}
+
 .content-infos-contato {
   padding-top: 16px;
   display: flex;
@@ -2711,4 +2756,778 @@ ul.container {
 
 .downloads-doc {
   padding-bottom: 112px;
+}
+
+.mySwiper-cosmos-last {
+  display: none;
+}
+
+@media (max-width: 1140px) {
+  .mySwiper-cosmos-last {
+    display: block;
+  }
+
+  .mySwiper-cosmos {
+    display: none;
+  }
+
+  .slide-cosmos-last {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 71.65109034267913vh !important;
+    }
+  }
+
+  .invista-fundos-home {
+    padding-top: 180px;
+  }
+
+  .text-swiper-cosmos-last {
+    width: 100%;
+    z-index: 1;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      // Renda variável longo prazo
+      color: var(--text-white);
+      font-size: 14px;
+      font-family: var(--font-text-5);
+      font-weight: 700;
+      line-height: 22.4px;
+      word-wrap: break-word;
+
+      padding-bottom: 24px !important;
+    }
+
+    h1 {
+      color: var(--text-white);
+      font-size: 56px;
+      font-family: var(--font-text-4);
+      font-weight: 800;
+      line-height: 61.6px;
+      word-wrap: break-word;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      // Um fundo da TC Pandhora
+      color: var(--text-grey-scale-02);
+      font-size: 22px;
+      font-family: var(--font-text-3);
+      font-weight: 400;
+      line-height: 29.04px;
+      word-wrap: break-word;
+
+      padding-bottom: 40px !important;
+      margin-bottom: 0px !important;
+    }
+
+    span {
+      // Lorem ipsum dolor sit amet consectetur. Ultrices eget placerat fames cras est aenean. Sed bibendum pulvinar mauris volutpat mollis felis.
+      color: var(--text-grey-scale-03);
+      font-size: 16px;
+      font-family: var(--font-text-5);
+      font-weight: 400;
+      line-height: 25.6px;
+      word-wrap: break-word;
+      padding-bottom: 40px !important;
+    }
+
+    a {
+      padding: 12px;
+      border-radius: 2px;
+      // Investir no TC Cosmos
+      color: var(--text-white);
+      font-size: 14px;
+      font-family: var(--font-text-3);
+      font-weight: 500;
+      line-height: 17.5px;
+      word-wrap: break-word;
+      background-color: var(--text-main);
+      width: fit-content;
+    }
+  }
+
+  .ghost-home-carrosel-last {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 85%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 85%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 85%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+  }
+
+  .swiper-pagination-cosmos-last {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+    padding-bottom: 40px;
+
+    .swiper-pagination-bullet {
+      transition: 0.5s ease-in-out;
+      border-radius: 4px !important;
+      background-color: var(--text-system-disabled);
+    }
+
+    .swiper-pagination-bullet-active {
+      transition: 0.5s ease-in-out;
+      width: 80px;
+      border-radius: 4px !important;
+    }
+  }
+
+  .content-fundo-home {
+    flex-direction: column;
+    padding-left: 72px;
+    padding-right: 72px;
+    width: 100%;
+  }
+
+  .text-invista-home {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+
+  .section-pandhora {
+    margin-top: 0;
+  }
+
+  .text-fundo-home {
+    width: 100% !important;
+  }
+
+  .ghost-fundo-home {
+    display: none;
+  }
+
+  .itens-fundo-home {
+    width: 100%;
+    word-break: break-all;
+  }
+
+  .text-invista-home {
+    // padding-top: 680px;
+    padding-right: 0px;
+  }
+
+  .invista-fundos-home {
+    flex-direction: column;
+  }
+
+  .img-invista img {
+    width: 100%;
+    position: relative !important;
+  }
+
+  .accordion-home {
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nossos-fundos-home {
+    padding-top: 80px;
+  }
+
+  .footer-quadro {
+    display: none;
+  }
+
+  .footer-home {
+    padding-top: 40px;
+  }
+
+  .img-invista img {
+    margin-top: 0;
+  }
+
+  .quadro-last {
+    display: block !important;
+    padding-bottom: 40px;
+    background-color: #e7e7e7;
+
+    .quadro-last-text {
+      width: 50%;
+    }
+
+    .imgs-quadro-last-text {
+      display: flex;
+      gap: 16px;
+
+      img {
+        width: 146px;
+      }
+    }
+
+    .content-quadro-last {
+      border-radius: 4px;
+      background-color: var(--text-white);
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+
+      h5 {
+        // Onde Investir
+        color: var(--text-grey-scale-07);
+        font-size: 16px;
+        font-family: var(--font-text-5);
+        font-weight: 400;
+        line-height: 25.6px;
+        word-wrap: break-word;
+        padding-bottom: 24px !important;
+        margin-bottom: 0 !important;
+      }
+
+      h1 {
+        // Abra sua conta e comece
+        color: var(--text-grey-scale-09);
+        font-size: 24px;
+        font-family: var(--font-text-3);
+        font-weight: 400;
+        line-height: 31.68px;
+        word-wrap: break-word;
+
+        span {
+          // a operar hoje pelo app TC
+          color: var(--text-grey-scale-09);
+          font-size: 24px;
+          font-family: var(--font-text-3);
+          font-weight: 700;
+          line-height: 31.68px;
+          word-wrap: break-word;
+          text-shadow: 0 3.36px 7.896px #b5b5b5, 0 -3px 1px #fff;
+        }
+      }
+
+      h4 {
+        // Já é cliente?
+        color: var(--text-grey-scale-09);
+        font-size: 19px;
+        font-family: var(--font-text-3);
+        font-weight: 400;
+        line-height: 26.6px;
+        word-wrap: break-word;
+        padding-bottom: 24px !important;
+        padding-top: 24px !important;
+
+        a {
+          text-decoration: underline;
+          text-shadow: 0 3.36px 7.896px #b5b5b5, 0 -3px 1px #fff;
+        }
+      }
+
+      h3 {
+        color: var(--text-grey-scale-07);
+        font-size: 18px;
+        font-family: var(--font-text-3);
+        font-weight: 400;
+        line-height: 25.2px;
+        word-wrap: break-word;
+        padding-bottom: 16px !important;
+
+        span {
+          color: var(--text-grey-scale-07);
+          font-size: 18px;
+          font-family: var(--font-text-3);
+          font-weight: 700;
+          line-height: 25.2px;
+          word-wrap: break-word;
+        }
+      }
+    }
+
+    .img-quadro-last {
+      width: 55%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  .section-pandhora {
+    padding-bottom: 80px !important;
+  }
+
+  .footer-last-texts {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .emails-footer-last {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+    span {
+      // dpo@pandhora.com
+      color: #fafafa;
+      font-size: 16px;
+      font-family: var(--font-text-5);
+      font-weight: 400;
+      line-height: 25.6px;
+      word-wrap: break-word;
+    }
+  }
+
+  .anbima-footer-last {
+    img {
+      width: 94px;
+    }
+  }
+
+  .footer-sobre {
+    border-bottom: none !important;
+  }
+
+  .footer-sobre h5 {
+    color: #666666 !important;
+  }
+
+  .footer-prisma {
+    display: none;
+  }
+
+  .contato-footer-last {
+    padding-top: 32px;
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 24px;
+  }
+
+  .footer-texts {
+    display: none;
+  }
+
+  .icons-footer-pandhora {
+    display: none !important;
+  }
+
+  .icons-social-last {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    img {
+      width: 32px;
+    }
+  }
+
+  .footer-last-itens {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .mapa-site-last {
+    display: flex;
+    width: 100%;
+  }
+
+  .logos-footer {
+    border-bottom: none !important;
+    padding-bottom: 24px;
+  }
+
+  .collapse-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    gap: 8px;
+
+    span {
+      color: #fafafa;
+      font-size: 14px;
+      font-family: var(--font-text-5);
+      font-weight: 400;
+      line-height: 22.4px;
+      word-wrap: break-word;
+    }
+  }
+
+  .list-menu-footer {
+    display: flex;
+  }
+
+  .container-investir-home .txt-investir-home h1 {
+    width: auto !important;
+  }
+
+  .footer-itensprisma-last {
+    display: block;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 40px;
+
+    span {
+      color: #fafafa;
+      font-size: 14px;
+      font-family: var(--text-font-5);
+      font-weight: 400;
+      line-height: 22.4px;
+      word-wrap: break-word;
+    }
+
+    .logo-prisma-last {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 40px;
+
+      img {
+        width: 101px;
+      }
+    }
+  }
+
+  .button-mapa-site-mobile {
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  .collapsing {
+    margin: 0;
+    padding: 0;
+  }
+
+  .collapse {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    a {
+      color: var(--text-white);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .content-cards-home {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .cards-home {
+      border-radius: 4px;
+      width: 100% !important;
+      height: 100%;
+      word-break: break-all;
+    }
+  }
+}
+
+@media (max-width: 588px) {
+
+  .swiper-pagination-cosmos-last {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .content-cards-home {
+    padding-bottom: 112px;
+  }
+
+  .slide-cosmos-last {
+    img {
+      height: 85.65109vh !important;
+    }
+
+    a {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .text-swiper-cosmos-last {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .content-card-fundos-home {
+    h1 {
+      font-size: 36px !important;
+    }
+  }
+
+  .section-pandhora {
+    position: relative;
+    z-index: 10;
+  }
+
+  .quadro-last {
+    z-index: 2;
+  }
+
+  .accordion-home {
+    h1 {
+      font-size: 36px !important;
+      padding-bottom: 14px !important;
+
+      span {
+        font-size: 36px !important;
+      }
+    }
+  }
+
+  .nossos-fundos-home {
+    h1 {
+      font-size: 56px;
+
+      span {
+        font-size: 56px;
+      }
+    }
+  }
+
+  .invista-fundos-home {
+    padding-top: 80px;
+  }
+
+  .text-invista-home {
+    padding-bottom: 64px;
+
+    h1 {
+      font-size: 56px;
+      span {
+        font-size: 56px;
+      }
+    }
+
+    span {
+      font-size: 17px;
+    }
+  }
+
+  .itens-fundo-home {
+    gap: 16px !important;
+  }
+
+  .ghost-fundo-home-last {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    // height: 1425px;
+    // border: 5px solid red;
+    background-color: var(--text-main);
+  }
+
+  .content-fundo-home {
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 64px;
+  }
+
+  .card-carrosel-home span {
+    font-size: 16px;
+  }
+
+  .btn1 {
+    display: none;
+  }
+
+  .btns-last-home {
+    display: flex !important;
+    align-items: center;
+    border-radius: 4px;
+    padding: 16px;
+    width: 100%;
+    justify-content: center;
+    word-break: break-all;
+    background-color: var(--pure-black);
+    color: var(--text-white);
+    font-size: 16px;
+    font-family: var(--font-text-5);
+    font-weight: 500;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+
+  .btn2 {
+    display: none;
+  }
+
+  .content-fundo-home .text-fundo-home h2 {
+    font-size: 56px;
+  }
+
+  .container-investir-home .txt-investir-home h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 56px;
+    font-weight: 800;
+  }
+
+  .content-fundo-home .text-fundo-home a {
+    display: none;
+  }
+
+  .gestao-invest-home {
+    padding-left: 0 !important;
+  }
+
+  .container-investir-home {
+    padding-top: 112px !important;
+  }
+
+  #last-a-home {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 524px) {
+  .content-fundo-home {
+    img {
+      width: 44px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-last-itens {
+    flex-direction: column;
+  }
+
+  .content-card-fundos-home {
+    width: 320px !important;
+    height: fit-content;
+  }
+
+  .icons-social-last {
+    margin-top: 24px;
+  }
+
+  .anbima-footer-last img {
+    margin-top: 40px;
+  }
+
+  .contato-footer-last {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 727px) {
+  .quadro-last {
+    display: none !important;
+  }
+
+  .quadro-mobile-container {
+    position: relative;
+    z-index: 10;
+  }
+  .quadro-mobile {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    .imgs-quadro-mobile {
+      display: flex;
+      gap: 16px;
+
+      img {
+        width: 140px;
+      }
+    }
+
+    .text-quadro-mobile {
+      h5 {
+        // Onde Investir
+        color: #333333;
+        font-size: 16px;
+        font-family: var(--font-text-5);
+        font-weight: 400;
+        line-height: 25.6px;
+        word-wrap: break-word;
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        margin: 0 !important;
+      }
+
+      h1 {
+        color: #010101;
+        font-size: 24px;
+        font-family: Bw Seido Raw;
+        font-weight: 400;
+        line-height: 31.68px;
+        word-wrap: break-word;
+        padding-bottom: 24px !important;
+
+        span {
+          color: #010101;
+          font-size: 24px;
+          font-family: Bw Seido Raw;
+          font-weight: 700;
+          line-height: 31.68px;
+          word-wrap: break-word;
+        }
+      }
+
+      h6 {
+        // Já é cliente?
+        color: #010101;
+        font-size: 19px;
+        font-family: Bw Seido Raw;
+        font-weight: 400;
+        line-height: 26.6px;
+        word-wrap: break-word;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      h4 {
+        color: #010101;
+        font-size: 17px;
+        font-family: Bw Seido Raw;
+        font-weight: 400;
+        line-height: 22.44px;
+        word-wrap: break-word;
+      }
+      h3 {
+        color: #010101;
+        font-size: 17px;
+        font-family: Bw Seido Raw;
+        font-weight: 700;
+        line-height: 22.44px;
+        word-wrap: break-word;
+      }
+    }
+  }
 }

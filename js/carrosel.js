@@ -9,7 +9,7 @@ var swiperVertical = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiper-fundos", {
-  slidesPerView: 3,
+  slidesPerView: "auto",
   spaceBetween: 24,
   autoplay: {
     delay: 2000,
@@ -23,17 +23,12 @@ var swiper = new Swiper(".mySwiper-fundos", {
 
 var swiperCosmos = new Swiper(".mySwiper-cosmos", {
   slidesPerView: "auto",
-  // spaceBetween: 24,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
   pagination: {
     el: ".swiper-pagination-cosmos",
   },
 });
 
-const paginationItems = document.querySelectorAll(".pagination li");
+const paginationItems = document.querySelectorAll(".pagination-home-main li");
 let activeIndex = 0;
 
 function updatePagination() {

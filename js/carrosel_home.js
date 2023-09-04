@@ -30,3 +30,15 @@ function adicionarClasseComEfeitoHover() {
 }
 
 adicionarClasseComEfeitoHover();
+
+var swiperCosmos = new Swiper(".mySwiper-cosmos-last", {
+  slidesPerView: 1,
+  // spaceBetween: 24,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination-cosmos-last",
+  },
+});
