@@ -1,16 +1,11 @@
-var swiper = new Swiper(".mySwiper", {
+var swiperVertical = new Swiper(".mySwiper", {
   direction: "vertical",
   slidesPerView: "auto",
   spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 2000,
-    // disableOnInteraction: false,
   },
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
 });
 
 var swiper = new Swiper(".mySwiper-fundos", {
@@ -26,6 +21,40 @@ var swiper = new Swiper(".mySwiper-fundos", {
   },
 });
 
+var swiperCosmos = new Swiper(".mySwiper-cosmos", {
+  slidesPerView: "auto",
+  // spaceBetween: 24,
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination-cosmos",
+  },
+});
+
+const paginationItems = document.querySelectorAll(".pagination li");
+let activeIndex = 0;
+
+function updatePagination() {
+  // Remove a classe 'active' de todos os dots
+  paginationItems.forEach((item) => {
+    item.classList.remove("active");
+  });
+
+  // Define a classe 'active' para o próximo dot
+  paginationItems[activeIndex].classList.add("active");
+
+  // Incrementa activeIndex e redefine para 0 quando ultrapassa o número de items
+  activeIndex = (activeIndex + 1) % paginationItems.length;
+}
+
+// Inicializa a paginação após 3 segundos
+setTimeout(() => {
+  updatePagination();
+  // Atualiza a paginação a cada 3 segundos
+  setInterval(updatePagination, 3000);
+}, 3000);
 const accordion_item = document.querySelectorAll(".accordion_item");
 
 accordion_item.forEach((item) => {
@@ -60,40 +89,18 @@ function VerifyActive(item, content, content_actived) {
   }
 }
 
-const divsFilhas = document.querySelectorAll(
-  ".cards-fundo-home > .card-carrosel-home"
+let currentIndexFundos = 0;
+const divsFilhasFundos = document.querySelectorAll(
+  ".itens-fundo-home .card-carrosel-home"
 );
-let currentIndex = 0;
 
-function alternarClasseAtiva() {
-  divsFilhas.forEach((div) => div.classList.remove("active-fundos"));
-  divsFilhas[currentIndex].classList.add("active-fundos");
+function adicionarClasseAtiva() {
+  divsFilhasFundos.forEach((divFilha, index) => {
+    divFilha.classList.remove("active-fundos");
+  });
 
-  currentIndex = (currentIndex + 1) % divsFilhas.length;
+  divsFilhasFundos[currentIndexFundos].classList.add("active-fundos");
+  currentIndexFundos = (currentIndexFundos + 1) % divsFilhasFundos.length;
 }
 
-const divImagem = document.querySelector(".img-fundo-home");
-const imagens = [
-  "../images/Person/buka.png",
-  "../images/Person/person2.png",
-  "../images/Person/person3.png",
-];
-let currentIndexImg = 0;
-
-function alterarImagem() {
-  divImagem.innerHTML = `<img src="${imagens[currentIndexImg]}" alt="Imagem">`;
-
-  currentIndexImg = (currentIndexImg + 1) % imagens.length;
-}
-
-// Chame a função alternarClasseAtiva usando setInterval para alternar a classe a cada 2 segundos
-setInterval(alternarClasseAtiva, 2000);
-
-// Adicione um ouvinte de evento para o evento de rolagem no documento
-document.addEventListener("scroll", () => {
-  // Chame a função alternarClasseAtiva quando ocorrer um evento de rolagem
-  alternarClasseAtiva();
-});
-
-// Chame a função alterarImagem usando setInterval como você fez anteriormente
-setInterval(alterarImagem, 2000);
+setInterval(adicionarClasseAtiva, 2000);

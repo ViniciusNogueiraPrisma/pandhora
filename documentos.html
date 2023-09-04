@@ -1,0 +1,3137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link preload rel="stylesheet" href="./vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendor/basic-table.min.css" />
+
+    <link rel="stylesheet" href="./vendor/slick.min.css" />
+    <link rel="stylesheet" href="./vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="./vendor/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://template.riweb.com.br/prisma/css/stories.dist.min.css"
+      media="all"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8c2d2553fe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/import.dist.min.css" />
+
+    <link rel="stylesheet" href="./scss/import.css" />
+
+    <script src="vendor/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar headerFixoMenu">
+      <div class="container-sm navbar-after">
+        <div class="logo">
+          <img src="./images/icons/logo-pandhora.png" alt="" />
+        </div>
+
+        <div class="list-menu">
+          <ul class="navbar-nav">
+            <div class="navbar-items">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sobre a Pandhora
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Quem Somos</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nossos Fundos
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Essencial</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Long Bios</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">TC Cosmos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Digital Assets</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Documentos
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Fale Conosco
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">Contato</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cadastre-se no mailing</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Termos e Condições</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="search-btn">
+          <button
+            type="button"
+            class="open-searchbox btnSearch"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="2"
+            title=""
+            data-bs-original-title="Pesquisar"
+          >
+            <i class="icon-busca"></i>
+          </button>
+        </div>
+
+        <div class="btns-menu">
+          <div class="btns-items btn1">
+            <a href="" class="abrir-conta">
+              <span>Abrir conta</span>
+            </a>
+            <img src="./images/icons/icon-carteira.svg" alt="" />
+          </div>
+
+          <div class="btns-items btn2">
+            <a href="" class="abrir-conta">
+              <span>Login</span>
+            </a>
+            <img src="./images/icons/profile-bold.svg" alt="" />
+          </div>
+
+          <div class="btn-menu">
+            <button
+              type="button"
+              class="toggle-mobile-menu"
+              aria-label="Abrir Menu"
+            >
+              <span class="icon-nav" title="Abrir Menu"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="searchbox">
+      <div class="container container-responsivo-full">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite aqui a sua busca"
+          />
+
+          <div class="input-group-text">
+            <button
+              type="button"
+              class="close-searchbox"
+              aria-label="Fechar Modal de Pesquiasr"
+            >
+              <span class="icon-exibir"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-help">
+          <small>Aperte Enter para pesquisar</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <aside class="mobile-menu-div">
+      <div class="">
+        <div class="mobile-menu">
+          <div class="header-menu">
+            <div class="div-menu-open">
+              <!-- <div class="button-storys-open">
+                <button class="openStorys" type="button">
+                  <span class="text-stories">Stories RI</span>
+                  <span class="icon-button-stories">
+                    <i class="icon-stories"></i>
+                  </span>
+                </button>
+              </div> -->
+              <button
+                title="Fechar"
+                class="toggle-mobile-menu"
+                aria-label="Fechar Menu"
+              >
+                <span class="icon-nav"></span>
+              </button>
+            </div>
+            <a class="logo-header" href=":javascript">
+              <picture class="branding">
+                <img
+                  class="logo-mobile"
+                  src="./images/logo-white-pandhora-tc.png"
+                  alt="TC"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="container-sm">
+            <div class="middle-header">
+              <div class="menu-tools">
+                <div class="div-pesquisar-mobile">
+                  <!-- <button
+                    type="button"
+                    class="pesquisar-button"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="hover"
+                    data-bs-placement="bottom"
+                    title="Pesquisar"
+                    aria-label="Pesquisar"
+                  >
+                    <img src="./images/icons/icon-busca.svg" alt="Pesquisar" />
+                  </button> -->
+                  <input
+                    name="ctl00$searchId"
+                    type="text"
+                    id="searchId"
+                    class="inputBuscaMobile"
+                    placeholder="Digite aqui a sua busca"
+                  />
+                </div>
+                <p>Aperte Enter para pesquisar</p>
+              </div>
+              <div class="institucional-and-language">
+                <div class="flex-relacoes-institucional">
+                  <p>Relações com Investidores</p>
+                  <a href="" target="_blank"> Institucional </a>
+                </div>
+
+                <ul>
+                  <li id="btnPt" class="active">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaPtBr','')"
+                    >
+                      PT
+                    </a>
+                  </li>
+                  <li id="btnEn">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaEnUS','')"
+                    >
+                      EN
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-body">
+              <nav class="accordion nav-mobile" id="accordionMenuMobile">
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-1"
+                      aria-controls="mobile-menu-1"
+                    >
+                      Sobre a Pandhora
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item link-externo">
+                          <a href="nossos-produtos.html">Quem Somos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-2"
+                      aria-controls="mobile-menu-2"
+                    >
+                      Nossos Fundos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="diretoria-executiva.html">teste</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-3"
+                      aria-controls="mobile-menu-3"
+                    >
+                      Documentos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="central-resultados.html">Créditos</a>
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html">Pagamentos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="banner-internas">
+      <div class="img-banner-interna">
+        <div class="overlay"></div>
+        <div class="container-sm texts-banner-interna">
+          <h1>Documentos</h1>
+          <span>Download de documentos atualizados dos nossos fundos</span>
+        </div>
+        <img src="./images/quem_somos_header_interno.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="container-sm pagination-internas">
+      <div class="first-pagination">
+        <img src="./images/icons/icon-home.png" alt="" />
+        <img src="./images/icons/icon-arrow.png" alt="" />
+
+        <span class="active-pagination"> Documentos </span>
+      </div>
+
+      <div class="second-pagination">
+        <img src="./images/icons/icon-telegram.png" alt="" />
+        <img src="./images/icons/icon-wpp.png" alt="" />
+        <img src="./images/icons/icon-linkedin.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-sm downloads-doc">
+      <div class="filtro-form-main">
+        <div class="filtro-form recebeCombo">
+          <div class="filtros-title">
+            <h1>Documentos para download</h1>
+          </div>
+
+          <div class="filtros-pag">
+            <div>
+              <label for="anoSelect"> Filtrar por Fundo: </label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Todos</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="anoSelect"> Filtrar por Fundo: </label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>2023</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accCotacoesDocumentos">
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-0">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-0"
+              aria-controls="collapse-0"
+            >
+              Assembleia Geral Extraordinária (AGE)
+            </button>
+          </h2>
+          <div
+            id="collapse-0"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-0"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 15/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=GzP4XTIPAQNyd6Gu+xF2Yg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Proposta da Administração da AGE nº 176/2023 do dia 05/09/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Proposta da Administração da AGE nº 176/2023 do dia
+                        05/09/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 15/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=hgbfqCCGDjkzldUQtKUicA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Edital de Convocação da AGE nº 176/2023 do dia 05/09/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Edital de Convocação da AGE nº 176/2023 do dia
+                        05/09/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 02/06/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=CUk+8C0xiSMs+CzjweFgyQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da AGE nº 175/2023 do dia 02/06/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da AGE nº 175/2023 do dia 02/06/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 02/06/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=szEqpyqtLAzLPULH2lWSfA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Proposta da Administração da AGE nº 175/2023 do dia 02/06/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Proposta da Administração da AGE nº 175/2023 do dia
+                        02/06/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 02/06/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=sLaLKUJ2IQa5cqYvSYAcog==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Edital de Convocação da AGE nº 175/2023 do dia 02/06/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Edital de Convocação da AGE nº 175/2023 do dia
+                        02/06/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 20/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=HSRjRjZc4XVRgF0rQb/U+w==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da AGE nº 174/2023 do dia 20/03/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da AGE nº 174/2023 do dia 20/03/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 20/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=ExTzn6JJkrjTvZid1t3rYg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Edital de Convocação da AGE nº 174/2023 do dia 20/03/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Edital de Convocação da AGE nº 174/2023 do dia
+                        20/03/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 20/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=EZVu3BBoOZUyXUExyJmSSA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Proposta da Administração da AGE nº 174/2023 do dia 20/03/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Proposta da Administração da AGE nº 174/2023 do dia
+                        20/03/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 27/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=+oW+YKLvfOGI4Y0bpEUoFQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da AGE nº 173/2023 do dia 27/01/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da AGE nº 173/2023 do dia 27/01/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 27/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=FhHFgFtMUFF3NHntP3Az7Q==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Proposta da Administração da AGE nº 173/2022 do dia 27/01/2022 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Proposta da Administração da AGE nº 173/2022 do dia
+                        27/01/2022 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 27/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=L+2gX7T3kwtZzhr/mDoxVA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Edital de Convocação da AGE nº 173/2023 do dia 27/01/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Edital de Convocação da AGE nº 173/2023 do dia
+                        27/01/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-1">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-1"
+              aria-controls="collapse-1"
+            >
+              Assembleia Geral Ordinária e Extraordinária (AGOE)
+            </button>
+          </h2>
+          <div
+            id="collapse-1"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-1"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 28/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=k3RMmb2+sAcL8xYaydYUMA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da AGO/E nº 56/2023 do dia 28/04/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da AGO/E nº 56/2023 do dia 28/04/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 28/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=M7OPfMmnaIJ/QIqeKQUYig==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Proposta da Administração da AGO/E nº 56/2023 do dia 28/04/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Proposta da Administração da AGO/E nº 56/2023 do dia
+                        28/04/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 28/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=qJ+cB8v3GkkuScNDcg0m4w==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Edital de Convocação da AGO/E nº 56/2023 do dia 28/04/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Edital de Convocação da AGO/E nº 56/2023 do dia
+                        28/04/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-2">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-2"
+              aria-controls="collapse-2"
+            >
+              Reunião do Conselho de Administração (RCA)
+            </button>
+          </h2>
+          <div
+            id="collapse-2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-2"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 31/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=Oy/9J7gV6Xr2qr4spAFQ4w==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 509/2023 do dia 31/08/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 509/2023 do dia 31/08/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 10/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=pFj4SXKDEQoaSB52/eNs6g==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 508/2023 do dia 10/08/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 508/2023 do dia 10/08/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 04/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=P4n78JrhndRg7izINwTvAw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 507/2023 do dia 03/08/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 507/2023 do dia 03/08/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 21/07/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=DSqWD9FVNtghObLug4BmaA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 506/2023 do dia 20/07/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 506/2023 do dia 20/07/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 06/07/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=V0akS9jc3TT+wfMnZUKMdw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 505/2023 do dia 06/07/2023 às 15:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 505/2023 do dia 06/07/2023 às 15:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 06/07/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=8zv2XgGccBcC2r4qvv4TzQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 504/2023 do dia 06/07/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 504/2023 do dia 06/07/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 15/06/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=ZYy+tRvCZ6dQp06M1lZ4+Q==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 503/2023 do dia 15/06/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 503/2023 do dia 15/06/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 01/06/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=hpYqoGe26NeCAu9VX9Invw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 502/2023 do dia 01/06/2023 às 15:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 502/2023 do dia 01/06/2023 às 15:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 12/05/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=A+sI2hB8GQpVv+cusZcKDg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 501/2023 do dia 11/05/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 501/2023 do dia 11/05/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 19/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=N87UHcQHPVQkls7kUaqLMA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 500/2023 do dia 19/04/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 500/2023 do dia 19/04/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 06/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=X+o+jPZclBjfiQmcl2SYDQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 499/2023 do dia 06/04/2023 às 09:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 499/2023 do dia 06/04/2023 às 09:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 06/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=D7bIs7F27eGUeGz/8SjWDw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 498/2023 do dia 06/04/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 498/2023 do dia 06/04/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 23/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=vgPUPxD5/srER9E5Dv7VIg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 497/2023 do dia 23/03/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 497/2023 do dia 23/03/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 09/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=NXaawCe2JuOYHL9q7vkfBA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 496/2023 do dia 09/03/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 496/2023 do dia 09/03/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 24/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=yWiYja+09RaHernAiA3pyQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 495/2023 do dia 24/02/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 495/2023 do dia 24/02/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 09/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=wI3kC0kpMX6vaZEkk1mTsw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 494/2023 do dia 09/02/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 494/2023 do dia 09/02/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 31/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=4KH9S73eJutSTZcw0KDagw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 493/2023 do dia 31/01/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 493/2023 do dia 31/01/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 12/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=0rGe9NfGm20u/fzYY+KuoA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 492/2023 do dia 12/01/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 492/2023 do dia 12/01/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 05/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=CJDDUjIzPijdfWxzfQcCKQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCA nº 491/2023 do dia 05/01/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCA nº 491/2023 do dia 05/01/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-3">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-3"
+              aria-controls="collapse-3"
+            >
+              Reunião do Conselho Fiscal (RCF)
+            </button>
+          </h2>
+          <div
+            id="collapse-3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-3"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 10/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=kdbVKcfDnrSLqGUfy4WsvQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCF nº 003/2023 do dia 09/08/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCF nº 003/2023 do dia 09/08/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 10/05/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=plFFPBdG5EgHAilD3xjDfQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCF nº 002/2023 do dia 10/05/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCF nº 002/2023 do dia 10/05/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 09/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=FUZj/YwuqOa7hAU2QKU1jA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata da RCF nº 001/2023 do dia 08/03/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata da RCF nº 001/2023 do dia 08/03/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-4">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-4"
+              aria-controls="collapse-4"
+            >
+              Reunião do Comitê de Auditoria Estatutário (CAE)
+            </button>
+          </h2>
+          <div
+            id="collapse-4"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-4"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 09/05/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=wzCvdr7++c7OXy+0TL7u+g==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CAE nº 13/2023 do dia 09/05/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CAE nº 13/2023 do dia 09/05/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 08/05/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=ifcUR1cmZm2XELAJDb8LwA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 12/2023 do dia 08/05/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 12/2023 do dia 08/05/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 27/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=A9ztAVt5ti3x7gPIybuA1A==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 11/2023 do dia 27/04/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 11/2023 do dia 27/04/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 13/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=sCApCZXd8WoO1VOBcxPxgg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 10/2023 do dia 13/04/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 10/2023 do dia 13/04/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 23/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=PxgAIb6fyjlLqPPbYFhfOA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 09/2023 do dia 23/03/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 09/2023 do dia 23/03/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 16/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=vTleFDBS6f1W4K00QnXGeA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 08/2023 do dia 16/03/2023 às 13:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 08/2023 do dia 16/03/2023 às 13:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 15/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=RiCNkAyDNpT5RvT7eCxoGw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 07/2023 do dia 15/03/2023 as 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 07/2023 do dia 15/03/2023 as 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 07/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=l/sdx0f2m8RZ3798Z2U5dQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 06/2023 do dia 07/03/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 06/2023 do dia 07/03/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 01/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=lsd7vqPGlP+gHAXa+SaknQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 05/2023 do dia 01/03/2023 às 10:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 05/2023 do dia 01/03/2023 às 10:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 22/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=v1BzpfK1xWlb4eFddwbatg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 04/2023 do dia 22/02/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 04/2023 do dia 22/02/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 08/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=gh1xWXlCnYBdR2JugedDPg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 03/2023 do dia 08/02/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 03/2023 do dia 08/02/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 25/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=UAYvjmxE+sKqleK32GiD0A==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CAE nº 02/2023 do dia 25/01/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CAE nº 02/2023 do dia 25/01/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 18/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=LFytMHsvufcQq8vewJ5xFQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Extrato da Ata CAE nº 01/2023 do dia 18/01/2023 às 08:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Extrato da Ata CAE nº 01/2023 do dia 18/01/2023 às 08:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-5">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-5"
+              aria-controls="collapse-5"
+            >
+              Reunião do Comitê de Elegibilidade (CE)
+            </button>
+          </h2>
+          <div
+            id="collapse-5"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-5"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 15/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=aHTteP8FD3Wnscp0cMrqFQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 10/2023 do dia 28/07/2023 às 13:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 10/2023 do dia 28/07/2023 às 13:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 15/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=Ktt2Ha4jIEPZce+AerXdng==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 09/2023 do dia 14/06/2023 às 18:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 09/2023 do dia 14/06/2023 às 18:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 15/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=Va+Aq22A2UXQHgLXQxblzA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 08/2023 do dia 24/04/2023 às 14:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 08/2023 do dia 24/04/2023 às 14:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 13/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=j1nTXrrVWLMGrn23u3SMLg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 07/2023 do dia 13/04/2023 às 16:15'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 07/2023 do dia 13/04/2023 às 16:15
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 13/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=RHBL0R40LuA5nlFgJKT4uw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 06/2023 do dia 13/04/2023 às 16:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 06/2023 do dia 13/04/2023 às 16:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 22/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=78ExD0JmhWD0XY1i+bLHJA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 05/2023 do dia 22/03/2023 às 11:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 05/2023 do dia 22/03/2023 às 11:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 07/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=xsQfCCfplEBBdWjasVzDBg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 04/2023 do dia 07/03/2023 às 11:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 04/2023 do dia 07/03/2023 às 11:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 17/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=JmOrSzY/Vv4eFF0EScea4g==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 03/2023 do dia 17/02/2023 às 09:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 03/2023 do dia 17/02/2023 às 09:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 07/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=aHH8/EYwscjSE20NE75ZUQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 02/2023 do dia 07/02/2023 às 10:00'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 02/2023 do dia 07/02/2023 às 10:00
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 30/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=IbFGkHt32tzNlwbEtZa2rw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Ata CE nº 01/2023 do dia 30/01/2023 às 13:30'});"
+                    >
+                      <p class="recebeTexto">
+                        Ata CE nº 01/2023 do dia 30/01/2023 às 13:30
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-6">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-6"
+              aria-controls="collapse-6"
+            >
+              Aviso ao Mercado
+            </button>
+          </h2>
+          <div
+            id="collapse-6"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-6"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 23/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=I0tWbF+m+FcYHz2sxufF1g==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Aviso ao Mercado - Requerimento de registro da oferta pública de distribuição de 300.000 (trezentas mil) debêntures simples, não conversíveis em ações, da espécie com garantia real, em série única'});"
+                    >
+                      <p class="recebeTexto">
+                        Aviso ao Mercado - Requerimento de registro da oferta
+                        pública de distribuição de 300.000 (trezentas mil)
+                        debêntures simples, não conversíveis em ações, da
+                        espécie com garantia real, em série única
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-7">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-7"
+              aria-controls="collapse-7"
+            >
+              Comunicados ao Mercado
+            </button>
+          </h2>
+          <div
+            id="collapse-7"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-7"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 01/09/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=M90CBySRw8dE2p0J7WIk9w==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Comunicado ao Mercado - Anúncio de encerramento da oferta pública de distribuição, sob o rito de registro automático, de debêntures simples, não conversíveis em ações, da espécie com garantia real, em série única, da 11ª (décima primeira) emissão'});"
+                    >
+                      <p class="recebeTexto">
+                        Comunicado ao Mercado - Anúncio de encerramento da
+                        oferta pública de distribuição, sob o rito de registro
+                        automático, de debêntures simples, não conversíveis em
+                        ações, da espécie com garantia real, em série única, da
+                        11ª (décima primeira) emissão
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 30/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=N8iixnQXQb1JNTfJbQLHvA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Comunicado ao Mercado - Anúncio de inicio da oferta pública de distribuição, sob o rito de registro automático, de debêntures simples, não conversíveis em ações, da espécie com garantia real, em série única, da 11ª (décima primeira) emissão'});"
+                    >
+                      <p class="recebeTexto">
+                        Comunicado ao Mercado - Anúncio de inicio da oferta
+                        pública de distribuição, sob o rito de registro
+                        automático, de debêntures simples, não conversíveis em
+                        ações, da espécie com garantia real, em série única, da
+                        11ª (décima primeira) emissão
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 29/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=GOSKlGSW7DuHe7u0C/NDXQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Comunicado ao Mercado - Modificação da oferta pública de distribuição, sob o rito de registro automático, de debêntures simples, não conversíveis em ações, da espécie com garantia real, em série única, da 11ª Emissão'});"
+                    >
+                      <p class="recebeTexto">
+                        Comunicado ao Mercado - Modificação da oferta pública de
+                        distribuição, sob o rito de registro automático, de
+                        debêntures simples, não conversíveis em ações, da
+                        espécie com garantia real, em série única, da 11ª
+                        Emissão
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 28/08/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=yPba5WBhC13HDWWSyNqyTQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Comunicado ao Mercado - Resultado do Procedimento de Bookbuilding 11ª emissão de debêntures Saneago'});"
+                    >
+                      <p class="recebeTexto">
+                        Comunicado ao Mercado - Resultado do Procedimento de
+                        Bookbuilding 11ª emissão de debêntures Saneago
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 24/05/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=PM0jygDis31iNDSuqY6viw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Lei Complementar N° 182/2023'});"
+                    >
+                      <p class="recebeTexto">Lei Complementar N° 182/2023</p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 13/04/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=x8VSwtzqqFOtCBVZ3Nbc5A==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Nota da Companhia diante da Operação Collusion'});"
+                    >
+                      <p class="recebeTexto">
+                        Nota da Companhia diante da Operação Collusion
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 14/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=VkIazqL5SEGIaYP+rEm9Mw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Nota da Companhia diante da Operação Custo Máximo'});"
+                    >
+                      <p class="recebeTexto">
+                        Nota da Companhia diante da Operação Custo Máximo
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 24/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=NiQ3aKpupwLW59HvDCvgyw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Fitch Ratings eleva rating corporativo e as emissões de debêntures da Saneago  para ‘AA-(bra)’; Perspectiva Estável'});"
+                    >
+                      <p class="recebeTexto">
+                        Fitch Ratings eleva rating corporativo e as emissões de
+                        debêntures da Saneago para ‘AA-(bra)’; Perspectiva
+                        Estável
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 31/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=FK/Bq4ViP6mcI5q/llzlJA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Renúncia e Eleição do Presidente do Conselho de Administração'});"
+                    >
+                      <p class="recebeTexto">
+                        Renúncia e Eleição do Presidente do Conselho de
+                        Administração
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 31/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=CQwTRNUfnzRw+hnfgjBqrg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Novo Diretor Financeiro, de Relações com Investidores e Regulação'});"
+                    >
+                      <p class="recebeTexto">
+                        Novo Diretor Financeiro, de Relações com Investidores e
+                        Regulação
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-8">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-8"
+              aria-controls="collapse-8"
+            >
+              Formulário de Referência
+            </button>
+          </h2>
+          <div
+            id="collapse-8"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-8"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 29/06/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=KOfkHC0MQi9UyZy5FvEyUg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário de Referência - 2023 - Versão 3'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário de Referência - 2023 - Versão 3
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 07/06/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=j1aOLsBWiNDSKvb45cjlRg==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário de Referência - 2023 - Versão 2'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário de Referência - 2023 - Versão 2
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 31/05/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=+eBAwERcf7tKJ94jMOSOfQ==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário de Referência - 2023 - Versão 1'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário de Referência - 2023 - Versão 1
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 29/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=oFSFguoO6g//3xVoSR8SRA==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário de Referência - 2022 - Versão 6'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário de Referência - 2022 - Versão 6
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 16/03/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=eihpFKiEi/aeGZC3aIE6ug==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário de Referência - 2022 - Versão 5'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário de Referência - 2022 - Versão 5
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 06/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=wH54WDKMkAvy9lu4W6Q/Aw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário de Referência - 2022 - Versão 4'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário de Referência - 2022 - Versão 4
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 12/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=eJVEHaG9oCXDRnLFIWSjMw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário de Referência - 2022 - Versão 3'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário de Referência - 2022 - Versão 3
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+          <h2 class="accordion-header" id="heading-9">
+            <button
+              class="accordionList accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#collapse-9"
+              aria-controls="collapse-9"
+            >
+              Formulário Cadastral
+            </button>
+          </h2>
+          <div
+            id="collapse-9"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accCotacoesDocumentos"
+            aria-labelledby="heading-9"
+          >
+            <div class="accordion-body">
+              <ul class="list-downloads">
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 03/02/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=luvnKF+49odxh7F6G8O/og==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário Cadastral - 2023 - Versão 2'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário Cadastral - 2023 - Versão 2
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" class="ajusteLista aos-init aos-animate">
+                  <div>
+                    <span class="dataListGroup"> 12/01/2023 </span>
+                    <a
+                      href="Download.aspx?Arquivo=UzCVndw9Q45LhtIynaU8Pw==&amp;IdCanal=qzOXeVzoYNmMBjKH2b0e4g=="
+                      class="recebeLink"
+                      target="_blank"
+                      onclick="gtag('event', 'link', {'event_label': 'Formulário Cadastral - 2023 - Versão 1'});"
+                    >
+                      <p class="recebeTexto">
+                        Formulário Cadastral - 2023 - Versão 1
+                      </p>
+                      <div class="imgs-list-download">
+                        <img
+                          src="./images/icons/icon-download.svg"
+                          alt="Download"
+                          class="iconeDownload img-download"
+                        />
+                        <img
+                          src="./images/icons/icon-pdf-simple.svg"
+                          alt="PDF"
+                          class="iconeDownload img-pdf"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-sm">
+        <div class="logos-footer">
+          <div class="logo-footer-pandhora">
+            <a href=""
+              ><img src="./images/logo-white-pandhora-tc.png" alt=""
+            /></a>
+          </div>
+
+          <div class="icons-footer-pandhora">
+            <a href=""> <img src="./images/icons/yt.png" alt="" /></a>
+            <a href=""
+              ><img src="./images/icons/linkedin-white.png" alt=""
+            /></a>
+            <a href=""><img src="./images/icons/insta-white.png" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="footer-texts">
+          <div class="footer-links">
+            <h5>
+              Sobre <br />
+              Pandhora
+            </h5>
+            <span><a href="#">Quem Somos</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Nossos Fundos</h5>
+            <span><a href="">Essencial</a></span>
+            <span><a href="">Long bias</a></span>
+            <span><a href="">TC Cosmos</a></span>
+            <span><a href="">Material de Divulgação Essencial</a></span>
+            <span><a href="">Material de Divulgação Long Bias</a></span>
+            <span><a href="">Material de Divulgação TC Cosmos</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Documentos</h5>
+            <span><a href="">Código de Ética</a></span>
+            <span><a href="">Formulário de Referência</a></span>
+            <span><a href="">Manual de Compliance</a></span>
+            <span><a href="">Política de Gestão de Risco</a></span>
+            <span><a href="">Política de Investimento Pessoal</a></span>
+            <span><a href="">Política de Rateio e Divisão de Ordens</a></span>
+            <span><a href="">Política de Seleção de Exchanges</a></span>
+            <span><a href="">Políticas de Privacidade</a></span>
+            <span><a href="">Política de Liquidez Anbima</a></span>
+            <span
+              ><a href="">Política de ESG & Investimento Responsável</a></span
+            >
+            <span
+              ><a href="">Política de Prevenção de Lavagem de Dinheiro</a></span
+            >
+            <span><a href="">Política de Exercício de Voto</a></span>
+          </div>
+
+          <div class="footer-links">
+            <h5>Fale Conosco</h5>
+            <span><a href="">Contato</a></span>
+            <span><a href="">Cadastre-se no mailing</a></span>
+            <span><a href="">Política de Privacidade</a></span>
+            <span><a href="">Termos e Condições</a></span>
+
+            <h5 class="footer-contato-title">Emails</h5>
+            <span><a href="">dpo@pandhora.com</a></span>
+            <span><a href="">contato@pandhora.com</a></span>
+            <span class="footer-end"
+              ><a href=""
+                >R. Leopoldo Couto Magalhães Júnior - Itaim Bibi, São Paulo
+                <br />
+                - SP, 04542-000</a
+              ></span
+            >
+          </div>
+
+          <div class="footer-links">
+            <h2>Saiba tudo em primeira mão.</h2>
+            <h4>
+              Assine à Pandhora News e receba conteúdo exclusivo sobre o mercado
+              financeiro.
+            </h4>
+
+            <small>Email: *</small>
+            <input
+              class="input-text-footer"
+              type="text"
+              placeholder="Digite seu e-mail @"
+            />
+            <input
+              class="input-submit-footer"
+              type="submit"
+              value="Cadastrar"
+            />
+
+            <span><a href="">Política de Privacidade</a></span>
+            <span><a href="">Termos e Condições</a></span>
+
+            <img class="img-anbima" src="./images/anbima.png" alt="" />
+          </div>
+        </div>
+
+        <div class="footer-sobre">
+          <h5>
+            A Pandhora Investimentos Ltda.(“Pandhora”) é uma gestora de recursos
+            devidamente credenciada na Comissão de Valores Mobiliários - CVM
+            como administradora de carteira, de acordo com o Ato Declaratório
+            CVM n.º 17.517 e constituída sob os moldes da Instrução CVM
+            Nº558/15. A gestora é aderente ao códigos ANBIMA de Regulação e
+            Melhores Práticas para Administração de Recursos de Terceiros e
+            código ANBIMA de Regulação e Melhores Práticas para o Programa de
+            Certificação Continuada. A Pandhora não comercializa ou distribui
+            quotas de fundos de investimento, portanto todas as informações
+            contidas neste website não devem ser consideradas como oferta de
+            venda de cotas de fundos de investimentos ou de qualquer título ou
+            valor mobiliário, recomendação de investimento e nem deve servir
+            como única base para tomada de decisões de investimento. Fundos de
+            investimentos não contam com a garantia do administrador do fundo,
+            do gestor da carteira, de qualquer mecanismo de seguro ou, ainda, do
+            Fundo Garantidor de Créditos - FGC. A rentabilidade obtida no
+            passado não representa garantia de rentabilidade futura. A
+            rentabilidade divulgada não é líquida de impostos. Ao investidor é
+            recomendada a leitura cuidadosa do prospecto e do regulamento do
+            fundo de investimento ao aplicar os seus recursos. O Fundo Pandhora
+            não se responsabiliza pela publicação acidental de informações
+            incorretas, nem por decisões de investimentos tomadas com base neste
+            material. O conteúdo deste website não pode ser reproduzido sem
+            prévia e expressa autorização. A Pandhora, seus sócios e
+            funcionários não se responsabilizam pelo uso indevido do conteúdo
+            deste website, pela publicação acidental de informações incorretas,
+            nem por decisões de investimentos tomadas com base neste material.
+            SUPERVISÃO E FISCALIZAÇÃO: Comissão de Valores Mobiliários – CVM.
+            Serviço de Atendimento ao Cidadão em www.cvm.gov.br
+          </h5>
+        </div>
+
+        <div class="footer-prisma">
+          <div class="prisma-title">
+            <span
+              >Pandhora Investimentos LTDA - Todos os direitos reservados
+              2023</span
+            >
+          </div>
+
+          <div class="prisma-logo">
+            <img src="./images/Selo Prisma.png" alt="" />
+          </div>
+
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <span>Voltar ao topo</span>
+            <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script
+      defer
+      src="https://template.riprisma.com/prisma/js/storiesPrisma.min.js"
+    ></script>
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="js/carrosel.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

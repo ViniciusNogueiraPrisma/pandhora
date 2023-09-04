@@ -37,7 +37,7 @@
       font-weight: 400;
 
       align-self: flex-start;
-      margin-top: 27px;
+      margin-top: 28px;
       line-height: 135%;
 
       &::after {
@@ -110,15 +110,15 @@
 
     &:hover {
       span {
-        color: var(--text-primary-01-default);
+        color: var(--text-main);
         &::after {
-          background-color: var(--text-primary-01-default);
+          background-color: var(--text-main);
         }
       }
 
       a {
         p {
-          color: var(--text-primary-01-var-2) !important;
+          color: var(--text-main) !important;
         }
 
         img {
