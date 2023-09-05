@@ -3662,13 +3662,14 @@ ul.container {
   }
 }
 
-@media(max-width: 948px) {
+@media (max-width: 948px) {
   .filtro-form {
     flex-direction: column;
   }
 
   .filtros-pag {
     flex-direction: column;
+    padding-top: 32px;
 
     select {
       width: 100% !important;

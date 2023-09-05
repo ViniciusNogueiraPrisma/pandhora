@@ -7775,6 +7775,7 @@ ul.container {
   }
   .filtros-pag {
     flex-direction: column;
+    padding-top: 32px;
   }
   .filtros-pag select {
     width: 100% !important;
