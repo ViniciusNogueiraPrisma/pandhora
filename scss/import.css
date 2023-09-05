@@ -7759,7 +7759,7 @@ ul.container {
     gap: 20px;
   }
   .pagination-last img {
-    width: 28px;
+    width: 22px;
   }
   .contatos-main {
     width: 100%;
@@ -7767,6 +7767,17 @@ ul.container {
   .informacoes-main {
     width: 100%;
     padding-top: 44px;
+  }
+}
+@media (max-width: 948px) {
+  .filtro-form {
+    flex-direction: column;
+  }
+  .filtros-pag {
+    flex-direction: column;
+  }
+  .filtros-pag select {
+    width: 100% !important;
   }
 }
 /* Pages */

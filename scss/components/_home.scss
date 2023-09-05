@@ -3648,7 +3648,7 @@ ul.container {
     gap: 20px;
 
     img {
-      width: 28px;
+      width: 22px;
     }
   }
 
@@ -3659,5 +3659,19 @@ ul.container {
   .informacoes-main {
     width: 100%;
     padding-top: 44px;
+  }
+}
+
+@media(max-width: 948px) {
+  .filtro-form {
+    flex-direction: column;
+  }
+
+  .filtros-pag {
+    flex-direction: column;
+
+    select {
+      width: 100% !important;
+    }
   }
 }
