@@ -48,85 +48,6 @@
     <script src="vendor/jquery.min.js"></script>
   </head>
   <body>
-    <!-- <div class="acessibillity-bar">
-      <div class="container container-responsivo-full">
-        <div class="content">
-          <div class="right-top-header">
-            <div class="accessibility-tools">
-              <a href="/acessibilidade"> <small> Acessibilidade </small> </a>
-
-              <button
-                id="contrast-toggle"
-                type="button"
-                class="tool"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                data-bs-original-title="Contraste"
-              >
-                <span class="icon-contraste"></span>
-              </button>
-
-              <button
-                id="increaseFont"
-                type="button"
-                class="tool"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                data-bs-original-title="Aumentar o tamanho da fonte"
-              >
-                <span class="icon-aumentar-fonte" accesskey="4"></span>
-              </button>
-
-              <button
-                id="decreaseFont"
-                type="button"
-                class="tool"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                data-bs-original-title="Diminuir o tamanho da fonte"
-              >
-                <span class="icon-diminuir-fonte" accesskey="5"></span>
-              </button>
-            </div>
-
-            <div class="idiomas">
-              <a
-                id="hlkCulturaPtBr"
-                accesskey="7"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                class="active"
-                href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
-                data-bs-original-title="Mudar para português"
-              >
-                <span>PT</span>
-              </a>
-              <a
-                id="hlkCulturaEnUS"
-                accesskey="8"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')"
-                data-bs-original-title="Mudar para inglês"
-              >
-                <span>EN</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="navbar headerFixoMenu">
       <div class="container-sm navbar-after">
         <div class="logo">
@@ -274,7 +195,7 @@
     </div>
 
     <div class="searchbox">
-      <div class="container container-responsivo-full">
+      <div class="container-sm container-responsivo-full">
         <div class="input-group">
           <input
             type="text"
@@ -483,7 +404,7 @@
     <div class="banner-internas">
       <div class="img-banner-interna banner-internas-last">
         <div class="overlay"></div>
-        <div class="container-sm texts-banner-interna texts-banner-last">
+        <div class="container texts-banner-interna texts-banner-last">
           <h1>TC Cosmos</h1>
           <span>Um fundo da TC Pandhora</span>
 
@@ -524,7 +445,7 @@
       </div>
     </div>
 
-    <div class="container-sm pagination-internas">
+    <div class="container pagination-internas">
       <div class="first-pagination">
         <img src="./images/icons/icon-home.png" alt="" />
         <img src="./images/icons/icon-arrow.png" alt="" />
@@ -541,7 +462,7 @@
     </div>
 
     <div class="container-fundos-infos">
-      <div class="container-sm fundos-content">
+      <div class="container fundos-content">
         <div class="fundos-text">
           <h5>Um fundo da TC Pandhora</h5>
           <h1>Com todo o expertise de Pedro Albuquerque</h1>
@@ -556,7 +477,51 @@
           <a href="">Quero investir no TC Cosmos</a>
         </div>
 
-        <div class="fundos-carrosel">a</div>
+        <div class="fundos-carrosel">
+          <div class="container-carrosel-fundos">
+            <input type="radio" name="slider" id="item-1" checked />
+            <input type="radio" name="slider" id="item-2" />
+            <input type="radio" name="slider" id="item-3" />
+            <div class="cards-fundos-content">
+              <label class="card-fundos" for="item-1" id="song-1">
+                <div class="itens-carrosel-fundos">
+                  <img src="./images/icons/icon-conection.png" alt="" />
+                  <div class="texts-itens-carrosel-fundos">
+                    <h1>Altamente diversificado b</h1>
+                    <span
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Pariatur nisi in sed cum</span
+                    >
+                  </div>
+                </div>
+              </label>
+              <label class="card-fundos" for="item-2" id="song-2">
+                <div class="itens-carrosel-fundos">
+                  <img src="./images/icons/icon-conection.png" alt="" />
+                  <div class="texts-itens-carrosel-fundos">
+                    <h1>Altamente diversificado c</h1>
+                    <span
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Pariatur nisi in sed cum</span
+                    >
+                  </div>
+                </div>
+              </label>
+              <label class="card-fundos" for="item-3" id="song-3">
+                <div class="itens-carrosel-fundos">
+                  <img src="./images/icons/icon-conection.png" alt="" />
+                  <div class="texts-itens-carrosel-fundos">
+                    <h1>Altamente diversificado a</h1>
+                    <span
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Pariatur nisi in sed cum</span
+                    >
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -565,16 +530,18 @@
     </div>
 
     <div class="historico-fundos">
-      <div class="container-sm historico-fundos-text">
-        <h1>Histórico de Performance</h1>
-        <h5>TC Cosmos</h5>
-        <span
-          >Criando fundos ideais para construção de patrimônio, com segurança e
-          diversificação.</span
-        >
+      <div class="container historico-fundos-text">
+        <div class="historico-fundo-text-content">
+          <h1>Histórico de Performance</h1>
+          <h5>TC Cosmos</h5>
+          <span
+            >Criando fundos ideais para construção de patrimônio, com segurança
+            e diversificação.</span
+          >
+        </div>
       </div>
 
-      <div class="container-sm trade-content-fundos">
+      <div class="container trade-content-fundos">
         <div class="trade-a">
           <a href="" class="tab-link" data-tab="tab1">Início</a>
           <a href="" class="tab-link" data-tab="tab2">Ano</a>
@@ -595,7 +562,7 @@
     </div>
 
     <div class="beneficios-fundos">
-      <div class="container-sm">
+      <div class="container">
         <div class="beneficios-title">
           <h1>Benefícios</h1>
           <h5>e o que esperar</h5>
@@ -646,11 +613,11 @@
     </div>
 
     <div class="resultados-fundos">
-      <div class="container-sm resultados-title">
+      <div class="container resultados-title">
         <h1>Resultados</h1>
       </div>
 
-      <div class="container-sm">
+      <div class="container">
         <div class="table-responsive">
           <table class="table">
             <thead>
@@ -706,7 +673,7 @@
     </div>
 
     <div class="infos-resultados">
-      <div class="container-sm">
+      <div class="container">
         <div class="infos-title">
           <h1>Informações</h1>
         </div>
@@ -835,7 +802,7 @@
     </div>
 
     <div class="comparativos-fundos">
-      <div class="container-sm">
+      <div class="container">
         <div class="comparativos-title">
           <h1>
             Comparativos <br />
