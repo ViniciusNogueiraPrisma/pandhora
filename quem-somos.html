@@ -52,85 +52,6 @@
     <script src="vendor/jquery.min.js"></script>
   </head>
   <body>
-    <!-- <div class="acessibillity-bar">
-      <div class="container container-responsivo-full">
-        <div class="content">
-          <div class="right-top-header">
-            <div class="accessibility-tools">
-              <a href="/acessibilidade"> <small> Acessibilidade </small> </a>
-
-              <button
-                id="contrast-toggle"
-                type="button"
-                class="tool"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                data-bs-original-title="Contraste"
-              >
-                <span class="icon-contraste"></span>
-              </button>
-
-              <button
-                id="increaseFont"
-                type="button"
-                class="tool"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                data-bs-original-title="Aumentar o tamanho da fonte"
-              >
-                <span class="icon-aumentar-fonte" accesskey="4"></span>
-              </button>
-
-              <button
-                id="decreaseFont"
-                type="button"
-                class="tool"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                data-bs-original-title="Diminuir o tamanho da fonte"
-              >
-                <span class="icon-diminuir-fonte" accesskey="5"></span>
-              </button>
-            </div>
-
-            <div class="idiomas">
-              <a
-                id="hlkCulturaPtBr"
-                accesskey="7"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                class="active"
-                href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
-                data-bs-original-title="Mudar para português"
-              >
-                <span>PT</span>
-              </a>
-              <a
-                id="hlkCulturaEnUS"
-                accesskey="8"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                title=""
-                href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')"
-                data-bs-original-title="Mudar para inglês"
-              >
-                <span>EN</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="navbar headerFixoMenu">
       <div class="container-sm navbar-after">
         <div class="logo">
@@ -272,6 +193,19 @@
             >
               <span class="icon-nav" title="Abrir Menu"></span>
             </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-sm navbar-btns-after">
+        <div class="content-btns-after">
+          <div class="btn-navbar-1">
+            <a href="">Abrir conta</a>
+            <img src="./images/icons/icon-carteira.svg" alt="" />
+          </div>
+          <div class="btn-navbar-2">
+            <a href="">Login</a>
+            <img src="./images/icons/profile-bold.svg" alt="" />
           </div>
         </div>
       </div>
@@ -489,13 +423,25 @@
         <div class="overlay"></div>
         <div class="container-sm texts-banner-interna">
           <h1>Quem Somos</h1>
-          <span>Um pouco sobre a história da Panhora e suas operações</span>
+          <span>Um pouco sobre a história da Pandhora e suas operações</span>
         </div>
         <img src="./images/quem_somos_header_interno.jpg" alt="" />
       </div>
     </div>
 
     <div class="container-sm pagination-internas">
+      <div class="pagination-last">
+        <img
+          class="aumentar-font-last"
+          src="./images/icons/icon-aumentarfont.png"
+          alt=""
+        />
+        <img
+          class="diminuir-font-last"
+          src="./images/icons/icon-diminuir.png"
+          alt=""
+        />
+      </div>
       <div class="first-pagination">
         <img src="./images/icons/icon-home.png" alt="" />
         <img src="./images/icons/icon-arrow.png" alt="" />
@@ -546,10 +492,6 @@
       </div>
     </div>
 
-    <!-- <div class="banner-qs">
-      <img src="./images/bn-qs.png" alt="" />
-    </div> -->
-
     <div>
       <section class="section-parallax">
         <div class="p-one parallax-inner"></div>
@@ -561,8 +503,8 @@
         <div class="promessa-qs">
           <h1>Nossa promessa</h1>
           <h4>
-            Criando fundos ideais para construção de patrimônio,<br> com segurança e
-            diversificação.
+            Criando fundos ideais para construção de patrimônio,<br />
+            com segurança e diversificação.
           </h4>
         </div>
 
@@ -664,193 +606,272 @@
             <h1>Equipe</h1>
           </div>
 
-          <!-- <div class="equipe-cards-container">
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile1.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile2.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile3.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile4.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile5.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile6.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile7.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile8.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile9.png" alt="" />
-            </div>
-
-            <div class="equipe-cards">
-              <div class="text-equipe-cards">
-                <h1>Pedro Albuquerque</h1>
-                <span>Membro do Comitê de Investimentos</span>
-              </div>
-              <img src="./images/profiles/profile10.png" alt="" />
-            </div>
-          </div> -->
-
           <div class="testimotionals">
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile1.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Isaías Lopes</h1>
-                  <span>CIO</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
+                <img src="./images/profiles/profile1.png" alt="" />
+                <div class="layer"></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile2.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile3.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile4.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile5.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile6.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile7.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div class="image">
                 <img src="./images/profiles/profile8.png" alt="" />
+                <div class="layer"></div>
               </div>
-              <div class="layer"></div>
             </div>
 
             <div class="card">
-              <div class="image">
-                <div class="text-equipe-cards">
-                  <h1>Pedro Albuquerque</h1>
-                  <span>Membro do Comitê de Investimentos</span>
+              <div class="container-card-hover">
+                <div class="card-hover-qs">
+                  <div class="border-hover content">
+                    <div class="contentBx">
+                      <h3>Pedro Albuquerque</h3>
+                      <span>Membro do comitê de investimentos</span>
+                    </div>
+                  </div>
+                  <ul class="sci">
+                    <li>
+                      <i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
                 </div>
-                <img src="./images/profiles/profile9.png" alt="" />
               </div>
-              <div class="layer"></div>
+              <div class="image">
+                <img src="./images/profiles/profile1.png" alt="" />
+                <div class="layer"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <footer>
+    <footer class="footer-home">
       <div class="container-sm">
         <div class="logos-footer">
           <div class="logo-footer-pandhora">
@@ -865,6 +886,58 @@
               ><img src="./images/icons/linkedin-white.png" alt=""
             /></a>
             <a href=""><img src="./images/icons/insta-white.png" alt="" /></a>
+          </div>
+        </div>
+
+        <div class="footer-last-texts">
+          <div class="mapa-site-last">
+            <div class="collapse show footer-last-itens" id="collapseMapSite">
+              <div class="list-menu-footer">
+                <div class="collapse-footer">
+                  <div class="main-btn-footer">
+                    <span>Abrir mapa do site</span>
+                    <button
+                      class="button-mapa-site-mobile collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseUlSiteDesktop"
+                      aria-expanded="false"
+                      aria-controls="collapseUlSiteDesktop"
+                    >
+                      <img src="./images/icons/icon-plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <ul class="collapse" id="collapseUlSiteDesktop">
+                    <li>
+                      <a href="/perfil-corporativo" target="_self"
+                        >Aguardando conteudo</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="icons-social-last">
+                <img src="/images/icons/icon-footer-insta.png" alt="" />
+                <img src="./images/icons/icon-footer-face.png" alt="" />
+                <img src="./images/icons/icon-footer-twitter.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="contato-footer-last">
+            <div class="emails-footer-last">
+              <span>dpo@pandhora.com</span>
+              <span>contato@pandhora.com</span>
+              <span
+                >R. Leopoldo Couto Magalhães Júnior - Itaim Bibi, São Paulo -
+                SP, 04542-000</span
+              >
+            </div>
+
+            <div class="anbima-footer-last">
+              <img src="./images/anbima.png" alt="" />
+            </div>
           </div>
         </div>
 
@@ -949,6 +1022,20 @@
             <span><a href="">Termos e Condições</a></span>
 
             <img class="img-anbima" src="./images/anbima.png" alt="" />
+          </div>
+        </div>
+
+        <div class="footer-itensprisma-last">
+          <span
+            >Pandhora Investimentos LTDA - Todos os direitos reservados
+            2023</span
+          >
+          <div class="logo-prisma-last">
+            <img src="./images/Selo Prisma.png" alt="" />
+            <div class="voltar-topo" id="voltar-ao-topo">
+              <span>Voltar ao topo</span>
+              <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i>
+            </div>
           </div>
         </div>
 

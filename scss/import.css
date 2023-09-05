@@ -6437,6 +6437,154 @@ footer {
   background-color: #1d1d1d !important;
 }
 
+.container-card-hover {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.container-card-hover .card-hover-qs {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.container-card-hover .card-hover-qs .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.contentBx {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-hover-qs .content {
+  width: 100%;
+  height: 100%;
+}
+
+.border-hover {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 12px;
+}
+
+.border-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.7s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.border-hover:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.container-card-hover .card-hover-qs:hover .content {
+  transform: translateY(-47px);
+}
+
+.container-card-hover .card-hover-qs .sci {
+  position: absolute;
+  bottom: -27px;
+  display: flex;
+  width: 100%;
+}
+
+.container-card-hover .card-hover-qs .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-card-hover .card-hover-qs .content .contentBx h3 {
+  color: white;
+  font-size: 21px;
+  font-family: "Bw Seido Raw";
+  font-weight: 700;
+  line-height: 29.4px;
+  word-wrap: break-word;
+  margin-bottom: 0px !important;
+}
+
+.contentBx span {
+  color: white;
+  font-size: 16px;
+  font-family: "Bw Seido Raw";
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.container-card-hover .card-hover-qs .sci li {
+  list-style: none;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0px !important;
+}
+
+.container-card-hover .card-hover-qs .sci {
+  padding: 0px !important;
+}
+
+.container-card-hover .card-hover-qs:hover .sci {
+  padding: 0px !important;
+}
+
+.container-card-hover .card-hover-qs:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.container-card-hover .card-hover-qs .sci li a {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+}
+
+.linkedin-card {
+  border-top: 1px solid white;
+  padding-top: 12px;
+  margin-top: 8px;
+  display: none;
+  transition: 0.7s;
+}
+
 .testimotionals .card .layer {
   z-index: 1;
   position: absolute;
@@ -6444,9 +6592,10 @@ footer {
   height: 100%;
   width: 100%;
   left: 0;
-  background: linear-gradient(to left, rgb(0, 0, 0), rgb(176, 176, 176));
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
   transition: 0.5s;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .testimotionals .card:hover .layer {
