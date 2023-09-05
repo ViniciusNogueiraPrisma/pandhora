@@ -4942,6 +4942,10 @@ body.open-menu::after {
   word-wrap: break-word;
 }
 
+.testimotionals-carrosel {
+  display: none;
+}
+
 .container-investir-home {
   display: flex;
   padding-top: 180px;
@@ -7928,6 +7932,82 @@ ul.container {
   }
   .filtros-pag select {
     width: 100% !important;
+  }
+}
+@media (max-width: 842px) {
+  .gestao-qs {
+    flex-direction: column;
+    gap: 0;
+  }
+  .testimotionals {
+    grid-template-columns: auto auto !important;
+  }
+  .gestao-1 {
+    width: 100%;
+  }
+  .gestao-2 {
+    width: 100%;
+  }
+  .gestao-2 h3 {
+    margin: 0 !important;
+  }
+  .cards-acreditamos-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .cards-acreditamos {
+    border: 1px solid black;
+  }
+  .parallax-inner {
+    min-height: 439px;
+  }
+  .acreditamos-title {
+    padding-top: 321px;
+    justify-content: start;
+  }
+}
+@media (max-width: 1248px) {
+  .promessa-qs {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .card-promessas {
+    width: 100%;
+  }
+  .card-promessas-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1112px) {
+  .testimotionals {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 550px) {
+  .testimotionals {
+    display: none;
+  }
+  .testimotionals-carrosel {
+    display: block;
+  }
+  .equipe-title {
+    padding-bottom: 40px;
+  }
+  .swiper-pagination-equipe {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .swiper-pagination-equipe .swiper-pagination-bullet {
+    border-radius: 4px !important;
+    width: 24px;
+    background-color: var(--text-white);
+    transition: 0.7s;
+  }
+  .swiper-pagination-equipe .swiper-pagination-bullet-active {
+    transition: 0.7s;
+    background-color: var(--pure-black);
+    width: 80px;
   }
 }
 /* Pages */

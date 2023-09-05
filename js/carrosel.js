@@ -28,6 +28,18 @@ var swiperCosmos = new Swiper(".mySwiper-cosmos", {
   },
 });
 
+var swiper = new Swiper(".mySwiper-equipe", {
+  slidesPerView: "auto",
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination-equipe",
+  },
+});
+
 const paginationItems = document.querySelectorAll(".pagination-home-main li");
 let activeIndex = 0;
 
