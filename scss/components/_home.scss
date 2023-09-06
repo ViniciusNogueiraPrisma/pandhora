@@ -263,7 +263,7 @@
   border-radius: 16px;
 
   background: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(2px) !important;
+  backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(5px) !important;
 
   width: 100%;
@@ -276,7 +276,6 @@
   );
 }
 
-/* Estilo da div ativa */
 .tab-content.active {
   display: block;
   opacity: 1;
@@ -1814,9 +1813,15 @@ footer {
   // background-image: url("../../images/bn-qs.png");
 }
 
+.p-dois {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url("../../images/home-fundo-3-min\ 1.png");
+  // background-image: url("../../images/bn-qs.png");
+}
+
 .parallax-inner {
   position: relative;
-  min-height: 690px;
+  min-height: 71.65109034267913vh;
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
