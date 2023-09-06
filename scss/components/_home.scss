@@ -4127,3 +4127,33 @@ input[type="radio"] {
   //   height: 422px !important;
   // }
 }
+
+
+@media(max-width: 600px) {
+  .banner-internas-last {
+    height: 500px !important;
+
+    img {
+      height: 500px !important;
+    }
+  }
+
+  .overlay {
+    height: 500px !important;
+  }
+
+  .cards-fundos-content {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+}
+
+@media(max-width: 438px) {
+  .fundos-text {
+    padding-bottom: 80px;
+  }
+
+  .banner-fundos {
+    padding-top: 80px;
+  }
+}
