@@ -4724,6 +4724,10 @@ body.open-menu::after {
   font-family: var(--font-text-3);
 }
 
+.comparativos-table {
+  overflow-x: auto !important;
+}
+
 .navbar {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -6635,7 +6639,7 @@ footer {
   height: 58.1516095535vh;
 }
 .banner-internas-last img {
-  height: 58.1516095535vh;
+  height: 58.1516095535vh !important;
 }
 
 .texts-banner-last {
@@ -6648,6 +6652,7 @@ footer {
   justify-content: start;
   align-items: center;
   gap: 50px;
+  word-break: break-all;
 }
 .percents-banner .percents-content {
   display: flex;
@@ -6734,6 +6739,7 @@ footer {
 }
 .banner-fundos img {
   width: 100%;
+  object-fit: cover;
   height: 71.6510903427vh;
 }
 
@@ -7895,6 +7901,9 @@ ul.container {
     font-size: 56px;
     font-weight: 700;
   }
+  .overlay-fundos {
+    height: 58.1516095535vh !important;
+  }
   .overlay {
     height: 311px;
     background: rgb(1, 1, 1);
@@ -8105,6 +8114,63 @@ input[type=radio] {
   line-height: 25px;
 }
 
+@media (max-width: 1000px) {
+  .fundos-content {
+    flex-direction: column;
+  }
+  .fundos-text {
+    width: 100%;
+  }
+  .fundos-carrosel {
+    width: 100%;
+  }
+  .historico-fundos-text .historico-fundo-text-content {
+    width: 100%;
+  }
+  .beneficios-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cards-beneficios-container {
+    flex-direction: column;
+  }
+  .content-infos {
+    flex-direction: column;
+  }
+  .texts-infos {
+    width: 100%;
+  }
+  .download-infos {
+    width: 100%;
+  }
+  .download-texts {
+    gap: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .percents-banner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .texts-banner-last {
+    padding-bottom: 40px !important;
+  }
+}
+@media (max-width: 464px) {
+  .percents-banner {
+    grid-row-gap: 32px;
+    grid-column-gap: 22px;
+  }
+  .percents-banner h1 {
+    font-size: 22px !important;
+    font-weight: 400;
+    line-height: 29px;
+  }
+  .percents-banner span {
+    font-size: 12px !important;
+    font-weight: 400;
+  }
+}
 /* Pages */
 .page-erro {
   display: flex;

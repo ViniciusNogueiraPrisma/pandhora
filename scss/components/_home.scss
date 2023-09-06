@@ -26,6 +26,10 @@
   font-family: var(--font-text-3);
 }
 
+.comparativos-table {
+  overflow-x: auto !important;
+}
+
 .navbar {
   //   border: 1px solid black;
   padding-top: 32px;
@@ -2256,7 +2260,7 @@ footer {
   height: 58.151609553478714vh;
 
   img {
-    height: 58.151609553478714vh;
+    height: 58.151609553478714vh !important;
   }
 }
 
@@ -2271,6 +2275,7 @@ footer {
   justify-content: start;
   align-items: center;
   gap: 50px;
+  word-break: break-all;
 
   .percents-content {
     display: flex;
@@ -2367,12 +2372,11 @@ footer {
 }
 
 .banner-fundos {
-  // border: 1px solid red;
   height: auto;
-  // padding-top: 353px;
 
   img {
     width: 100%;
+    object-fit: cover;
     height: 71.65109034267913vh;
   }
 }
@@ -3778,6 +3782,10 @@ ul.container {
     }
   }
 
+  .overlay-fundos {
+    height: 58.1516095535vh !important;
+  }
+
   .overlay {
     height: 311px;
     background: rgb(1, 1, 1);
@@ -4029,6 +4037,93 @@ input[type="radio"] {
   }
 }
 
-// * {
-//   border: 1px solid red;
-// }
+@media (max-width: 1000px) {
+  .fundos-content {
+    flex-direction: column;
+  }
+
+  .fundos-text {
+    width: 100%;
+  }
+
+  .fundos-carrosel {
+    width: 100%;
+  }
+
+  .historico-fundos-text .historico-fundo-text-content {
+    width: 100%;
+  }
+
+  .beneficios-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cards-beneficios-container {
+    flex-direction: column;
+  }
+
+  .content-infos {
+    flex-direction: column;
+  }
+
+  .texts-infos {
+    width: 100%;
+  }
+
+  .download-infos {
+    width: 100%;
+  }
+
+  .download-texts {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .percents-banner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .texts-banner-last {
+    padding-bottom: 40px !important;
+  }
+
+  // .percents-banner {
+  //   h1 {
+  //     font-size: 22px !important;
+  //     font-weight: 400;
+  //     line-height: 29px;
+  //   }
+
+  //   span {
+  //     font-size: 12px !important;
+  //     font-weight: 400;
+  //   }
+  // }
+}
+
+@media (max-width: 464px) {
+  .percents-banner {
+    grid-row-gap: 32px;
+    grid-column-gap: 22px;
+  }
+
+  .percents-banner {
+    h1 {
+      font-size: 22px !important;
+      font-weight: 400;
+      line-height: 29px;
+    }
+
+    span {
+      font-size: 12px !important;
+      font-weight: 400;
+    }
+  }
+
+  // .banner-internas-last img {
+  //   height: 422px !important;
+  // }
+}
