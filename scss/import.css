@@ -8186,6 +8186,18 @@ input[type=radio] {
     padding-bottom: 120px;
   }
 }
+@media (max-width: 498px) {
+  .trade-a {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .tab-link {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
 @media (max-width: 438px) {
   .fundos-text {
     padding-bottom: 80px;
