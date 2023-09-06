@@ -3998,7 +3998,7 @@ input[type="radio"] {
   transform: translateY(-100%);
   margin-bottom: 24px;
   padding-right: 55px;
-  opacity: 0.4;
+  // opacity: 0.4;
   z-index: 0;
   transition: 0.5s;
 }
@@ -4009,7 +4009,7 @@ input[type="radio"] {
   transform: translateY(100%);
   margin-top: 24px;
   padding-right: 55px;
-  opacity: 0.4;
+  // opacity: 0.4;
   z-index: 0;
   transition: 0.5s;
 }
@@ -4023,27 +4023,27 @@ input[type="radio"] {
 }
 
 #item-1:checked ~ .cards-fundos-content #song-2 .itens-carrosel-fundos {
-  background-color: #bbbbbb !important;
+  background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-1:checked ~ .cards-fundos-content #song-3 .itens-carrosel-fundos {
-  background-color: #bbbbbb !important;
+  background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-2:checked ~ .cards-fundos-content #song-1 .itens-carrosel-fundos {
-  background-color: #bbbbbb !important;
+  background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-2:checked ~ .cards-fundos-content #song-3 .itens-carrosel-fundos {
-  background-color: #bbbbbb !important;
+  background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-3:checked ~ .cards-fundos-content #song-2 .itens-carrosel-fundos {
-  background-color: #bbbbbb !important;
+  background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-3:checked ~ .cards-fundos-content #song-1 .itens-carrosel-fundos {
-  background-color: #bbbbbb !important;
+  background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-2:checked ~ .player #test {
@@ -4539,4 +4539,31 @@ body {
   grid-template-columns: auto auto auto auto auto;
   grid-row-gap: 16px;
   grid-column-gap: 9px;
+}
+
+.border-fundos-content {
+  border: 1px solid var(--text-main);
+  height: 100%;
+  width: 1px;
+  z-index: -99999;
+  position: absolute;
+  margin-left: 20px;
+
+  .ball-fundos-content1 {
+    background-color: var(--text-main);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -7px;
+  }
+
+  .ball-fundos-content2 {
+    background-color: var(--text-main);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -7px;
+    position: absolute;
+    bottom: 0;
+  }
 }
