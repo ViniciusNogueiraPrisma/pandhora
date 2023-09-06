@@ -6237,7 +6237,7 @@ footer {
 }
 
 .p-dois {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../images/home-fundo-3-min 1.png");
+  background-image: url("../../images/home-fundo-3-min 1.png");
 }
 
 .parallax-inner {
@@ -8072,17 +8072,23 @@ input[type=radio] {
 #item-1:checked ~ .cards-fundos-content #song-3,
 #item-2:checked ~ .cards-fundos-content #song-1,
 #item-3:checked ~ .cards-fundos-content #song-2 {
-  transform: translateY(-100%) scale(0.8);
+  transform: translateY(-100%);
+  margin-bottom: 24px;
+  padding-right: 55px;
   opacity: 0.4;
   z-index: 0;
+  transition: 0.5s;
 }
 
 #item-1:checked ~ .cards-fundos-content #song-2,
 #item-2:checked ~ .cards-fundos-content #song-3,
 #item-3:checked ~ .cards-fundos-content #song-1 {
-  transform: translateY(100%) scale(0.8);
+  transform: translateY(100%);
+  margin-top: 24px;
+  padding-right: 55px;
   opacity: 0.4;
   z-index: 0;
+  transition: 0.5s;
 }
 
 #item-1:checked ~ .cards-fundos-content #song-1,
@@ -8091,6 +8097,30 @@ input[type=radio] {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
+}
+
+#item-1:checked ~ .cards-fundos-content #song-2 .itens-carrosel-fundos {
+  background-color: #bbbbbb !important;
+}
+
+#item-1:checked ~ .cards-fundos-content #song-3 .itens-carrosel-fundos {
+  background-color: #bbbbbb !important;
+}
+
+#item-2:checked ~ .cards-fundos-content #song-1 .itens-carrosel-fundos {
+  background-color: #bbbbbb !important;
+}
+
+#item-2:checked ~ .cards-fundos-content #song-3 .itens-carrosel-fundos {
+  background-color: #bbbbbb !important;
+}
+
+#item-3:checked ~ .cards-fundos-content #song-2 .itens-carrosel-fundos {
+  background-color: #bbbbbb !important;
+}
+
+#item-3:checked ~ .cards-fundos-content #song-1 .itens-carrosel-fundos {
+  background-color: #bbbbbb !important;
 }
 
 #item-2:checked ~ .player #test {
