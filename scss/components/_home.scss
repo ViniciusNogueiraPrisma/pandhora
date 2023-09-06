@@ -4128,8 +4128,7 @@ input[type="radio"] {
   // }
 }
 
-
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .banner-internas-last {
     height: 500px !important;
 
@@ -4148,8 +4147,7 @@ input[type="radio"] {
   }
 }
 
-
-@media(max-width: 498px) {
+@media (max-width: 498px) {
   .trade-a {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -4163,7 +4161,7 @@ input[type="radio"] {
   }
 }
 
-@media(max-width: 438px) {
+@media (max-width: 438px) {
   .fundos-text {
     padding-bottom: 80px;
   }
