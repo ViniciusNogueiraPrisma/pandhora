@@ -8538,6 +8538,9 @@ body {
     transform: translateY(-39%) !important;
     transition: 2s ease !important;
   }
+  #item-1:checked ~ .cards-fundos-content #song-3 {
+    padding-right: 0px !important;
+  }
   #item-2:checked ~ .cards-fundos-content #song-2 {
     transition: 2s ease !important;
   }
