@@ -5825,7 +5825,6 @@ footer {
 .card-carrosel-home {
   border: 1px solid var(--text-white);
   height: auto;
-  background-color: var(--text-grey-scale-04);
   border-radius: 4px;
   display: flex;
   justify-content: start;
