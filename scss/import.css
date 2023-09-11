@@ -8718,6 +8718,10 @@ body {
 [data-theme=dark] .nav-link:hover {
   color: white !important;
 }
+[data-theme=dark] .menu-bar .nav-link:focus,
+[data-theme=dark] .menu-bar .nav-link:hover {
+  color: #1d1d1d !important;
+}
 [data-theme=dark] .container-investir-home span {
   color: white;
 }
@@ -8732,6 +8736,15 @@ body {
 }
 [data-theme=dark] .logo-black-home {
   display: none;
+}
+[data-theme=dark] .container-investir-home .txt-investir-home h1 {
+  color: white;
+}
+[data-theme=dark] .text-invista-home span {
+  color: white !important;
+}
+[data-theme=dark] .container-investir-home span {
+  color: white !important;
 }
 
 /* Pages */

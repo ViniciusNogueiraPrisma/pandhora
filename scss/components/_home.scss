@@ -4797,7 +4797,11 @@ body {
     background-color: #1d1d1d !important;
   }
 
-  .menu-bar .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
+  .menu-bar
+    .mobile-menu-div.active
+    .mobile-menu
+    .toggle-mobile-menu
+    span::before {
     background-color: white !important;
   }
 
@@ -4821,6 +4825,11 @@ body {
   .nav-link:focus,
   .nav-link:hover {
     color: white !important;
+  }
+
+  .menu-bar .nav-link:focus,
+  .menu-bar .nav-link:hover {
+    color: #1d1d1d !important;
   }
 
   .container-investir-home span {
@@ -4903,5 +4912,17 @@ body {
 
   .logo-black-home {
     display: none;
+  }
+
+  .container-investir-home .txt-investir-home h1 {
+    color: white;
+  }
+
+  .text-invista-home span {
+    color: white !important;
+  }
+
+  .container-investir-home span {
+    color: white !important;
   }
 }
