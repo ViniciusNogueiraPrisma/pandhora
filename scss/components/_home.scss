@@ -767,6 +767,10 @@ footer {
   display: none;
 }
 
+.img-promessa-2 {
+  display: none;
+}
+
 .voltar-topo {
   cursor: pointer;
   display: flex;
@@ -4892,71 +4896,17 @@ body {
     color: white;
   }
 
-  .quadro-mobile {
-    // background-color: #1d1d1d;
+  .img-promessa-2 {
+    display: block;
   }
 
-  // .quadro-mobile .text-quadro-mobile h5 {
-  //   color: white;
-  // }
-
-  // .quadro-mobile .text-quadro-mobile h1 {
-  //   color: white;
-  // }
-
-  // .quadro-mobile .text-quadro-mobile h1 span {
-  //   color: white;
-  // }
-
-  // .quadro-mobile .text-quadro-mobile h6 {
-  //   color: white;
-  // }
-
-  // .quadro-mobile .text-quadro-mobile h4 {
-  //   color: white;
-  // }
-
-  // .quadro-mobile .text-quadro-mobile h3 {
-  //   color: white;
-  // }
+  .img-promessa-1 {
+    display: none;
+  }
 
   .quadro-last {
     background-color: #1d1d1d;
-
-    .content-quadro-last {
-      // background: rgb(84, 84, 84);
-      // background: linear-gradient(
-      //   90deg,
-      //   rgba(84, 84, 84, 1) 0%,
-      //   rgba(29, 29, 29, 1) 100%
-      // );
-      // border: 1px solid rgb(44, 44, 44);
-    }
   }
-
-  // .quadro-last .content-quadro-last h5 {
-  //   color: white;
-  // }
-
-  // .quadro-last .content-quadro-last h1 {
-  //   color: white;
-  // }
-
-  // .quadro-last .content-quadro-last span {
-  //   color: white;
-  // }
-
-  // .quadro-last .content-quadro-last h3 {
-  //   color: white;
-  // }
-
-  // .quadro-last .content-quadro-last h4 {
-  //   color: white;
-  // }
-
-  // .quadro-last .content-quadro-last a {
-  //   color: white;
-  // }
 
   .icon-busca:before {
     color: white;
@@ -4976,5 +4926,264 @@ body {
 
   .container-investir-home span {
     color: white !important;
+  }
+
+  .gestao-1 {
+    h5 {
+      color: white;
+    }
+  }
+
+  .gestao-1 h1 {
+    color: white;
+  }
+
+  .card-promessas {
+    background-color: white !important;
+  }
+
+  .last-card-promessa {
+    h1 {
+      color: black !important;
+    }
+
+    span {
+      color: black !important;
+    }
+  }
+
+  .cards-acreditamos {
+    background-color: white;
+  }
+
+  .acreditamos-title h1 {
+    color: white;
+  }
+
+  .first-pagination .inactive-pagination {
+    color: #aeaeae;
+  }
+
+  .first-pagination .active-pagination {
+    color: white;
+  }
+
+  .gestao-2 {
+    h5 {
+      color: white;
+    }
+
+    h3 {
+      color: white;
+    }
+  }
+
+  .swiper-pagination-equipe .swiper-pagination-bullet {
+    background-color: white;
+  }
+
+  .gestao-2 h1 {
+    color: white;
+  }
+
+  .pagination-internas .second-pagination img {
+    filter: brightness(1000%) !important;
+  }
+
+  .first-pagination img {
+    filter: brightness(1000%) !important;
+  }
+
+  .pagination-last img {
+    filter: brightness(1000%) !important;
+  }
+
+  .gestao-2 span {
+    color: white;
+  }
+
+  .fundos-text h5 {
+    color: white;
+  }
+
+  .fundos-text h1 {
+    color: white;
+  }
+
+  .fundos-text a {
+    background-color: white;
+    color: black;
+  }
+
+  .itens-carrosel-fundos .texts-itens-carrosel-fundos h1 {
+    color: black;
+  }
+
+  .border-fundos-content {
+    border: 1px solid white;
+  }
+
+  .border-fundos-content .ball-fundos-content1 {
+    background-color: white;
+  }
+
+  .border-fundos-content .ball-fundos-content2 {
+    background-color: white;
+  }
+
+  .itens-carrosel-fundos {
+    background-color: white;
+
+    img {
+      filter: brightness(0%);
+    }
+  }
+
+  .itens-carrosel-fundos .texts-itens-carrosel-fundos span {
+    color: black;
+  }
+
+  .fundos-text span {
+    color: white;
+  }
+
+  .historico-fundos-text {
+    h1 {
+      color: white;
+    }
+
+    h5 {
+      color: white;
+    }
+
+    span {
+      color: white;
+    }
+  }
+
+  .cards-beneficios {
+    background-color: white !important;
+
+    img {
+      filter: brightness(0);
+    }
+
+    h1 {
+      color: black;
+    }
+
+    span {
+      color: black;
+    }
+  }
+
+  .last-cards-beneficios {
+    background-color: white !important;
+
+    img {
+      filter: brightness(0);
+    }
+
+    h1 {
+      color: black !important;
+    }
+
+    span {
+      color: black !important;
+    }
+  }
+
+  .resultados-title h1 {
+    color: white;
+  }
+
+  .table thead tr th {
+    color: white;
+  }
+
+  .infos-title h1 {
+    color: white;
+  }
+
+  .infos-resultados {
+    background-color: #1d1d1d;
+  }
+
+  .download-infos h1 {
+    color: black;
+  }
+
+  .download-texts {
+    span {
+      color: black;
+    }
+  }
+
+  .texts-infos-content {
+    span {
+      color: white;
+    }
+
+    h1 {
+      color: white;
+    }
+  }
+
+  .comparativos-table tr th {
+    color: white;
+  }
+
+  .comparativos-title {
+    h1 {
+      color: white;
+    }
+  }
+
+  .comparativos-fundos {
+    background-color: #1d1d1d;
+  }
+
+  .filtros-title h1 {
+    color: white;
+  }
+
+  .accordion .accordion-header button {
+    color: white;
+  }
+
+  .accordion .accordion-header button::after {
+    filter: brightness(1000%);
+  }
+
+  .accordion .accordion-header button:not(.collapsed) {
+    background-color: #1d1d1d;
+  }
+
+  .list-downloads li span {
+    color: white;
+  }
+
+  .list-downloads li a p,
+  .list-downloads li .link-inside p {
+    color: white;
+  }
+
+  .imgs-list-download {
+    img {
+      filter: brightness(1000%);
+    }
+  }
+
+  .contatos-title h1 {
+    color: white;
+  }
+
+  .informacoes-content h1 {
+    color: black;
+  }
+
+  .btns-contato .entrar-contato {
+    background-color: white;
+    color: black;
   }
 }

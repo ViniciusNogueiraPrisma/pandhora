@@ -5342,6 +5342,10 @@ footer {
   display: none;
 }
 
+.img-promessa-2 {
+  display: none;
+}
+
 .voltar-topo {
   cursor: pointer;
   display: flex;
@@ -8760,6 +8764,12 @@ body {
 [data-theme=dark] .quadro-mobile .text-quadro-mobile h6 a {
   color: white;
 }
+[data-theme=dark] .img-promessa-2 {
+  display: block;
+}
+[data-theme=dark] .img-promessa-1 {
+  display: none;
+}
 [data-theme=dark] .quadro-last {
   background-color: #1d1d1d;
 }
@@ -8777,6 +8787,189 @@ body {
 }
 [data-theme=dark] .container-investir-home span {
   color: white !important;
+}
+[data-theme=dark] .gestao-1 h5 {
+  color: white;
+}
+[data-theme=dark] .gestao-1 h1 {
+  color: white;
+}
+[data-theme=dark] .card-promessas {
+  background-color: white !important;
+}
+[data-theme=dark] .last-card-promessa h1 {
+  color: black !important;
+}
+[data-theme=dark] .last-card-promessa span {
+  color: black !important;
+}
+[data-theme=dark] .cards-acreditamos {
+  background-color: white;
+}
+[data-theme=dark] .acreditamos-title h1 {
+  color: white;
+}
+[data-theme=dark] .first-pagination .inactive-pagination {
+  color: #aeaeae;
+}
+[data-theme=dark] .first-pagination .active-pagination {
+  color: white;
+}
+[data-theme=dark] .gestao-2 h5 {
+  color: white;
+}
+[data-theme=dark] .gestao-2 h3 {
+  color: white;
+}
+[data-theme=dark] .swiper-pagination-equipe .swiper-pagination-bullet {
+  background-color: white;
+}
+[data-theme=dark] .gestao-2 h1 {
+  color: white;
+}
+[data-theme=dark] .pagination-internas .second-pagination img {
+  filter: brightness(1000%) !important;
+}
+[data-theme=dark] .first-pagination img {
+  filter: brightness(1000%) !important;
+}
+[data-theme=dark] .pagination-last img {
+  filter: brightness(1000%) !important;
+}
+[data-theme=dark] .gestao-2 span {
+  color: white;
+}
+[data-theme=dark] .fundos-text h5 {
+  color: white;
+}
+[data-theme=dark] .fundos-text h1 {
+  color: white;
+}
+[data-theme=dark] .fundos-text a {
+  background-color: white;
+  color: black;
+}
+[data-theme=dark] .itens-carrosel-fundos .texts-itens-carrosel-fundos h1 {
+  color: black;
+}
+[data-theme=dark] .border-fundos-content {
+  border: 1px solid white;
+}
+[data-theme=dark] .border-fundos-content .ball-fundos-content1 {
+  background-color: white;
+}
+[data-theme=dark] .border-fundos-content .ball-fundos-content2 {
+  background-color: white;
+}
+[data-theme=dark] .itens-carrosel-fundos {
+  background-color: white;
+}
+[data-theme=dark] .itens-carrosel-fundos img {
+  filter: brightness(0%);
+}
+[data-theme=dark] .itens-carrosel-fundos .texts-itens-carrosel-fundos span {
+  color: black;
+}
+[data-theme=dark] .fundos-text span {
+  color: white;
+}
+[data-theme=dark] .historico-fundos-text h1 {
+  color: white;
+}
+[data-theme=dark] .historico-fundos-text h5 {
+  color: white;
+}
+[data-theme=dark] .historico-fundos-text span {
+  color: white;
+}
+[data-theme=dark] .cards-beneficios {
+  background-color: white !important;
+}
+[data-theme=dark] .cards-beneficios img {
+  filter: brightness(0);
+}
+[data-theme=dark] .cards-beneficios h1 {
+  color: black;
+}
+[data-theme=dark] .cards-beneficios span {
+  color: black;
+}
+[data-theme=dark] .last-cards-beneficios {
+  background-color: white !important;
+}
+[data-theme=dark] .last-cards-beneficios img {
+  filter: brightness(0);
+}
+[data-theme=dark] .last-cards-beneficios h1 {
+  color: black !important;
+}
+[data-theme=dark] .last-cards-beneficios span {
+  color: black !important;
+}
+[data-theme=dark] .resultados-title h1 {
+  color: white;
+}
+[data-theme=dark] .table thead tr th {
+  color: white;
+}
+[data-theme=dark] .infos-title h1 {
+  color: white;
+}
+[data-theme=dark] .infos-resultados {
+  background-color: #1d1d1d;
+}
+[data-theme=dark] .download-infos h1 {
+  color: black;
+}
+[data-theme=dark] .download-texts span {
+  color: black;
+}
+[data-theme=dark] .texts-infos-content span {
+  color: white;
+}
+[data-theme=dark] .texts-infos-content h1 {
+  color: white;
+}
+[data-theme=dark] .comparativos-table tr th {
+  color: white;
+}
+[data-theme=dark] .comparativos-title h1 {
+  color: white;
+}
+[data-theme=dark] .comparativos-fundos {
+  background-color: #1d1d1d;
+}
+[data-theme=dark] .filtros-title h1 {
+  color: white;
+}
+[data-theme=dark] .accordion .accordion-header button {
+  color: white;
+}
+[data-theme=dark] .accordion .accordion-header button::after {
+  filter: brightness(1000%);
+}
+[data-theme=dark] .accordion .accordion-header button:not(.collapsed) {
+  background-color: #1d1d1d;
+}
+[data-theme=dark] .list-downloads li span {
+  color: white;
+}
+[data-theme=dark] .list-downloads li a p,
+[data-theme=dark] .list-downloads li .link-inside p {
+  color: white;
+}
+[data-theme=dark] .imgs-list-download img {
+  filter: brightness(1000%);
+}
+[data-theme=dark] .contatos-title h1 {
+  color: white;
+}
+[data-theme=dark] .informacoes-content h1 {
+  color: black;
+}
+[data-theme=dark] .btns-contato .entrar-contato {
+  background-color: white;
+  color: black;
 }
 
 /* Pages */
