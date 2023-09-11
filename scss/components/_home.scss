@@ -4793,20 +4793,20 @@ body {
     width: 40px !important;
   }
 
-  .toggle-mobile-menu span {
+  .menu-bar .toggle-mobile-menu span {
     background-color: #1d1d1d !important;
   }
 
-  .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
+  .menu-bar .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
     background-color: white !important;
   }
 
-  .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span {
+  .menu-bar .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span {
     background-color: white !important;
   }
 
-  .toggle-mobile-menu span::after,
-  .toggle-mobile-menu span::before {
+  .menu-bar .toggle-mobile-menu span::after,
+  .menu-bar .toggle-mobile-menu span::before {
     background-color: #1d1d1d;
   }
 

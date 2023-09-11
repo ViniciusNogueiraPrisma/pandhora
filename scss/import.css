@@ -8695,17 +8695,17 @@ body {
   display: block;
   width: 40px !important;
 }
-[data-theme=dark] .toggle-mobile-menu span {
+[data-theme=dark] .menu-bar .toggle-mobile-menu span {
   background-color: #1d1d1d !important;
 }
-[data-theme=dark] .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
+[data-theme=dark] .menu-bar .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
   background-color: white !important;
 }
-[data-theme=dark] .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span {
+[data-theme=dark] .menu-bar .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span {
   background-color: white !important;
 }
-[data-theme=dark] .toggle-mobile-menu span::after,
-[data-theme=dark] .toggle-mobile-menu span::before {
+[data-theme=dark] .menu-bar .toggle-mobile-menu span::after,
+[data-theme=dark] .menu-bar .toggle-mobile-menu span::before {
   background-color: #1d1d1d;
 }
 [data-theme=dark] .section-cards-home {
