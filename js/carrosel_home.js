@@ -42,3 +42,19 @@ var swiperCosmos = new Swiper(".mySwiper-cosmos-last", {
     el: ".swiper-pagination-cosmos-last",
   },
 });
+
+$(document).ready(function () {
+  var timeout;
+  $(".nav-item.dropdown").hover(
+    function () {
+      clearTimeout(timeout); // Limpa o temporizador para evitar a ocultação
+      $(".dropdown-menu", this).stop(true, true).slideDown("fast");
+    },
+    function () {
+      var $dropdown = $(".dropdown-menu", this);
+      timeout = setTimeout(function () {
+        $dropdown.stop(true, true).slideUp("fast");
+      }, 10); // Atraso de 200 milissegundos antes da ocultação
+    }
+  );
+});

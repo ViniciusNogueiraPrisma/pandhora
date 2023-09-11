@@ -184,6 +184,15 @@
   }
 }
 
+// .hover-dropdown:hover .dropdown-menu {
+//   display: block;
+// }
+
+// .hover-dropdown .dropdown-menu {
+//   display: none;
+//   transition: none; /* Opcional: para remover a transição padrão do Bootstrap */
+// }
+
 .hover-effect {
   transition: 0.5s;
   filter: saturate(100%) !important;
