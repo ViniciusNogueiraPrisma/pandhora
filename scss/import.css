@@ -8564,6 +8564,103 @@ body {
     padding-right: 0;
   }
 }
+.logo-white-home {
+  display: none;
+}
+
+.icon-pandora-2 {
+  display: none;
+}
+
+[data-theme=dark] .logo-white-home {
+  display: block;
+  width: 200px;
+}
+[data-theme=dark] .icon-pandora-1 {
+  display: none;
+}
+[data-theme=dark] .card-carrosel-home {
+  background-color: transparent;
+}
+[data-theme=dark] .section-pandhora {
+  background-color: #1d1d1d;
+}
+[data-theme=dark] .text-invista-home h1 {
+  color: white;
+}
+[data-theme=dark] .text-invista-home h1 span {
+  color: white;
+}
+[data-theme=dark] .text-invista-home span {
+  color: white;
+}
+[data-theme=dark] .nossos-fundos-home h1 {
+  color: white;
+}
+[data-theme=dark] .nossos-fundos-home h1 span {
+  color: white;
+}
+[data-theme=dark] .content-card-fundos-home {
+  background-color: #b5b5b5;
+}
+[data-theme=dark] .content-card-fundos-home h5 {
+  color: #1d1d1d;
+}
+[data-theme=dark] .content-card-fundos-home h1 {
+  color: #1d1d1d;
+}
+[data-theme=dark] .content-card-fundos-home:hover span {
+  color: #1d1d1d;
+}
+[data-theme=dark] .content-card-fundos-home:hover .infos-card-fundos-home h5 {
+  color: #1d1d1d;
+}
+[data-theme=dark] .content-card-fundos-home:hover .data-infos-cards-fundos-home h5 {
+  color: #1d1d1d;
+}
+[data-theme=dark] .content-fundo-home .text-fundo-home a {
+  background-color: #1d1d1d;
+}
+[data-theme=dark] .content-card-fundos-home:hover a {
+  color: #1d1d1d;
+  transition: 0.5s;
+}
+[data-theme=dark] .swiper-pagination-fundos .swiper-pagination-bullet {
+  background-color: white;
+}
+[data-theme=dark] .accordion_header span {
+  color: white;
+}
+[data-theme=dark] .accordion_content p {
+  color: #1d1d1d;
+}
+[data-theme=dark] .searchbox .input-group .input-group-text button [class^=icon-]::before {
+  color: white;
+}
+[data-theme=dark] .icon-pandora-2 {
+  display: block;
+  width: 40px !important;
+}
+[data-theme=dark] .section-cards-home {
+  background-color: #1d1d1d;
+}
+[data-theme=dark] .last-card-home {
+  border: 1px solid white !important;
+}
+[data-theme=dark] .nav-link:focus,
+[data-theme=dark] .nav-link:hover {
+  color: white !important;
+}
+[data-theme=dark] .container-investir-home span {
+  color: white;
+}
+[data-theme=dark] .icon-busca:before {
+  color: white;
+}
+[data-theme=dark] .logo-black-home {
+  display: none;
+}
+
 /* Pages */
 .page-erro {
   display: flex;
