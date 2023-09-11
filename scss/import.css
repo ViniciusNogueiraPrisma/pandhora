@@ -4759,7 +4759,6 @@ body.open-menu::after {
 }
 
 .text-carrosel-hover {
-  width: 42.458333vw;
   position: absolute;
   z-index: 3;
   height: 100%;
