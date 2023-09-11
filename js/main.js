@@ -21,7 +21,6 @@ $(document).ready(function () {
   });
 });
 
-
 // observes the input's :focus and :focusout event inside the search box and styles its parent element.
 
 $(".searchbox input").focus(function () {
@@ -40,7 +39,6 @@ $(".open-searchbox, .close-searchbox").click(function () {
 });
 
 // manages the status of the mobile menu.
-
 
 $(".toggle-mobile-menu").click(function () {
   $(".mobile-menu-div").toggleClass("active");

@@ -26,6 +26,10 @@
   font-family: var(--font-text-3);
 }
 
+html {
+  font-size: 100% !important;
+}
+
 .mobile-menu .menu-tools {
   border-bottom: none !important;
   padding-bottom: 0px !important;
@@ -3037,8 +3041,8 @@ ul.container {
   .text-swiper-cosmos-last {
     width: 100%;
     z-index: 1;
-    padding-left: 80px;
-    padding-right: 80px;
+    // padding-left: 80px;
+    // padding-right: 80px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -3825,12 +3829,12 @@ ul.container {
 @media (max-width: 1212px) {
   .img-banner-interna {
     img {
-      height: 311px;
+      height: 343px;
     }
   }
 
   .texts-banner-interna {
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
 
     span {
       font-size: 19px;
@@ -3848,7 +3852,7 @@ ul.container {
   }
 
   .overlay {
-    height: 311px;
+    height: 343px;
     background: rgb(1, 1, 1);
     background: linear-gradient(
       0deg,

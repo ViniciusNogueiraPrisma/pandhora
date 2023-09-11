@@ -43,6 +43,8 @@ var swiperCosmos = new Swiper(".mySwiper-cosmos-last", {
   },
 });
 
+
+
 $(document).ready(function () {
   var timeout;
   $(".nav-item.dropdown").hover(

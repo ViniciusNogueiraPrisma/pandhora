@@ -4724,6 +4724,10 @@ body.open-menu::after {
   font-family: var(--font-text-3);
 }
 
+html {
+  font-size: 100% !important;
+}
+
 .mobile-menu .menu-tools {
   border-bottom: none !important;
   padding-bottom: 0px !important;
@@ -7303,8 +7307,6 @@ ul.container {
   .text-swiper-cosmos-last {
     width: 100%;
     z-index: 1;
-    padding-left: 80px;
-    padding-right: 80px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -7927,10 +7929,7 @@ ul.container {
 }
 @media (max-width: 1212px) {
   .img-banner-interna img {
-    height: 311px;
-  }
-  .texts-banner-interna {
-    padding-bottom: 80px;
+    height: 343px;
   }
   .texts-banner-interna span {
     font-size: 19px;
@@ -7944,7 +7943,7 @@ ul.container {
     height: 58.1516095535vh !important;
   }
   .overlay {
-    height: 311px;
+    height: 343px;
     background: rgb(1, 1, 1);
     background: linear-gradient(0deg, rgb(1, 1, 1) 0%, rgba(0, 0, 0, 0.3421743697) 100%);
   }
