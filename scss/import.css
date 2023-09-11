@@ -2221,6 +2221,7 @@ body.open-menu::after {
   flex-direction: column;
   list-style: none;
   padding: 0;
+  padding-top: 40px;
   width: 100%;
   position: relative;
   max-width: 100%;
