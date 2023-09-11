@@ -166,7 +166,6 @@ html {
   justify-content: center;
 }
 
-
 .hover-effect .text-carrosel-hover {
   padding-left: 7vw;
   padding-right: 7vw;
@@ -1324,7 +1323,7 @@ footer {
 .ghost-fundo-home {
   border-top-left-radius: 50px;
   height: 300px;
-  width: 570px;
+  width: 500px;
   top: -25px;
   background: rgb(133, 41, 233);
   background: linear-gradient(
@@ -1505,7 +1504,7 @@ footer {
 }
 
 .btns-menu {
-  gap: 8px;
+  gap: 16px;
   display: flex;
   align-items: center;
 }
@@ -1553,6 +1552,10 @@ footer {
     display: none;
   }
 
+  // .logo img {
+  //   width: 112px !important;
+  // }
+
   .list-menu {
     display: none;
   }
@@ -1573,7 +1576,7 @@ footer {
 
   .btn-menu {
     // border: 1px solid red;
-    padding-left: 16px;
+    // padding-left: 16px;
   }
 }
 
@@ -2754,16 +2757,20 @@ footer {
 
   th {
     color: #333333;
+    width: 0% !important;
     font-size: 18px;
     font-family: "Roboto";
     font-weight: 400;
     line-height: 27px;
-    word-wrap: break-word;
+    // word-wrap: break-word;
+    // word-break: break-all;
     text-align: start !important;
   }
 
   td {
+    // word-break: break-all;
     // 1.4-1.5 a.a.
+    width: 0px;
     color: #333333;
     font-size: 18px !important;
     font-family: "Roboto" !important;
@@ -2986,7 +2993,13 @@ ul.container {
   padding-top: 40px;
 }
 
+.accordion {
+  margin-top: 0px !important;
+}
+
 .filtro-form {
+  padding-bottom: 80px;
+  margin-bottom: 0px !important;
   display: flex;
   justify-content: space-between !important;
 }
@@ -3530,7 +3543,7 @@ ul.container {
 
     .content-btns-after {
       display: flex;
-      gap: 18px;
+      gap: 16px;
       width: 100%;
     }
 

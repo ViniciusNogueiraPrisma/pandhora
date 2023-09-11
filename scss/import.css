@@ -1770,7 +1770,7 @@ svg {
   align-items: center;
 }
 .acessibillity-bar .content .right-top-header .accessibility-tools > a {
-  margin-right: 12px;
+  margin-right: 32px;
   display: block;
   text-decoration: none;
   text-underline-offset: 1px;
@@ -5807,7 +5807,7 @@ footer {
 .ghost-fundo-home {
   border-top-left-radius: 50px;
   height: 300px;
-  width: 570px;
+  width: 500px;
   top: -25px;
   background: rgb(133, 41, 233);
   background: linear-gradient(90deg, rgba(133, 41, 233, 0.4066001401) 0%, rgba(255, 255, 255, 0) 93%);
@@ -5967,7 +5967,7 @@ footer {
 }
 
 .btns-menu {
-  gap: 8px;
+  gap: 16px;
   display: flex;
   align-items: center;
 }
@@ -6024,9 +6024,6 @@ footer {
   }
   .btnSearch {
     display: none;
-  }
-  .btn-menu {
-    padding-left: 16px;
   }
 }
 @media (max-width: 1140px) {
@@ -7059,14 +7056,15 @@ footer {
 }
 .comparativos-table tr th {
   color: #333333;
+  width: 0% !important;
   font-size: 18px;
   font-family: "Roboto";
   font-weight: 400;
   line-height: 27px;
-  word-wrap: break-word;
   text-align: start !important;
 }
 .comparativos-table tr td {
+  width: 0px;
   color: #333333;
   font-size: 18px !important;
   font-family: "Roboto" !important;
@@ -7266,7 +7264,13 @@ ul.container {
   padding-top: 40px;
 }
 
+.accordion {
+  margin-top: 0px !important;
+}
+
 .filtro-form {
+  padding-bottom: 80px;
+  margin-bottom: 0px !important;
   display: flex;
   justify-content: space-between !important;
 }
@@ -7702,7 +7706,7 @@ ul.container {
   }
   .navbar-btns-after .content-btns-after {
     display: flex;
-    gap: 18px;
+    gap: 16px;
     width: 100%;
   }
   .navbar-btns-after .btn-navbar-1 {
