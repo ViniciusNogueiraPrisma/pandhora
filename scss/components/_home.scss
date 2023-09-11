@@ -3829,12 +3829,12 @@ ul.container {
 @media (max-width: 1212px) {
   .img-banner-interna {
     img {
-      height: 343px;
+      height: 311px;
     }
   }
 
   .texts-banner-interna {
-    // padding-bottom: 80px;
+    padding-bottom: 80px;
 
     span {
       font-size: 19px;
@@ -3852,7 +3852,7 @@ ul.container {
   }
 
   .overlay {
-    height: 343px;
+    height: 311px;
     background: rgb(1, 1, 1);
     background: linear-gradient(
       0deg,

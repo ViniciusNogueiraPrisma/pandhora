@@ -7929,7 +7929,10 @@ ul.container {
 }
 @media (max-width: 1212px) {
   .img-banner-interna img {
-    height: 343px;
+    height: 311px;
+  }
+  .texts-banner-interna {
+    padding-bottom: 80px;
   }
   .texts-banner-interna span {
     font-size: 19px;
@@ -7943,7 +7946,7 @@ ul.container {
     height: 58.1516095535vh !important;
   }
   .overlay {
-    height: 343px;
+    height: 311px;
     background: rgb(1, 1, 1);
     background: linear-gradient(0deg, rgb(1, 1, 1) 0%, rgba(0, 0, 0, 0.3421743697) 100%);
   }
