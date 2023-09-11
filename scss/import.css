@@ -4759,6 +4759,7 @@ body.open-menu::after {
 }
 
 .text-carrosel-hover {
+  width: 42.458333vw;
   position: absolute;
   z-index: 3;
   height: 100%;
@@ -4951,7 +4952,7 @@ body.open-menu::after {
 .img-carrosel-home:hover {
   transition: 0.5s;
   filter: saturate(100%);
-  flex: 1 1 300px;
+  flex: 1 1 400px;
 }
 
 .img-carrosel-home:hover .text-carrosel-hover {

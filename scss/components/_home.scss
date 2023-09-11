@@ -76,7 +76,7 @@
 .text-carrosel-hover {
   // width: 700px;
   // width: 33.458333333333336vw;
-  // width: 42.458333vw;
+  width: 42.458333vw;
   position: absolute;
   z-index: 3;
   height: 100%;
@@ -306,7 +306,7 @@
   transition: 0.5s;
   filter: saturate(100%);
 
-  flex: 1 1 300px;
+  flex: 1 1 400px;
 }
 
 .img-carrosel-home:hover .text-carrosel-hover {
