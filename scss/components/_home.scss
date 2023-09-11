@@ -26,6 +26,18 @@
   font-family: var(--font-text-3);
 }
 
+#btnEn {
+  margin-top: 17px;
+}
+
+.rotate-image {
+  transition: transform 0.3s ease;
+}
+
+#btnMapaSite[aria-expanded="true"] .rotate-image {
+  transform: rotate(45deg) !important;
+}
+
 .comparativos-table {
   overflow-x: auto !important;
 }
@@ -4638,6 +4650,23 @@ body {
     display: none;
   }
 
+  .mobile-menu .institucional-and-language .flex-relacoes-institucional p {
+    color: white;
+  }
+
+  .mobile-menu .institucional-and-language .flex-relacoes-institucional > a {
+    color: white;
+  }
+
+  .mobile-menu .menu-tools .div-pesquisar-mobile input {
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
+  .mobile-menu .menu-tools .div-pesquisar-mobile input::placeholder {
+    color: white;
+  }
+
   .card-carrosel-home {
     background-color: transparent;
   }
@@ -4667,7 +4696,7 @@ body {
   }
 
   .content-card-fundos-home {
-    background-color: #b5b5b5;
+    background-color: white;
 
     h5 {
       color: #1d1d1d;
@@ -4695,8 +4724,9 @@ body {
   }
 
   .content-card-fundos-home:hover a {
-    color: #1d1d1d;
-    transition: .5s;
+    color: white;
+    background-color: #333333;
+    transition: 0.5s;
   }
 
   .swiper-pagination-fundos .swiper-pagination-bullet {
@@ -4711,7 +4741,7 @@ body {
     color: #1d1d1d;
   }
 
-  .searchbox .input-group .input-group-text button [class^=icon-]::before {
+  .searchbox .input-group .input-group-text button [class^="icon-"]::before {
     color: white;
   }
 
