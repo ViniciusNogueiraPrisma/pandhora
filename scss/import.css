@@ -4839,6 +4839,11 @@ html {
   justify-content: center;
 }
 
+.hover-effect .text-carrosel-hover {
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
 .text-carrosel-home {
   position: absolute;
   z-index: 3;
@@ -4976,7 +4981,6 @@ html {
 
 .img-carrosel-home:hover .text-carrosel-hover {
   display: flex !important;
-  padding-left: 7vw;
 }
 
 .img-carrosel-home:hover .text-carrosel-home {
