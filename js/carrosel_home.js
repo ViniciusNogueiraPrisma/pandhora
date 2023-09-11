@@ -26,7 +26,7 @@ function adicionarClasseComEfeitoHover() {
     });
 
     index = (index + 1) % imagens.length;
-  }, 31000);
+  }, 3000);
 }
 
 adicionarClasseComEfeitoHover();
