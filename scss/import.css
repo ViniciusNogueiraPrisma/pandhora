@@ -4768,6 +4768,11 @@ html {
   display: none;
 }
 
+.hover-effect .text-carrosel-hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+
 .text-carrosel-hover {
   width: 42.458333vw;
   position: absolute;

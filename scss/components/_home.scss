@@ -77,6 +77,11 @@ html {
 //   display: none;
 // }
 
+.hover-effect .text-carrosel-hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+
 .text-carrosel-hover {
   // width: 700px;
   // width: 33.458333333333336vw;
@@ -91,7 +96,6 @@ html {
   padding-left: 32px;
   padding-right: 32px;
   transition: 0.7s;
-  // opacity: 0.6;
 
   a {
     background-color: #8529e9;
