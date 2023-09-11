@@ -96,18 +96,18 @@ function VerifyActive(item, content, content_actived) {
   }
 }
 
-let currentIndexFundos = 0;
-const divsFilhasFundos = document.querySelectorAll(
-  ".itens-fundo-home .card-carrosel-home"
-);
+// let currentIndexFundos = 0;
+// const divsFilhasFundos = document.querySelectorAll(
+//   ".itens-fundo-home .card-carrosel-home"
+// );
 
-function adicionarClasseAtiva() {
-  divsFilhasFundos.forEach((divFilha, index) => {
-    divFilha.classList.remove("active-fundos");
-  });
+// function adicionarClasseAtiva() {
+//   divsFilhasFundos.forEach((divFilha, index) => {
+//     divFilha.classList.remove("active-fundos");
+//   });
 
-  divsFilhasFundos[currentIndexFundos].classList.add("active-fundos");
-  currentIndexFundos = (currentIndexFundos + 1) % divsFilhasFundos.length;
-}
+//   divsFilhasFundos[currentIndexFundos].classList.add("active-fundos");
+//   currentIndexFundos = (currentIndexFundos + 1) % divsFilhasFundos.length;
+// }
 
-setInterval(adicionarClasseAtiva, 2000);
+// setInterval(adicionarClasseAtiva, 2000);

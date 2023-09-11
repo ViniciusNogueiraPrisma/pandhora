@@ -48,10 +48,98 @@
     <script src="vendor/jquery.min.js"></script>
   </head>
   <body>
+    <div class="acessibillity-bar">
+      <div class="container container-responsivo-full">
+        <div class="content">
+          <div class="right-top-header">
+            <div class="accessibility-tools">
+              <a href="/acessibilidade"> <small> Acessibilidade </small> </a>
+
+              <button
+                id="contrast-toggle"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Contraste"
+              >
+                <span class="icon-contraste"></span>
+              </button>
+
+              <button
+                id="increaseFont"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Aumentar o tamanho da fonte"
+              >
+                <span class="icon-aumentar-fonte" accesskey="4"></span>
+              </button>
+
+              <button
+                id="decreaseFont"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Diminuir o tamanho da fonte"
+              >
+                <span class="icon-diminuir-fonte" accesskey="5"></span>
+              </button>
+            </div>
+
+            <div class="idiomas">
+              <a
+                id="hlkCulturaPtBr"
+                accesskey="7"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                class="active"
+                href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
+                data-bs-original-title="Mudar para português"
+              >
+                <span>PT</span>
+              </a>
+              <a
+                id="hlkCulturaEnUS"
+                accesskey="8"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')"
+                data-bs-original-title="Mudar para inglês"
+              >
+                <span>EN</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="navbar headerFixoMenu">
       <div class="container-sm navbar-after">
         <div class="logo">
-          <img src="./images/icons/logo-pandhora.png" alt="" />
+          <img
+            class="logo-black-home"
+            src="./images/icons/logo-pandhora.png"
+            alt=""
+          />
+          <img
+            src="./images/logo-pandhora-white.png"
+            alt=""
+            class="logo-white-home"
+          />
         </div>
 
         <div class="list-menu">

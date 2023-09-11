@@ -1998,7 +1998,7 @@ svg {
 body.open-menu::after {
   content: "";
   display: block;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.792);
   height: 100%;
   width: 100%;
   position: fixed;
@@ -2038,7 +2038,7 @@ body.open-menu::after {
   width: 21px;
 }
 .mobile-menu .logo-mobile {
-  width: 200px;
+  width: 112px;
 }
 .mobile-menu .header-menu {
   display: flex;
@@ -4724,8 +4724,13 @@ body.open-menu::after {
   font-family: var(--font-text-3);
 }
 
-#btnEn {
-  margin-top: 17px;
+.mobile-menu .menu-tools {
+  border-bottom: none !important;
+  padding-bottom: 0px !important;
+}
+
+.flex-relacoes-institucional {
+  display: none !important;
 }
 
 .rotate-image {
@@ -4741,8 +4746,8 @@ body.open-menu::after {
 }
 
 .navbar {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navbar-btns-after {
@@ -4756,7 +4761,7 @@ body.open-menu::after {
 .text-carrosel-hover {
   width: 42.458333vw;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -4817,7 +4822,7 @@ body.open-menu::after {
 
 .text-carrosel-home {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   height: 78.8062vh;
   display: flex;
   flex-direction: column;
@@ -4930,12 +4935,11 @@ body.open-menu::after {
 
 .ghost-image-carrosel {
   position: absolute;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(5px) !important;
   width: 100%;
   height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0);
+  -webkit-backdrop-filter: blur(5px) !important;
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6839110644) 0%, rgba(255, 255, 255, 0) 83%);
 }
@@ -4949,6 +4953,14 @@ body.open-menu::after {
   transition: 0.5s;
   filter: saturate(100%);
   flex: 1 1 300px;
+}
+
+.img-carrosel-home:hover .text-carrosel-hover {
+  display: flex !important;
+}
+
+.img-carrosel-home:hover .text-carrosel-home {
+  display: none !important;
 }
 
 .content-carrosel-home {
@@ -7474,7 +7486,6 @@ ul.container {
     font-weight: 700;
     line-height: 31.68px;
     word-wrap: break-word;
-    text-shadow: 0 3.36px 7.896px #b5b5b5, 0 -3px 1px #fff;
   }
   .quadro-last .content-quadro-last h4 {
     color: var(--text-grey-scale-09);
@@ -7488,7 +7499,6 @@ ul.container {
   }
   .quadro-last .content-quadro-last h4 a {
     text-decoration: underline;
-    text-shadow: 0 3.36px 7.896px #b5b5b5, 0 -3px 1px #fff;
   }
   .quadro-last .content-quadro-last h3 {
     color: var(--text-grey-scale-07);
@@ -8588,6 +8598,24 @@ body {
   display: block;
   width: 200px;
 }
+[data-theme=dark] .img-invista img {
+  filter: brightness(1000%);
+}
+[data-theme=dark] .menu-bar {
+  background-color: white !important;
+}
+[data-theme=dark] .menu-bar .nav-link {
+  color: #1d1d1d;
+}
+[data-theme=dark] .menu-bar .nav-link:hover {
+  color: var(--text-main) !important;
+}
+[data-theme=dark] .menu-bar .icon-busca:before {
+  color: #1d1d1d;
+}
+[data-theme=dark] .menu-bar .logo-white-home {
+  filter: brightness(0%);
+}
 [data-theme=dark] .icon-pandora-1 {
   display: none;
 }
@@ -8667,6 +8695,19 @@ body {
   display: block;
   width: 40px !important;
 }
+[data-theme=dark] .toggle-mobile-menu span {
+  background-color: #1d1d1d !important;
+}
+[data-theme=dark] .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
+  background-color: white !important;
+}
+[data-theme=dark] .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span {
+  background-color: white !important;
+}
+[data-theme=dark] .toggle-mobile-menu span::after,
+[data-theme=dark] .toggle-mobile-menu span::before {
+  background-color: #1d1d1d;
+}
 [data-theme=dark] .section-cards-home {
   background-color: #1d1d1d;
 }
@@ -8679,6 +8720,12 @@ body {
 }
 [data-theme=dark] .container-investir-home span {
   color: white;
+}
+[data-theme=dark] .quadro-mobile .text-quadro-mobile h6 a {
+  color: white;
+}
+[data-theme=dark] .quadro-last {
+  background-color: #1d1d1d;
 }
 [data-theme=dark] .icon-busca:before {
   color: white;

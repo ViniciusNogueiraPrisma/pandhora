@@ -3,7 +3,7 @@ body {
     &::after {
       content: "";
       display: block;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.792);
       height: 100%;
       width: 100%;
       position: fixed;
@@ -50,7 +50,7 @@ body {
   }
 
   .logo-mobile {
-    width: 200px;
+    width: 112px;
   }
 
   .header-menu {
