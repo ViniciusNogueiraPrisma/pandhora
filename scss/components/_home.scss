@@ -156,6 +156,16 @@ html {
   }
 }
 
+.teste {
+  height: 100%;
+  width: 100%;
+}
+
+.first-carrosel-container {
+  display: flex;
+  justify-content: center;
+}
+
 .text-carrosel-home {
   position: absolute;
   z-index: 3;
@@ -324,6 +334,7 @@ html {
 
 .img-carrosel-home:hover .text-carrosel-hover {
   display: flex !important;
+  padding-left: 7vw;
 }
 
 .img-carrosel-home:hover .text-carrosel-home {
@@ -3498,6 +3509,14 @@ ul.container {
   .swiper-pagination-cosmos-last {
     justify-content: center;
     padding-right: 0;
+  }
+
+  .container-investir-home .txt-investir-home h1 {
+    line-height: 120%;
+  }
+
+  .text-invista-home h1 {
+    line-height: 120%;
   }
 
   .navbar-btns-after {

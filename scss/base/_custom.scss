@@ -10,6 +10,12 @@ html {
   --mdb-gutter-x: 3.5rem !important;
 }
 
+.container-xxl {
+  max-width: 250px !important;
+  --mdb-gutter-x: 3.5rem !important;
+  // border: 1px solid red;
+}
+
 // .container {
 //   max-width: 1400px !important;
 //   --mdb-gutter-x: 10.5rem !important;

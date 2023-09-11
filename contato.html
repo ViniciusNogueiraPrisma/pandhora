@@ -75,7 +75,7 @@
               <button
                 id="increaseFont"
                 type="button"
-                class="tool"
+                class="tool aumentar-fonte"
                 data-bs-toggle="tooltip"
                 data-bs-trigger="hover"
                 data-bs-placement="bottom"
@@ -165,12 +165,14 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item" href="#">Quem Somos</a>
+                    <a class="dropdown-item" href="quem-somos.html"
+                      >Quem Somos</a
+                    >
                   </li>
                 </ul>
               </li>
 
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown hover-dropdown">
                 <a
                   class="nav-link"
                   href="#"
@@ -186,27 +188,28 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item" href="#">Essencial</a>
+                    <a class="dropdown-item" href="fundos.html">Essencial</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Long Bios</a>
+                    <a class="dropdown-item" href="fundos.html">Long Bias</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">TC Cosmos</a>
+                    <a class="dropdown-item" href="fundos.html">TC Cosmos</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Digital Assets</a>
+                    <a class="dropdown-item" href="fundos.html"
+                      >Digital Assets</a
+                    >
                   </li>
                 </ul>
               </li>
 
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown" href="documentos.html">
                 <a
                   class="nav-link"
-                  href="#"
+                  href="documentos.html"
                   id="navbarDropdownMenuLink"
                   role="button"
-                  data-mdb-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Documentos
@@ -229,13 +232,17 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item" href="#">Contato</a>
+                    <a class="dropdown-item" href="contato.html">Contato</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Cadastre-se no mailing</a>
+                    <a class="dropdown-item" href="contato.html"
+                      >Cadastre-se no mailing</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Termos e Condições</a>
+                    <a class="dropdown-item" href="contato.html"
+                      >Termos e Condições</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -432,7 +439,7 @@
                     <div class="accordion-body">
                       <ul class="pages">
                         <li class="item link-externo">
-                          <a href="nossos-produtos.html">Quem Somos</a>
+                          <a href="quem-somos.html">Quem Somos</a>
                         </li>
                       </ul>
                     </div>
@@ -461,7 +468,19 @@
                     <div class="accordion-body">
                       <ul class="pages">
                         <li class="item">
-                          <a href="diretoria-executiva.html">teste</a>
+                          <a href="diretoria-executiva.html">Essencial</a>
+                        </li>
+
+                        <li class="item">
+                          <a href="diretoria-executiva.html">Long Bias</a>
+                        </li>
+
+                        <li class="item">
+                          <a href="diretoria-executiva.html">TC Cosmos</a>
+                        </li>
+
+                        <li class="item">
+                          <a href="diretoria-executiva.html">Digital Assets</a>
                         </li>
                       </ul>
                     </div>
@@ -494,6 +513,43 @@
                         </li>
                         <li class="item">
                           <a href="documentos-cvm.html">Pagamentos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-4"
+                      aria-controls="mobile-menu-4"
+                    >
+                      Fale Conosco
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="central-resultados.html">Contato</a>
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html"
+                            >Cadastre-se no mailing</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html">Termos e condições</a>
                         </li>
                       </ul>
                     </div>
@@ -877,8 +933,10 @@
       defer
       src="https://template.riprisma.com/prisma/js/storiesPrisma.min.js"
     ></script>
+    
     <script defer src="vendor/counterup.js"></script>
     <script defer src="js/carrosel.js"></script>
+    <script defer src="js/carrosel_home.js"></script>
     <script defer src="vendor/menuFixo.js"></script>
     <script defer src="vendor/aos.js"></script>
     <script defer src="vendor/basic-table.min.js"></script>
