@@ -309,18 +309,35 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-
   z-index: 1;
 
-  background: rgba(0, 0, 0, 0);
-  // backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(5px) !important;
+  // background: rgba(0, 0, 0, 0);
+  // // backdrop-filter: blur(4px) !important;
+  // -webkit-backdrop-filter: blur(5px) !important;
+  // background: rgb(0, 0, 0);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(0, 0, 0, 0.6839110644257703) 0%,
+  //   rgba(255, 255, 255, 0) 83%
+  // );
+
   background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.5186449579831933) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.5186449579831933) 100%
+  );
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.6839110644257703) 0%,
-    rgba(255, 255, 255, 0) 83%
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.5186449579831933) 100%
   );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 
 .tab-content.active {
@@ -1327,7 +1344,7 @@ footer {
 .ghost-fundo-home {
   border-top-left-radius: 50px;
   height: 300px;
-  width: 500px;
+  width: 349px;
   top: -25px;
   background: rgb(133, 41, 233);
   background: linear-gradient(
@@ -3238,118 +3255,12 @@ ul.container {
     padding-top: 80px;
   }
 
-  .footer-quadro {
-    display: none;
-  }
-
   .footer-home {
     padding-top: 40px;
   }
 
   .img-invista img {
     margin-top: 0;
-  }
-
-  .quadro-last {
-    display: block !important;
-    padding-bottom: 40px;
-    background-color: #e7e7e7;
-
-    .quadro-last-text {
-      width: 50%;
-    }
-
-    .imgs-quadro-last-text {
-      display: flex;
-      gap: 16px;
-
-      img {
-        width: 146px;
-      }
-    }
-
-    .content-quadro-last {
-      border-radius: 4px;
-      background-color: var(--text-white);
-      display: flex;
-      align-items: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 40px;
-
-      h5 {
-        // Onde Investir
-        color: var(--text-grey-scale-07);
-        font-size: 16px;
-        font-family: var(--font-text-5);
-        font-weight: 400;
-        line-height: 25.6px;
-        word-wrap: break-word;
-        padding-bottom: 24px !important;
-        margin-bottom: 0 !important;
-      }
-
-      h1 {
-        // Abra sua conta e comece
-        color: var(--text-grey-scale-09);
-        font-size: 24px;
-        font-family: var(--font-text-3);
-        font-weight: 400;
-        line-height: 31.68px;
-        word-wrap: break-word;
-
-        span {
-          // a operar hoje pelo app TC
-          color: var(--text-grey-scale-09);
-          font-size: 24px;
-          font-family: var(--font-text-3);
-          font-weight: 700;
-          line-height: 31.68px;
-          word-wrap: break-word;
-        }
-      }
-
-      h4 {
-        // Já é cliente?
-        color: var(--text-grey-scale-09);
-        font-size: 19px;
-        font-family: var(--font-text-3);
-        font-weight: 400;
-        line-height: 26.6px;
-        word-wrap: break-word;
-        padding-bottom: 24px !important;
-        padding-top: 24px !important;
-
-        a {
-          text-decoration: underline;
-        }
-      }
-
-      h3 {
-        color: var(--text-grey-scale-07);
-        font-size: 18px;
-        font-family: var(--font-text-3);
-        font-weight: 400;
-        line-height: 25.2px;
-        word-wrap: break-word;
-        padding-bottom: 16px !important;
-
-        span {
-          color: var(--text-grey-scale-07);
-          font-size: 18px;
-          font-family: var(--font-text-3);
-          font-weight: 700;
-          line-height: 25.2px;
-          word-wrap: break-word;
-        }
-      }
-    }
-
-    .img-quadro-last {
-      width: 55%;
-      display: flex;
-      justify-content: end;
-    }
   }
 
   .section-pandhora {
@@ -5581,5 +5492,125 @@ body {
 @media (max-width: 400px) {
   .conteudo-2-main h1 {
     font-size: 40px !important;
+  }
+}
+
+@media (max-width: 1240px) {
+  .navbar-items {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1266px) {
+  .footer-quadro {
+    display: none;
+  }
+
+  .quadro-last {
+    display: block !important;
+    padding-bottom: 40px;
+    background-color: #e7e7e7;
+
+    .quadro-last-text {
+      width: 50%;
+    }
+
+    .imgs-quadro-last-text {
+      display: flex;
+      gap: 16px;
+
+      img {
+        width: 146px;
+      }
+    }
+
+    .content-quadro-last {
+      border-radius: 4px;
+      background-color: var(--text-white);
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+
+      h5 {
+        // Onde Investir
+        color: var(--text-grey-scale-07);
+        font-size: 16px;
+        font-family: var(--font-text-5);
+        font-weight: 400;
+        line-height: 25.6px;
+        word-wrap: break-word;
+        padding-bottom: 24px !important;
+        margin-bottom: 0 !important;
+      }
+
+      h1 {
+        // Abra sua conta e comece
+        color: var(--text-grey-scale-09);
+        font-size: 24px;
+        font-family: var(--font-text-3);
+        font-weight: 400;
+        line-height: 31.68px;
+        word-wrap: break-word;
+
+        span {
+          // a operar hoje pelo app TC
+          color: var(--text-grey-scale-09);
+          font-size: 24px;
+          font-family: var(--font-text-3);
+          font-weight: 700;
+          line-height: 31.68px;
+          word-wrap: break-word;
+        }
+      }
+
+      h4 {
+        // Já é cliente?
+        color: var(--text-grey-scale-09);
+        font-size: 19px;
+        font-family: var(--font-text-3);
+        font-weight: 400;
+        line-height: 26.6px;
+        word-wrap: break-word;
+        padding-bottom: 24px !important;
+        padding-top: 24px !important;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      h3 {
+        color: var(--text-grey-scale-07);
+        font-size: 18px;
+        font-family: var(--font-text-3);
+        font-weight: 400;
+        line-height: 25.2px;
+        word-wrap: break-word;
+        padding-bottom: 16px !important;
+
+        span {
+          color: var(--text-grey-scale-07);
+          font-size: 18px;
+          font-family: var(--font-text-3);
+          font-weight: 700;
+          line-height: 25.2px;
+          word-wrap: break-word;
+        }
+      }
+    }
+
+    .img-quadro-last {
+      width: 55%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+}
+
+@media (max-width: 727px) {
+  .quadro-last {
+    display: none !important;
   }
 }
