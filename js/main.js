@@ -46,23 +46,23 @@ $(".toggle-mobile-menu").click(function () {
   $("body").toggleClass("open-menu");
 });
 
-$(".button-mapa-site").click((e) => {
-  $(".button-mapa-site").toggleClass("active");
-});
+// $(".button-mapa-site").click((e) => {
+//   $(".button-mapa-site").toggleClass("active");
+// });
 
-$(document).ready(function () {
-  if (window.matchMedia("(min-width: 992px").matches) {
-    document.querySelector("#collapseMapSite").classList.add("show");
-  }
+// $(document).ready(function () {
+//   if (window.matchMedia("(min-width: 992px").matches) {
+//     document.querySelector("#collapseMapSite").classList.add("show");
+//   }
 
-  if (window.matchMedia("(max-width: 991px").matches) {
-    document
-      .querySelectorAll("#collapseMapSite .list-menu-footer > div .collapse")
-      .forEach((item) => {
-        item.classList.add("show");
-      });
-  }
-});
+//   if (window.matchMedia("(max-width: 991px").matches) {
+//     document
+//       .querySelectorAll("#collapseMapSite .list-menu-footer > div .collapse")
+//       .forEach((item) => {
+//         item.classList.add("show");
+//       });
+//   }
+// });
 
 // Código responsável por fazer o collapse das tables.
 
