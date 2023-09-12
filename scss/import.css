@@ -9311,6 +9311,14 @@ body {
     display: none !important;
   }
 }
+.collapse-footer .collapse li {
+  margin-top: 24px;
+}
+
+.collapse-footer .collapsing li {
+  margin-top: 24px;
+}
+
 /* Pages */
 .page-erro {
   display: flex;

@@ -5615,7 +5615,11 @@ body {
   }
 }
 
-// .table tbody tr td {
-//   border: 1px solid red;
-//   width: 2000px !important;
-// }
+.collapse-footer .collapse li {
+  margin-top: 24px;
+}
+
+
+.collapse-footer .collapsing li {
+  margin-top: 24px;
+}
