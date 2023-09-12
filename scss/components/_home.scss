@@ -175,6 +175,14 @@ html {
   padding-right: 7vw;
 }
 
+.text-carrosel-home:hover {
+  transition: 0.7s ease-in-out;
+}
+
+.img-carrosel-home:hover .text-carrosel-home {
+  transition: 0.7s ease-in-out;
+}
+
 .text-carrosel-home {
   position: absolute;
   z-index: 3;
@@ -184,7 +192,7 @@ html {
   justify-content: center;
   padding-left: 32px;
   padding-right: 32px;
-  transition: 0.7s;
+  transition: 0.7s ease-in-out;
 
   span {
     // Regressivo Longo Prazo
@@ -207,17 +215,8 @@ html {
   }
 }
 
-// .hover-dropdown:hover .dropdown-menu {
-//   display: block;
-// }
-
-// .hover-dropdown .dropdown-menu {
-//   display: none;
-//   transition: none; /* Opcional: para remover a transição padrão do Bootstrap */
-// }
-
 .hover-effect {
-  transition: 0.5s;
+  transition: 0.7s ease-in-out;
   filter: saturate(100%) !important;
 
   backdrop-filter: blur(0px) !important;

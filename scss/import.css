@@ -4850,6 +4850,14 @@ html {
   padding-right: 7vw;
 }
 
+.text-carrosel-home:hover {
+  transition: 0.7s ease-in-out;
+}
+
+.img-carrosel-home:hover .text-carrosel-home {
+  transition: 0.7s ease-in-out;
+}
+
 .text-carrosel-home {
   position: absolute;
   z-index: 3;
@@ -4859,7 +4867,7 @@ html {
   justify-content: center;
   padding-left: 32px;
   padding-right: 32px;
-  transition: 0.7s;
+  transition: 0.7s ease-in-out;
 }
 .text-carrosel-home span {
   color: #bbbbbb;
@@ -4879,7 +4887,7 @@ html {
 }
 
 .hover-effect {
-  transition: 0.5s;
+  transition: 0.7s ease-in-out;
   filter: saturate(100%) !important;
   backdrop-filter: blur(0px) !important;
   -webkit-backdrop-filter: blur(0px) !important;
