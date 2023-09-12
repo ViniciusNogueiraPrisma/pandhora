@@ -4845,11 +4845,6 @@ html {
   justify-content: center;
 }
 
-.hover-effect .text-carrosel-hover {
-  padding-left: 7vw;
-  padding-right: 7vw;
-}
-
 .text-carrosel-home:hover {
   transition: 0.7s ease-in-out;
 }

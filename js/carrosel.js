@@ -125,28 +125,16 @@ function VerifyActive(item, content, content_actived) {
 
   if (content_actived) {
     content_actived.style.height = 0;
+    // content.style.paddingTop = "0px";
+    // content.style.paddingBottom = "0px";
     content_actived.classList.remove("active-accordion");
   }
 
   if (content !== content_actived) {
     icon_item.innerHTML = "<i class='fa-solid fa-minus themas' ></i>";
     content.classList.add("active-accordion");
-    content.style.height = content.scrollHeight + 10 + "px";
+    content.style.height = content.scrollHeight + 34 + "px";
+    // content.style.paddingTop = "24px";
+    // content.style.paddingBottom = "24px";
   }
 }
-
-// let currentIndexFundos = 0;
-// const divsFilhasFundos = document.querySelectorAll(
-//   ".itens-fundo-home .card-carrosel-home"
-// );
-
-// function adicionarClasseAtiva() {
-//   divsFilhasFundos.forEach((divFilha, index) => {
-//     divFilha.classList.remove("active-fundos");
-//   });
-
-//   divsFilhasFundos[currentIndexFundos].classList.add("active-fundos");
-//   currentIndexFundos = (currentIndexFundos + 1) % divsFilhasFundos.length;
-// }
-
-// setInterval(adicionarClasseAtiva, 2000);

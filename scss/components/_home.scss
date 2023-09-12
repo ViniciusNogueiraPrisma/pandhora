@@ -170,10 +170,10 @@ html {
   justify-content: center;
 }
 
-.hover-effect .text-carrosel-hover {
-  padding-left: 7vw;
-  padding-right: 7vw;
-}
+// .hover-effect .text-carrosel-hover {
+//   // padding-left: 7vw;
+//   // padding-right: 7vw;
+// }
 
 .text-carrosel-home:hover {
   transition: 0.7s ease-in-out;
@@ -685,6 +685,8 @@ html {
 }
 
 .active-accordion {
+  // padding-top: 24px;
+  // padding-bottom: 24px !important;
 }
 
 .accordion_content {
