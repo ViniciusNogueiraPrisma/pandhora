@@ -407,5 +407,5 @@ $(document).ready(function () {
   });
 });
 
-const storys = new PrismaStories("slide", "#openStorys", "#closeStorys");
-storys.init();
+// const storys = new PrismaStories("slide", "#openStorys", "#closeStorys");
+// storys.init();
