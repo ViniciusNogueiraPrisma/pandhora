@@ -1297,6 +1297,8 @@ footer {
     font-weight: 500;
     line-height: 20px;
     word-wrap: break-word;
+    position: absolute;
+    bottom: 32px;
   }
 }
 
@@ -2928,6 +2930,7 @@ ul.container {
 .icons-informacoes {
   margin-bottom: 16px;
   display: flex;
+  align-items: flex-end;
   gap: 10px;
 
   img {
@@ -3661,9 +3664,17 @@ ul.container {
     flex-direction: column;
   }
 
+  .content-card-fundos-home a {
+    bottom: 20px;
+  }
+
   .content-card-fundos-home {
-    width: 320px !important;
+    width: 100%;
     height: fit-content;
+  }
+
+  .slides-fundos {
+    width: 100% !important;
   }
 
   .icons-social-last {
@@ -4152,7 +4163,7 @@ input[type="radio"] {
 @media (max-width: 464px) {
   .percents-banner {
     grid-row-gap: 32px;
-    grid-column-gap: 22px;
+    grid-column-gap: 15px;
   }
 
   .percents-banner {
@@ -5618,7 +5629,6 @@ body {
 .collapse-footer .collapse li {
   margin-top: 24px;
 }
-
 
 .collapse-footer .collapsing li {
   margin-top: 24px;
