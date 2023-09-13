@@ -8514,7 +8514,7 @@ body {
   margin-bottom: -3px;
 }
 
-@media (max-width: 522px) {
+@media (max-width: 607px) {
   #song-1 {
     display: none;
   }

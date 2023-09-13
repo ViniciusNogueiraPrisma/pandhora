@@ -4553,6 +4553,9 @@ body {
   position: absolute;
   margin-left: 20px;
 
+  // height: 570px;
+  // margin-top: -34px;
+
   .ball-fundos-content1 {
     background-color: var(--text-main);
     border-radius: 50%;
@@ -4574,7 +4577,7 @@ body {
   }
 }
 
-@media (max-width: 522px) {
+@media (max-width: 607px) {
   #song-1 {
     display: none;
   }
@@ -4619,7 +4622,9 @@ body {
     margin-top: -24px;
     padding-right: 0;
   }
+}
 
+@media (max-width: 522px) {
   // .cards-fundos-content {
   //   padding-bottom: 0px;
   // }
