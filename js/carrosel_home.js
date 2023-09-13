@@ -168,10 +168,9 @@ function adicionarClasseComEfeitoHover() {
   }
 
   imagens.forEach((imagem) => {
-    // Event listener para quando o mouse entra na imagem
+    
     imagem.addEventListener("mouseenter", pause);
 
-    // Event listener para quando o mouse sai da imagem
     imagem.addEventListener("mouseleave", resume);
   });
 
