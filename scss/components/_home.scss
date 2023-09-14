@@ -4051,7 +4051,7 @@ input[type="radio"] {
 #item-3:checked ~ .cards-fundos-content #song-2 {
   transform: translateY(-100%);
   margin-bottom: 24px;
-  padding-right: 55px;
+  // padding-right: 55px;
   z-index: 0;
   transition: 0.7s;
 }
@@ -4061,7 +4061,7 @@ input[type="radio"] {
 #item-3:checked ~ .cards-fundos-content #song-1 {
   transform: translateY(100%);
   margin-top: 24px;
-  padding-right: 55px;
+  // padding-right: 55px;
   z-index: 0;
   transition: 0.7s;
 }
@@ -4076,40 +4076,40 @@ input[type="radio"] {
 }
 
 #item-1:checked ~ .cards-fundos-content #song-2 .itens-carrosel-fundos {
-  background-color: var(--text-grey-scale-02) !important;
+  // background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-1:checked ~ .cards-fundos-content #song-3 .itens-carrosel-fundos {
-  background-color: var(--text-grey-scale-02) !important;
+  // background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-2:checked ~ .cards-fundos-content #song-1 .itens-carrosel-fundos {
-  background-color: var(--text-grey-scale-02) !important;
+  // background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-2:checked ~ .cards-fundos-content #song-3 .itens-carrosel-fundos {
-  background-color: var(--text-grey-scale-02) !important;
+  // background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-3:checked ~ .cards-fundos-content #song-2 .itens-carrosel-fundos {
-  background-color: var(--text-grey-scale-02) !important;
+  // background-color: var(--text-grey-scale-02) !important;
 }
 
 #item-3:checked ~ .cards-fundos-content #song-1 .itens-carrosel-fundos {
-  background-color: var(--text-grey-scale-02) !important;
+  // background-color: var(--text-grey-scale-02) !important;
 }
 
-#item-2:checked ~ .player #test {
-  transform: translateY(0);
-}
+// #item-2:checked ~ .player #test {
+//   transform: translateY(0);
+// }
 
-#item-2:checked ~ .player #test {
-  transform: translateY(-40px);
-}
+// #item-2:checked ~ .player #test {
+//   transform: translateY(-40px);
+// }
 
-#item-3:checked ~ .player #test {
-  transform: translateY(-80px);
-}
+// #item-3:checked ~ .player #test {
+//   transform: translateY(-80px);
+// }
 
 .itens-carrosel-fundos {
   background-color: var(--text-main);
@@ -4268,7 +4268,7 @@ input[type="radio"] {
 
 @media (max-width: 438px) {
   .fundos-text {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .banner-fundos {
