@@ -1913,7 +1913,7 @@ footer {
   right: 0;
   bottom: 0;
   display: block;
-  background: url(https://picsum.photos/g/1921/1081?random) top center;
+  background: url("") top center;
   background-size: cover;
   transform: translateZ(-1px) scale(2.1);
   min-height: 100%;
@@ -1931,7 +1931,6 @@ footer {
 .p-one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("../../images/bg_middle_quem_somos.jpg");
-  // background-image: url("../../images/bn-qs.png");
 }
 
 .p-dois {
