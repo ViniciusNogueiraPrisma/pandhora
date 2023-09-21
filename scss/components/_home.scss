@@ -1350,21 +1350,22 @@ footer {
 }
 
 .ball-top {
-  border: 8px solid var(--text-main);
+  border: 5px solid var(--text-main);
   position: absolute;
-  margin-top: -25px;
+  margin-top: -19px;
   border-radius: 50%;
-  margin-left: 3px;
+  margin-left: 6px;
 }
 
 .ball-bottom {
-  border: 8px solid var(--text-main);
+  border: 5px solid var(--text-main);
   position: absolute;
   bottom: 0;
   // margin-top: -20px;
   // margin-top: 1350px;
   margin-bottom: -25px;
-  margin-left: 3px;
+  margin-left: 6px;
+
   border-radius: 50%;
 }
 
@@ -4114,8 +4115,9 @@ input[type="radio"] {
 }
 
 .itens-carrosel-fundos {
+  margin-right: 40px;
   // background-color: var(--text-main);
-  background-color: #dddddd;
+  background-color: #f2f1f1;
   padding: 24px;
   border-radius: 4px;
   display: flex;
@@ -5723,6 +5725,7 @@ body {
 
   .swiper-slide-next .itens-carrosel-fundos {
     background-color: var(--text-main) !important;
+    margin: 0px;
     transition: 0.6s;
 
     h1 {
