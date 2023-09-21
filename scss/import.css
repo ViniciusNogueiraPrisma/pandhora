@@ -1329,6 +1329,7 @@ svg {
 }
 .accordion .accordion-header button:not(.collapsed)::after {
   background: url("../images/icons/icon-fechar-accordion.svg") no-repeat center;
+  filter: brightness(-100%);
 }
 .accordion .accordion-header button.collapsed:hover {
   color: var(--text-main);

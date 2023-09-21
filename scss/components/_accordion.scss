@@ -45,6 +45,7 @@
         &::after {
           background: url("../images/icons/icon-fechar-accordion.svg") no-repeat
             center;
+            filter: brightness(-100%);
         }
       }
 
