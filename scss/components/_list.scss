@@ -445,8 +445,8 @@
 
     &.active {
       a {
-        background-color: var(--primary-01-default);
-        border: 1px solid var(--primary-01-default);
+        background-color: var(--text-main);
+        border: 1px solid var(--text-main);
         color: var(--text-white);
       }
     }
@@ -454,8 +454,8 @@
     &:not(.active) {
       &:hover {
         a {
-          background-color: var(--primary-01-var-1);
-          border: 1px solid var(--primary-01-var-1);
+          background-color: var(--text-main);
+          border: 1px solid var(--text-main);
           color: var(--text-white);
         }
       }
@@ -473,7 +473,7 @@
   li {
     padding: 4px 8px;
     border-radius: 2px;
-    background-color: var(--primary-01-var-1);
+    background-color: var(--text-main);
     color: var(--text-white);
 
     &:not(:last-child) {

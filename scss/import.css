@@ -2768,13 +2768,13 @@ body.open-menu::after {
   transition: 0.3s ease;
 }
 .list-paginacao li.active a {
-  background-color: var(--primary-01-default);
-  border: 1px solid var(--primary-01-default);
+  background-color: var(--text-main);
+  border: 1px solid var(--text-main);
   color: var(--text-white);
 }
 .list-paginacao li:not(.active):hover a {
-  background-color: var(--primary-01-var-1);
-  border: 1px solid var(--primary-01-var-1);
+  background-color: var(--text-main);
+  border: 1px solid var(--text-main);
   color: var(--text-white);
 }
 
@@ -2788,7 +2788,7 @@ body.open-menu::after {
 .list-resultados-busca li {
   padding: 4px 8px;
   border-radius: 2px;
-  background-color: var(--primary-01-var-1);
+  background-color: var(--text-main);
   color: var(--text-white);
 }
 .list-resultados-busca li:not(:last-child) {
@@ -5091,6 +5091,11 @@ html {
   line-height: 20px;
   word-wrap: break-word;
   color: var(--text-white);
+}
+
+.busca-title {
+  color: #010101 !important;
+  font-family: var(--font-text-1);
 }
 
 .section-cards-home {
