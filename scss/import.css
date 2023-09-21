@@ -5095,7 +5095,10 @@ html {
 
 .busca-title {
   color: #010101 !important;
-  font-family: "Roboto" !important;
+  font-size: 34px;
+  font-family: var(--font-text-3);
+  font-weight: 700;
+  word-wrap: break-word;
 }
 
 .section-cards-home {
