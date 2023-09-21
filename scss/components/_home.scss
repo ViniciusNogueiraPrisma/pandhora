@@ -4212,8 +4212,8 @@ input[type="radio"] {
   // }
 
   .cards-fundos-content {
-    padding-top: 80px;
-    padding-bottom: 120px;
+    // padding-top: 80px;
+    // padding-bottom: 120px;
   }
 }
 
@@ -5666,14 +5666,20 @@ body {
 
   .swiper-slide {
     height: fit-content !important;
-    // border: 10px solid red;
-    // border: 1px solid red;
+    transition: 0.6s;
+  }
+
+  .swiper-slide-next {
+    transition: 0.6s;
   }
 
   .swiper-slide-next .itens-carrosel-fundos {
     background-color: var(--text-main) !important;
+    transition: 0.6s;
+
     h1 {
       color: white !important;
+      
     }
 
     span {

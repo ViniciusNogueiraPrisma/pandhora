@@ -8226,10 +8226,6 @@ input[type=radio] {
   .banner-internas-last img {
     height: 500px !important;
   }
-  .cards-fundos-content {
-    padding-top: 80px;
-    padding-bottom: 120px;
-  }
 }
 @media (max-width: 498px) {
   .trade-a {
@@ -9355,9 +9351,14 @@ body {
 }
 .swiper-slides-fundos .swiper-slide {
   height: fit-content !important;
+  transition: 0.6s;
+}
+.swiper-slides-fundos .swiper-slide-next {
+  transition: 0.6s;
 }
 .swiper-slides-fundos .swiper-slide-next .itens-carrosel-fundos {
   background-color: var(--text-main) !important;
+  transition: 0.6s;
 }
 .swiper-slides-fundos .swiper-slide-next .itens-carrosel-fundos h1 {
   color: white !important;
