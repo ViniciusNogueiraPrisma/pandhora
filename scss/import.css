@@ -5813,6 +5813,33 @@ footer {
   display: none;
 }
 
+.fundos-carrosel-before::before {
+  content: "";
+  margin-left: 10px;
+  position: absolute;
+  width: 2px;
+  background-color: var(--text-main);
+  height: 105%;
+  margin-top: -10px;
+}
+
+.ball-top {
+  border: 8px solid var(--text-main);
+  position: absolute;
+  margin-top: -25px;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+.ball-bottom {
+  border: 8px solid var(--text-main);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -25px;
+  margin-left: 3px;
+  border-radius: 50%;
+}
+
 .cards-fundo-home {
   flex-direction: column;
   gap: 24px;
@@ -8165,6 +8192,10 @@ input[type=radio] {
 @media (max-width: 1000px) {
   .fundos-content {
     flex-direction: column;
+  }
+  .fundos-carrosel {
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
   .fundos-text {
     width: 100%;
