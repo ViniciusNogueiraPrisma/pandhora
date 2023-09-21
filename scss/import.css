@@ -8257,6 +8257,9 @@ input[type=radio] {
   .banner-internas-last img {
     height: 500px !important;
   }
+  .parallax-inner {
+    background-attachment: initial;
+  }
 }
 @media (max-width: 498px) {
   .trade-a {
