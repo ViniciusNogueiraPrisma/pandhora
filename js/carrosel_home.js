@@ -1,3 +1,20 @@
+
+$(document).ready(function () {
+  var timeout;
+  $(".nav-item.dropdown").hover(
+    function () {
+      clearTimeout(timeout); // Limpa o temporizador para evitar a ocultação
+      $(".dropdown-menu", this).stop(true, true).slideDown("fast");
+    },
+    function () {
+      var $dropdown = $(".dropdown-menu", this);
+      timeout = setTimeout(function () {
+        $dropdown.stop(true, true).slideUp("fast");
+      }, 10); // Atraso de 200 milissegundos antes da ocultação
+    }
+  );
+});
+
 function adicionarClasseComEfeitoHover() {
   const imagens = document.querySelectorAll(".img-carrosel-home");
   const wrapperCosmos = document.querySelector(".wrapper-cosmos");
@@ -12,7 +29,7 @@ function adicionarClasseComEfeitoHover() {
       imagem.classList.remove("hover-effect");
       const textCarroselHover = imagem.querySelector(".text-carrosel-hover");
       textCarroselHover.style.display = "none"; // Oculta o text-carrosel-hover
-      
+
       const textCarroselHome = imagem.querySelector(".text-carrosel-home");
       textCarroselHome.style.display = "flex"; // Exibe o text-carrosel-home
     });
@@ -73,20 +90,4 @@ var swiperCosmos = new Swiper(".mySwiper-cosmos-last", {
   pagination: {
     el: ".swiper-pagination-cosmos-last",
   },
-});
-
-$(document).ready(function () {
-  var timeout;
-  $(".nav-item.dropdown").hover(
-    function () {
-      clearTimeout(timeout); // Limpa o temporizador para evitar a ocultação
-      $(".dropdown-menu", this).stop(true, true).slideDown("fast");
-    },
-    function () {
-      var $dropdown = $(".dropdown-menu", this);
-      timeout = setTimeout(function () {
-        $dropdown.stop(true, true).slideUp("fast");
-      }, 10); // Atraso de 200 milissegundos antes da ocultação
-    }
-  );
 });
