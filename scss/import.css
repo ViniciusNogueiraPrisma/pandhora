@@ -5735,7 +5735,7 @@ footer {
   transition: 0.7s;
   background-color: var(--pure-white);
   width: 426px;
-  height: 490px;
+  height: 532px;
   padding: 32px;
   border-radius: 4px;
 }
@@ -7884,6 +7884,13 @@ ul.container {
     width: 100%;
     height: fit-content;
   }
+  .infos-final {
+    position: relative !important;
+    top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 24px;
+  }
   .slides-fundos {
     width: 100% !important;
   }
@@ -9433,6 +9440,18 @@ body {
 
 .mailing-last {
   display: none;
+}
+
+.infos-final {
+  /* border: 1px solid red; */
+  padding-top: 0px;
+  /* padding-bottom: 0px; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  top: 293px;
 }
 
 /* Pages */

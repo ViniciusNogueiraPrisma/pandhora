@@ -11,10 +11,10 @@ var swiperVertical = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper-fundos", {
   slidesPerView: "auto",
   spaceBetween: 24,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination-fundos",
     clickable: true,

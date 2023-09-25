@@ -1233,7 +1233,7 @@ footer {
   background-color: var(--pure-white);
   // border: 1px solid red;
   width: 426px;
-  height: 490px;
+  height: 532px;
   padding: 32px;
   border-radius: 4px;
 
@@ -3781,6 +3781,14 @@ ul.container {
     height: fit-content;
   }
 
+  .infos-final {
+    position: relative !important;
+    top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 24px;
+  }
+
   .slides-fundos {
     width: 100% !important;
   }
@@ -5782,4 +5790,16 @@ body {
 
 .mailing-last {
   display: none;
+}
+
+.infos-final {
+  /* border: 1px solid red; */
+  padding-top: 0px;
+  /* padding-bottom: 0px; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  top: 293px;
 }
