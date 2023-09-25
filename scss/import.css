@@ -4781,6 +4781,11 @@ html {
   transition: 0.4s;
 }
 
+.content-cards-home .last-card-home:hover {
+  background-color: #8529e9 !important;
+  transition: 0.5s !important;
+}
+
 .text-carrosel-hover {
   width: 42.458333vw;
   position: absolute;
@@ -5309,7 +5314,6 @@ html {
 }
 
 .accordion_content {
-  background-color: #fff;
   overflow: hidden;
   height: 0;
   transition: all 0.5s ease;
@@ -5317,13 +5321,14 @@ html {
   display: grid;
   justify-content: start;
   align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: 10px;
   margin-right: 10px;
 }
 .accordion_content p {
   margin: auto;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -5751,11 +5756,11 @@ footer {
   font-weight: 700;
   line-height: 44.88px;
   word-wrap: break-word;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 }
 .content-card-fundos-home span {
   color: #333333;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Neue Haas Unica W1G;
   font-weight: 400;
   line-height: 22.4px;
@@ -5940,6 +5945,8 @@ footer {
 }
 .content-cards-home .last-card-home {
   background-color: var(--pure-black) !important;
+  transition: 0.5s !important;
+  cursor: pointer;
 }
 .content-cards-home .last-card-home span {
   color: var(--text-white) !important;
@@ -6115,9 +6122,19 @@ footer {
     display: none;
   }
 }
+@media (max-width: 1366px) {
+  .content-cards-home {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
 @media (max-width: 1140px) {
   #img-home-last {
     display: block !important;
+  }
+  .mailing-last {
+    display: flex !important;
+    padding-bottom: 24px;
   }
   .gestao-invest-home {
     padding-left: 79px;
@@ -6126,22 +6143,8 @@ footer {
     padding-bottom: 100px;
   }
   .content-cards-home {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-bottom: 180px;
-  }
-  .content-cards-home .cards-home {
-    width: 100% !important;
-    height: 227px;
-  }
-  .content-cards-home {
     top: 0;
+    margin-bottom: 80px;
   }
   #last-a-home {
     display: block !important;
@@ -7281,13 +7284,14 @@ ul.container {
 }
 
 .icons-informacoes {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   display: flex;
-  align-items: flex-end;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 14px;
 }
 .icons-informacoes img {
   width: 24px;
+  margin-top: 3px;
 }
 .icons-informacoes span {
   color: var(--text-grey-scale-07);
@@ -7690,17 +7694,18 @@ ul.container {
     color: var(--text-white);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 966px) {
   .content-cards-home {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .content-cards-home .cards-home {
     border-radius: 4px;
     width: 100% !important;
     height: 100%;
-    word-break: break-all;
   }
 }
 @media (max-width: 588px) {
@@ -7749,9 +7754,6 @@ ul.container {
   }
   .navbar-btns-after .btn-navbar-2 a {
     color: var(--text-white) !important;
-  }
-  .content-cards-home {
-    padding-bottom: 112px;
   }
   .slide-cosmos-last img {
     height: 85.65109vh !important;
@@ -9413,6 +9415,24 @@ body {
 }
 .swiper-slides-fundos .swiper-slide-next .itens-carrosel-fundos img {
   filter: brightness(1) !important;
+}
+
+.header-resultado th {
+  padding: 12px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+.table tbody tr td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
+  width: fit-content !important;
+}
+
+.mailing-last {
+  display: none;
 }
 
 /* Pages */
