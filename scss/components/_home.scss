@@ -23,7 +23,7 @@
 }
 
 * {
-  font-family: var(--font-text-3);
+  font-family: var(--font-text-3), Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -38,10 +38,6 @@ html {
 .flex-relacoes-institucional {
   display: none !important;
 }
-
-// #btnEn {
-//   margin-top: 17px;
-// }
 
 .rotate-image {
   transition: transform 0.3s ease;
@@ -68,14 +64,6 @@ html {
 .pagination-last {
   display: none;
 }
-
-// .aumentar-font-last {
-//   display: none;
-// }
-
-// .diminuir-font-last {
-//   display: none;
-// }
 
 .hover-effect .text-carrosel-hover {
   opacity: 1;
@@ -1561,7 +1549,7 @@ footer {
 .dropdown-menu {
   border-radius: 0px;
   background-color: #8529e9;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 
 .dropdown-item {

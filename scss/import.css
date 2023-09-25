@@ -4730,7 +4730,7 @@ body.open-menu::after {
   /* Outros formatos e variações da fonte podem ser adicionados aqui */
 }
 * {
-  font-family: var(--font-text-3);
+  font-family: var(--font-text-3), Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -6015,7 +6015,7 @@ footer {
 .dropdown-menu {
   border-radius: 0px;
   background-color: #8529e9;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 
 .dropdown-item {
