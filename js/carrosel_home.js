@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   var timeout;
   $(".nav-item.dropdown").hover(
@@ -10,7 +9,7 @@ $(document).ready(function () {
       var $dropdown = $(".dropdown-menu", this);
       timeout = setTimeout(function () {
         $dropdown.stop(true, true).slideUp("fast");
-      }, 10); // Atraso de 200 milissegundos antes da ocultação
+      }, 0); 
     }
   );
 });

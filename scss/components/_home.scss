@@ -1498,7 +1498,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 32px 16px 32px 16px;
-    word-wrap: break-word;
+    // word-wrap: break-word;
     background-color: #e1e1e1;
 
     span {
@@ -1553,6 +1553,7 @@ footer {
 .dropdown-menu {
   border-radius: 0px;
   background-color: #8529e9;
+  margin-top: -2px;
 }
 
 .dropdown-item {
