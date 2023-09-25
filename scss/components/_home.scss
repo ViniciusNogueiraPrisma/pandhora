@@ -3242,7 +3242,8 @@ ul.container {
 
     span {
       // Lorem ipsum dolor sit amet consectetur. Ultrices eget placerat fames cras est aenean. Sed bibendum pulvinar mauris volutpat mollis felis.
-      color: var(--text-grey-scale-03);
+      // color: var(--text-grey-scale-03);
+      color: #ffffff;
       font-size: 16px;
       font-family: var(--font-text-5);
       font-weight: 400;
@@ -3271,23 +3272,13 @@ ul.container {
     width: 100%;
     height: 100%;
     z-index: 0;
+
     background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(255, 255, 255, 0) 85%
-    );
-    background: -webkit-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(255, 255, 255, 0) 85%
-    );
     background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(255, 255, 255, 0) 85%
+      rgba(0, 0, 0, 0.44861694677871145) 66%,
+      rgba(255, 255, 255, 0) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
   }
 
   .swiper-pagination-cosmos-last {
@@ -4857,7 +4848,7 @@ body {
   }
 
   .accordion_content p {
-    color: #1d1d1d;
+    color: white;
   }
 
   .searchbox .input-group .input-group-text button [class^="icon-"]::before {

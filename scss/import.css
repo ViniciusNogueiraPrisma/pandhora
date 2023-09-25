@@ -7471,7 +7471,7 @@ ul.container {
     margin-bottom: 0px !important;
   }
   .text-swiper-cosmos-last span {
-    color: var(--text-grey-scale-03);
+    color: #ffffff;
     font-size: 16px;
     font-family: var(--font-text-5);
     font-weight: 400;
@@ -7497,10 +7497,7 @@ ul.container {
     height: 100%;
     z-index: 0;
     background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 85%);
-    background: -webkit-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 85%);
-    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 85%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4486169468) 66%, rgba(255, 255, 255, 0) 100%);
   }
   .swiper-pagination-cosmos-last {
     position: absolute;
@@ -8715,7 +8712,7 @@ body {
   color: white;
 }
 [data-theme=dark] .accordion_content p {
-  color: #1d1d1d;
+  color: white;
 }
 [data-theme=dark] .searchbox .input-group .input-group-text button [class^=icon-]::before {
   color: white;
