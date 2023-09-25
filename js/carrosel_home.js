@@ -1,14 +1,32 @@
+// $(document).ready(function () {
+//   var timeout;
+//   $(".nav-item.dropdown").hover(
+//     function () {
+//       clearTimeout(timeout); // limpa o temporizador para evitar a ocultação
+//       $(".dropdown-menu", this).stop(true, true).slideDown("fast");
+//     },
+//     function () {
+//       var $dropdown = $(".dropdown-menu", this);
+//       timeout = setTimeout(function () {
+//         $dropdown.stop(true, true).slideUp("fast");
+//       }, 0);
+//     }
+//   );
+// });
+
 $(document).ready(function () {
   var timeout;
   $(".nav-item.dropdown").hover(
     function () {
-      clearTimeout(timeout); // limpa o temporizador para evitar a ocultação
+      clearTimeout(timeout);
       $(".dropdown-menu", this).stop(true, true).slideDown("fast");
+      $(this).find(".nav-link").addClass("dropdown-ativo");
     },
     function () {
       var $dropdown = $(".dropdown-menu", this);
-      timeout = setTimeout(function () {
+      timeout = setTimeout(() => {
         $dropdown.stop(true, true).slideUp("fast");
+        $(this).find(".nav-link").removeClass("dropdown-ativo");
       }, 0);
     }
   );

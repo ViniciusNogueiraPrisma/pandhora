@@ -1518,6 +1518,26 @@ footer {
   margin-top: -100px;
 }
 
+/* Estilo base para .nav-link::after */
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #8529e9;
+  transition: width 0.3s;
+}
+
+/* Estilo para .nav-link::after quando a classe .dropdown-ativo estiver presente */
+
+.nav-link.dropdown-ativo {
+  color: #8529e9 !important;
+}
+
+.nav-link.dropdown-ativo::after {
+  width: 100%;
+}
+
 .nav-link {
   font-family: "Bw Seido Raw";
   color: var(--text-black);
