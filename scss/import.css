@@ -4737,6 +4737,38 @@ html {
   font-size: 100% !important;
 }
 
+@-moz-document url-prefix() {
+  h1 {
+    font-weight: 200 !important; /* Defina o peso da fonte desejado para o Firefox */
+  }
+  span {
+    font-weight: 200 !important;
+  }
+  .fundos-text h5 {
+    font-weight: 400 !important;
+  }
+  .itens-carrosel-fundos .texts-itens-carrosel-fundos h1 {
+    font-weight: 400 !important;
+  }
+  .table thead tr th {
+    font-weight: 600 !important;
+  }
+  .download-infos h1 {
+    font-weight: 400 !important;
+  }
+  .texts-infos-content span {
+    font-weight: 600 !important;
+  }
+  .filtros-title h1 {
+    font-weight: 400 !important;
+  }
+  .accordion .accordion-header button:not(.collapsed)::after {
+    filter: brightness(-100%) !important;
+  }
+  .informacoes-content h1 {
+    font-weight: 400 !important;
+  }
+}
 .mobile-menu .menu-tools {
   border-bottom: none !important;
   padding-bottom: 0px !important;
