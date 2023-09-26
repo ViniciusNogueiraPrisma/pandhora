@@ -99,6 +99,16 @@ html {
   padding-bottom: 24px;
 }
 
+@media (max-width: 667px) {
+  .fundos-carrosel {
+    height: 700px !important;
+  }
+
+  .itens-carrosel-fundos {
+    margin-right: 0px;
+  }
+}
+
 .navbar-btns-after {
   display: none !important;
 }
