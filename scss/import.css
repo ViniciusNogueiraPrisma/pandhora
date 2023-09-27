@@ -4800,7 +4800,7 @@ html {
     height: 700px !important;
   }
   .itens-carrosel-fundos {
-    margin-right: 0px;
+    margin-right: 0px !important;
   }
 }
 .navbar-btns-after {
@@ -8674,6 +8674,9 @@ body {
 }
 [data-theme=dark] .img-invista img {
   filter: brightness(1000%);
+}
+[data-theme=dark] .busca-title {
+  color: white !important;
 }
 [data-theme=dark] .menu-bar {
   background-color: white !important;
