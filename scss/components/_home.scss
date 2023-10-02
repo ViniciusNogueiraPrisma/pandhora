@@ -6128,3 +6128,142 @@ body[data-aos-delay="1000"] [data-aos] {
     grid-template-columns: auto auto;
   }
 }
+
+// .container-erro {
+//   display: flex;
+//   justify-content: space-between;
+//   // height: 100vh;
+// }
+
+// .erro1 {
+//   width: 50%;
+//   display: flex;
+//   justify-content: flex-end;
+//   padding-right: 100px;
+//   background-image: url("../../images/carrosel-home/fundo1.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .erro2 {
+//   width: 50%;
+//   padding-left: 100px;
+//   background-color: #864ac6;
+// }
+
+// .content-erro1 {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   align-items: flex-end;
+// }
+
+// .content-erro2 {
+//   width: 100%;
+//   display: flex;
+//   height: 100vh;
+//   justify-content: flex-start;
+// }
+
+.page404 {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: -1;
+
+  span {
+    // font-size: 600px;
+    font-size: 30em;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 700;
+    color: #dddddd;
+    line-height: 0 !important;
+    height: fit-content;
+    width: fit-content;
+  }
+}
+
+.texts-container-404 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  h1 {
+    // font-family: "Neue Haas Unica W1G";
+    color: #8529e9;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: 700 !important;
+    padding-bottom: 30px;
+  }
+
+  span {
+    font-family: "Roboto";
+    font-size: 17px;
+    color: black;
+  }
+
+  p {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.a-texts404 {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.first-a-404 {
+  border: 1px solid black;
+  padding: 12px;
+  width: fit-content;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: white;
+}
+
+.last-a-404 {
+  width: fit-content;
+  padding: 12px;
+  background-color: #8529e9;
+  color: white;
+  border-radius: 4px;
+  transition: 0.6s;
+}
+
+.last-a-404:hover {
+  color: #d2d2d2;
+  background-color: #904adc;
+  transition: 0.6s;
+}
+
+@media (max-width: 816px) {
+  .page404 {
+    display: none;
+  }
+}
+
+@media (max-width: 379px) {
+  .a-texts404 {
+    flex-direction: column;
+
+    a {
+      width: 100% !important;
+      word-break: break-all;
+    }
+  }
+}

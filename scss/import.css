@@ -9754,6 +9754,99 @@ body[data-aos-delay="1000"] [data-aos] {
     grid-template-columns: auto auto;
   }
 }
+.page404 {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: -1;
+}
+.page404 span {
+  font-size: 30em;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 700;
+  color: #dddddd;
+  line-height: 0 !important;
+  height: fit-content;
+  width: fit-content;
+}
+
+.texts-container-404 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.texts-container-404 h1 {
+  color: #8529e9;
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 700 !important;
+  padding-bottom: 30px;
+}
+.texts-container-404 span {
+  font-family: "Roboto";
+  font-size: 17px;
+  color: black;
+}
+.texts-container-404 p {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.a-texts404 {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.first-a-404 {
+  border: 1px solid black;
+  padding: 12px;
+  width: fit-content;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: white;
+}
+
+.last-a-404 {
+  width: fit-content;
+  padding: 12px;
+  background-color: #8529e9;
+  color: white;
+  border-radius: 4px;
+  transition: 0.6s;
+}
+
+.last-a-404:hover {
+  color: #d2d2d2;
+  background-color: #904adc;
+  transition: 0.6s;
+}
+
+@media (max-width: 816px) {
+  .page404 {
+    display: none;
+  }
+}
+@media (max-width: 379px) {
+  .a-texts404 {
+    flex-direction: column;
+  }
+  .a-texts404 a {
+    width: 100% !important;
+    word-break: break-all;
+  }
+}
 /* Pages */
 .page-erro {
   display: flex;
