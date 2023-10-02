@@ -138,19 +138,14 @@ html {
   width: 42.458333vw;
   position: absolute;
   z-index: 3;
-  // height: 100%;
+  height: 100%;
   // align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2.5vw;
+  padding-left: 32px;
+  padding-right: 32px;
   transition: 0.7s;
-
-  background: rgba(255, 255, 255, 1.78);
-  border-radius: 8px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.1px);
-  -webkit-backdrop-filter: blur(5.1px);
 
   a {
     background-color: #8529e9;
@@ -183,8 +178,8 @@ html {
 
   h1 {
     // TC Cosmos
-    color: #333333;
-    font-size: 56px;
+    color: white;
+    font-size: 72px;
     font-family: "Bennet Banner Extra Condensed";
     font-weight: 700;
     line-height: 86.4px;
@@ -193,8 +188,8 @@ html {
 
   h3 {
     // Um fundo da TC Pandhora
-    color: #8529e9;
-    font-size: 19px;
+    color: #dddddd;
+    font-size: 24px;
     font-family: "Bw Seido Raw";
     font-weight: 400;
     line-height: 31.68px;
@@ -205,8 +200,8 @@ html {
   span {
     // TC Cosmos é um fundo multimercado macro de maior volatilidade, que através de diferentes classes de ativos, procura boas oportunidades de curto, médio ou longo prazo.
     // color: #bbbbbb;
-    color: #333333;
-    font-size: 18px;
+    color: #dddddd;
+    font-size: 16px;
     font-family: "Neue Haas Unica W1G";
     font-weight: 400;
     line-height: 25.6px;
@@ -273,7 +268,7 @@ html {
   backdrop-filter: blur(0px) !important;
   -webkit-backdrop-filter: blur(0px) !important;
 
-  flex: 1 1 1000px !important;
+  flex: 1 1 300px !important;
 }
 
 .hover-effect img {
@@ -327,12 +322,8 @@ html {
 
 .img-carrosel-home {
   aspect-ratio: 9/16;
-  flex: 1 1 400px;
+  flex: 1 1 10px;
   min-width: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   filter: saturate(0);
   object-fit: cover;
@@ -371,23 +362,33 @@ html {
   height: 100%;
   z-index: 1;
 
+  // background: rgba(0, 0, 0, 0);
+  // // backdrop-filter: blur(4px) !important;
+  // -webkit-backdrop-filter: blur(5px) !important;
+  // background: rgb(0, 0, 0);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(0, 0, 0, 0.6839110644257703) 0%,
+  //   rgba(255, 255, 255, 0) 83%
+  // );
+
   background: rgb(0, 0, 0);
   background: -moz-linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.7147233893557423) 67%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.5186449579831933) 100%
   );
   background: -webkit-linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.7147233893557423) 67%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.5186449579831933) 100%
   );
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.7147233893557423) 67%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.5186449579831933) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 
 .tab-content.active {
@@ -399,11 +400,7 @@ html {
   transition: 0.5s;
   filter: saturate(100%);
 
-  flex: 1 1 1000px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1 1 400px;
 }
 
 .img-carrosel-home:hover .text-carrosel-hover {
@@ -1391,9 +1388,9 @@ footer {
 
 .fundos-carrosel-before::before {
   content: "";
-  margin-left: 40px;
+  margin-left: 10px;
   position: absolute;
-  width: 1px;
+  width: 2px;
   background-color: var(--text-main);
   height: 105%;
   margin-top: -10px;
@@ -1404,7 +1401,7 @@ footer {
   position: absolute;
   margin-top: -19px;
   border-radius: 50%;
-  margin-left: 36px;
+  margin-left: 6px;
 
   height: 11px;
   width: 11px;
@@ -1413,6 +1410,7 @@ footer {
     color: #8529e9 !important;
     background-color: #8529e9 !important;
   }
+
 }
 
 .ball-bottom {
@@ -1420,7 +1418,7 @@ footer {
   position: absolute;
   bottom: 0;
   margin-bottom: -25px;
-  margin-left: 36px;
+  margin-left: 6px;
 
   height: 11px;
   width: 11px;
@@ -1431,6 +1429,7 @@ footer {
     color: #8529e9 !important;
     // background-color: #8529e9 !important;
   }
+
 }
 
 .cards-fundo-home {
@@ -2061,18 +2060,6 @@ footer {
   background-image: url("../../images/home-fundo-3-min\ 1.png");
 }
 
-.fundo-essencial {
-  background-image: url("../../images/fundo-essencial.png") !important;
-}
-
-.fundo-tc-cosmo {
-  background-image: url("../../images/fundo-cosmos.png") !important;
-}
-
-.fundo-digital-assets {
-  background-image: url("../../images/fundo-digital.png") !important;
-}
-
 .parallax-inner {
   position: relative;
   // min-height: 71.65109034267913vh;
@@ -2591,7 +2578,7 @@ footer {
 
 .fundos-carrosel {
   width: 50%;
-  height: 700px;
+  height: 500px;
 }
 
 .fundos-text a:hover {
@@ -2891,8 +2878,6 @@ footer {
   justify-content: space-between;
   gap: 200px;
   align-items: center;
-  border-bottom: 1px solid var(--text-grey-scale-03);
-  padding-bottom: 17px;
 
   img {
     background-color: white;
@@ -3265,7 +3250,6 @@ ul.container {
   .slide-cosmos-last {
     display: flex;
     align-items: center;
-    justify-content: center;
 
     img {
       width: 100%;
@@ -3279,32 +3263,17 @@ ul.container {
   }
 
   .text-swiper-cosmos-last {
-    width: 95%;
+    width: 100%;
     z-index: 1;
     // padding-left: 80px;
     // padding-right: 80px;
-
-    // padding-top:  2.0833333333333335vw;
-    // padding-bottom:  2.0833333333333335vw;
-
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    padding-left: 24px;
-    padding-right: 24px;
-
     position: absolute;
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.78);
-    border-radius: 8px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.1px);
-    -webkit-backdrop-filter: blur(5.1px);
 
     h4 {
       // Renda variável longo prazo
-      color: #333333;
+      color: var(--text-white);
       font-size: 14px;
       font-family: var(--font-text-5);
       font-weight: 700;
@@ -3315,22 +3284,21 @@ ul.container {
     }
 
     h1 {
-      color: #333333;
-      font-size: 48px;
+      color: var(--text-white);
+      font-size: 56px;
       font-family: var(--font-text-4);
       font-weight: 800;
-      line-height: 47.6px;
+      line-height: 61.6px;
       word-wrap: break-word;
       padding-bottom: 8px;
     }
 
     h3 {
       // Um fundo da TC Pandhora
-      // color: #333333;
-      color: var(--text-main);
-      font-size: 19px;
+      color: var(--text-grey-scale-02);
+      font-size: 22px;
       font-family: var(--font-text-3);
-      font-weight: 700;
+      font-weight: 400;
       line-height: 29.04px;
       word-wrap: break-word;
 
@@ -3341,7 +3309,7 @@ ul.container {
     span {
       // Lorem ipsum dolor sit amet consectetur. Ultrices eget placerat fames cras est aenean. Sed bibendum pulvinar mauris volutpat mollis felis.
       // color: var(--text-grey-scale-03);
-      color: #333333;
+      color: #ffffff;
       font-size: 16px;
       font-family: var(--font-text-5);
       font-weight: 400;
@@ -3385,7 +3353,7 @@ ul.container {
     display: flex;
     justify-content: end;
     padding-right: 80px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 
     .swiper-pagination-bullet {
       transition: 0.5s ease-in-out;
@@ -3450,7 +3418,7 @@ ul.container {
   }
 
   .nossos-fundos-home {
-    padding-top: 20px;
+    padding-top: 140px;
   }
 
   .footer-home {
@@ -4015,7 +3983,7 @@ ul.container {
   }
 
   .overlay-fundos {
-    height: 100vh !important;
+    height: 58.1516095535vh !important;
   }
 
   .overlay {
@@ -4250,7 +4218,7 @@ input[type="radio"] {
   .texts-itens-carrosel-fundos {
     h1 {
       color: #999999;
-      font-size: 19px;
+      font-size: 24px;
       font-weight: 700;
       font-family: var();
       line-height: 31px;
@@ -4262,7 +4230,6 @@ input[type="radio"] {
       font-family: var();
       font-weight: 400;
       line-height: 25px;
-      font-size: 16px;
     }
   }
 }
@@ -5846,11 +5813,11 @@ body {
     transition: 0.6s;
   }
 
-  .swiper-slide-active {
+  .swiper-slide-next {
     transition: 0.6s;
   }
 
-  .swiper-slide-active .itens-carrosel-fundos {
+  .swiper-slide-next .itens-carrosel-fundos {
     background-color: var(--text-main) !important;
     margin: 0px;
     transition: 0.6s;
@@ -5884,7 +5851,7 @@ body {
   padding-left: 22px;
   padding-right: 22px;
 
-  width: fit-content;
+  width: fit-content !important;
 }
 
 .mailing-last {
@@ -5933,7 +5900,7 @@ body {
 .frame-tabela-essencial {
   width: 100%;
   height: 354px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 @media (max-width: 968px) {
@@ -6000,131 +5967,5 @@ ul.list-ponto li {
 
   .frame-tabela-essencial {
     height: 284px !important;
-  }
-}
-
-.last-card-home a {
-  color: white;
-}
-
-.resultados-fundos {
-  margin-top: 80px;
-}
-
-.container-termos {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-[data-aos][data-aos][data-aos-delay="1000"].aos-animate,
-body[data-aos-delay="1000"] [data-aos].aos-animate {
-  transition-delay: 1s !important;
-}
-
-[data-aos][data-aos][data-aos-delay="1000"],
-body[data-aos-delay="1000"] [data-aos] {
-  transition-delay: 1s !important;
-}
-
-@media (max-width: 800px) {
-  .header-fundos {
-    height: 601px !important;
-  }
-
-  .banner-internas-last-essencial {
-    height: 601px !important;
-  }
-
-  .banner-internas-last-essencial img {
-    height: 601px !important;
-  }
-
-  .overlay-fundos {
-    height: 601px !important;
-  }
-}
-
-@media (max-width: 453px) {
-  .texts-banner-interna h1 {
-    font-size: 48px;
-    line-height: 55.4px !important;
-  }
-
-  .texts-banner-interna span {
-    font-size: 15px;
-  }
-}
-
-.title-tabela-tc {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  text-transform: uppercase;
-  padding: 12px;
-  background-color: #ebebeb;
-
-  h1 {
-    color: #8c36f1;
-    font-size: 21px;
-    letter-spacing: 3px;
-  }
-}
-
-.table-retorno {
-  padding-top: 16px;
-  padding-bottom: 12px;
-}
-
-.content-retorno {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(205, 205, 205);
-  padding-bottom: 16px;
-}
-
-.infos-retorno {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-right: 22px;
-  padding-left: 22px;
-
-  span {
-    font-family: "Neue Haas Unica W1G";
-    font-size: 21px;
-    font-weight: 700;
-  }
-
-  p {
-    font-weight: 700;
-    font-size: 14px;
-    font-family: "Neue Haas Unica W1G";
-  }
-}
-
-.border-right-retorno {
-  border-right: 1px solid rgb(205, 205, 205);
-}
-
-.fa-retorno {
-  margin-left: 10px;
-}
-
-@media (max-width: 867px) {
-  .content-retorno {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-  }
-
-  .infos-retorno {
-    border-right: 1px solid rgb(205, 205, 205);
-  }
-}
-
-@media (max-width: 615px) {
-  .content-retorno {
-    display: grid;
-    grid-template-columns: auto auto;
   }
 }

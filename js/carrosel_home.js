@@ -89,7 +89,7 @@ function adicionarClasseComEfeitoHover() {
     }
   }
 
-  setInterval(nextImage, 3000);
+  setInterval(nextImage, 4500);
 
   wrapperCosmos.addEventListener("mouseenter", pause);
   wrapperCosmos.addEventListener("mouseleave", resume);
@@ -101,7 +101,7 @@ var swiperCosmos = new Swiper(".mySwiper-cosmos-last", {
   slidesPerView: 1,
   // spaceBetween: 24,
   autoplay: {
-    delay: 2000,
+    delay: 4500,
     disableOnInteraction: false,
   },
   pagination: {

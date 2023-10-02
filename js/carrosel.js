@@ -1,10 +1,12 @@
 var swiperVertical = new Swiper(".mySwiper", {
+  loop: true,
+  Infinite: true,
   direction: "vertical",
   slidesPerView: "auto",
   spaceBetween: 20,
-  loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 4500,
+    disableOnInteraction: false,
   },
 });
 
@@ -12,7 +14,7 @@ var swiper = new Swiper(".mySwiper-fundos", {
   slidesPerView: "auto",
   spaceBetween: 24,
   autoplay: {
-    delay: 2500,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
