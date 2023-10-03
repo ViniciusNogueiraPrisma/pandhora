@@ -6061,12 +6061,14 @@ body[data-aos-delay="1000"] [data-aos] {
   justify-content: center;
   text-transform: uppercase;
   padding: 12px;
-  background-color: #ebebeb;
+  background-color: #444;
 
   h1 {
-    color: #8c36f1;
-    font-size: 21px;
-    letter-spacing: 3px;
+    color: #fff;
+    font-family: "Linotype Neue Haas Unica Pro Medium";
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 700;
   }
 }
 
@@ -6090,16 +6092,37 @@ body[data-aos-delay="1000"] [data-aos] {
   padding-left: 22px;
 
   span {
-    font-family: "Neue Haas Unica W1G";
-    font-size: 21px;
+    // font-family: "Neue Haas Unica W1G";
+    font-family: "Linotype Neue Haas Unica Pro Medium";
+
+    color: #fff;
+    white-space: normal;
+    word-break: normal;
+    margin-bottom: 11px;
+    font-size: 19px;
     font-weight: 700;
+    line-height: 1;
   }
 
   p {
-    font-weight: 700;
+    color: #fff;
+    white-space: normal;
+    word-break: normal;
+    margin-bottom: 0;
     font-size: 14px;
-    font-family: "Neue Haas Unica W1G";
+    line-height: 1;
+    // font-family: "Neue Haas Unica W1G";
+    font-family: "Linotype Neue Haas Unica Pro Medium";
   }
+}
+
+@font-face {
+  font-family: "Linotype Neue Haas Unica Pro Medium";
+  src: url("https://assets.website-files.com/62b0e10e698fe4d9588e7137/64b000f6b3187cf75bd39f2f_Linotype%20-%20Neue%20Haas%20Unica%20Pro%20Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 .border-right-retorno {
@@ -6128,43 +6151,6 @@ body[data-aos-delay="1000"] [data-aos] {
     grid-template-columns: auto auto;
   }
 }
-
-// .container-erro {
-//   display: flex;
-//   justify-content: space-between;
-//   // height: 100vh;
-// }
-
-// .erro1 {
-//   width: 50%;
-//   display: flex;
-//   justify-content: flex-end;
-//   padding-right: 100px;
-//   background-image: url("../../images/carrosel-home/fundo1.png");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
-// .erro2 {
-//   width: 50%;
-//   padding-left: 100px;
-//   background-color: #864ac6;
-// }
-
-// .content-erro1 {
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   align-items: flex-end;
-// }
-
-// .content-erro2 {
-//   width: 100%;
-//   display: flex;
-//   height: 100vh;
-//   justify-content: flex-start;
-// }
 
 .page404 {
   position: absolute;

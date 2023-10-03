@@ -9692,12 +9692,14 @@ body[data-aos-delay="1000"] [data-aos] {
   justify-content: center;
   text-transform: uppercase;
   padding: 12px;
-  background-color: #ebebeb;
+  background-color: #444;
 }
 .title-tabela-tc h1 {
-  color: #8c36f1;
-  font-size: 21px;
-  letter-spacing: 3px;
+  color: #fff;
+  font-family: "Linotype Neue Haas Unica Pro Medium";
+  font-size: 17px;
+  letter-spacing: 4px;
+  font-weight: 700;
 }
 
 .table-retorno {
@@ -9720,16 +9722,32 @@ body[data-aos-delay="1000"] [data-aos] {
   padding-left: 22px;
 }
 .infos-retorno span {
-  font-family: "Neue Haas Unica W1G";
-  font-size: 21px;
+  font-family: "Linotype Neue Haas Unica Pro Medium";
+  color: #fff;
+  white-space: normal;
+  word-break: normal;
+  margin-bottom: 11px;
+  font-size: 19px;
   font-weight: 700;
+  line-height: 1;
 }
 .infos-retorno p {
-  font-weight: 700;
+  color: #fff;
+  white-space: normal;
+  word-break: normal;
+  margin-bottom: 0;
   font-size: 14px;
-  font-family: "Neue Haas Unica W1G";
+  line-height: 1;
+  font-family: "Linotype Neue Haas Unica Pro Medium";
 }
 
+@font-face {
+  font-family: "Linotype Neue Haas Unica Pro Medium";
+  src: url("https://assets.website-files.com/62b0e10e698fe4d9588e7137/64b000f6b3187cf75bd39f2f_Linotype%20-%20Neue%20Haas%20Unica%20Pro%20Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 .border-right-retorno {
   border-right: 1px solid rgb(205, 205, 205);
 }
