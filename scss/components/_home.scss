@@ -1361,7 +1361,7 @@ footer {
     span {
       // 00%
       color: #1d1d1d;
-      font-size: 21px;
+      font-size: 17px;
       font-family: var(--font-text-3);
       font-weight: 700;
       line-height: 29.4px;
@@ -6139,7 +6139,8 @@ body[data-aos-delay="1000"] [data-aos] {
 }
 
 .card-fundos-home {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
+  background-color: #e7e7e7;
 }
 
 .blog-pandhora {
@@ -6458,4 +6459,9 @@ body[data-aos-delay="1000"] [data-aos] {
 
 .blog-pandhora-interna {
   padding-bottom: 80px;
+}
+
+.iframeNossosFundos {
+  width: 100%;
+  height: 658px;
 }
