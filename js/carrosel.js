@@ -23,6 +23,19 @@ var swiper = new Swiper(".mySwiper-fundos", {
   },
 });
 
+var swiper = new Swiper(".mySwiper-blog", {
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination-blog",
+    clickable: true,
+  },
+});
+
 var swiperCosmos = new Swiper(".mySwiper-cosmos", {
   slidesPerView: "auto",
   pagination: {
