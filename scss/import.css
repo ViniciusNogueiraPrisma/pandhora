@@ -9763,6 +9763,10 @@ body[data-aos-delay="1000"] [data-aos] {
   margin-top: 0px !important;
 }
 
+.card-fundos-home {
+  margin-bottom: 80px;
+}
+
 /* Pages */
 .page-erro {
   display: flex;
