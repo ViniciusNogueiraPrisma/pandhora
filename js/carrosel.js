@@ -36,6 +36,35 @@ var swiper = new Swiper(".mySwiper-blog", {
   },
 });
 
+var swiperBlog = null;
+
+function initSwiper() {
+  if (window.innerWidth < 721) {
+    if (swiperBlog === null) {
+      swiperBlog = new Swiper(".mySwiper-blog-interna", {
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination-blog-interna",
+          clickable: true,
+        },
+      });
+    }
+  } else {
+    if (swiperBlog !== null) {
+      swiperBlog.destroy(true, true);
+      swiperBlog = null;
+    }
+  }
+}
+
+initSwiper();
+window.addEventListener("resize", initSwiper);
+
 var swiperCosmos = new Swiper(".mySwiper-cosmos", {
   slidesPerView: "auto",
   pagination: {
