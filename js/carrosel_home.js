@@ -1,19 +1,3 @@
-// $(document).ready(function () {
-//   var timeout;
-//   $(".nav-item.dropdown").hover(
-//     function () {
-//       clearTimeout(timeout); // limpa o temporizador para evitar a ocultação
-//       $(".dropdown-menu", this).stop(true, true).slideDown("fast");
-//     },
-//     function () {
-//       var $dropdown = $(".dropdown-menu", this);
-//       timeout = setTimeout(function () {
-//         $dropdown.stop(true, true).slideUp("fast");
-//       }, 0);
-//     }
-//   );
-// });
-
 $(document).ready(function () {
   var timeout;
   $(".nav-item.dropdown").hover(

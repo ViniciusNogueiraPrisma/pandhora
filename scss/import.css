@@ -9792,7 +9792,7 @@ body[data-aos-delay="1000"] [data-aos] {
 
 .cards-blog {
   width: 100%;
-  height: 545px;
+  height: 100%;
   background-color: white;
   border-radius: 4px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -9922,6 +9922,73 @@ body[data-aos-delay="1000"] [data-aos] {
   font-weight: 400;
 }
 
+.slide-blog {
+  width: 368px !important;
+}
+
+.swiper-pagination-blog {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.swiper-pagination-blog .swiper-pagination-bullet {
+  transition: 0.5s ease-in-out;
+  background-color: var(--text-grey-scale-09);
+  width: 12px;
+  border-radius: 4px;
+  height: 6px;
+}
+.swiper-pagination-blog .swiper-pagination-bullet-active {
+  transition: 0.5s ease-in-out;
+  background-color: black;
+  width: 80px;
+  height: 6px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1318px) {
+  .cadastrar-blog {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (max-width: 840px) {
+  .cadastrar-btns {
+    flex-direction: column;
+    align-items: start;
+  }
+  .cadastrar-btns input {
+    width: 100%;
+  }
+  .cadastrar-btn1 {
+    width: 100%;
+  }
+  .cadastrar-btn2 {
+    width: 100%;
+  }
+  .cadastrar-btn3 {
+    width: 100%;
+  }
+  .cadastrar-blog-texts {
+    flex-direction: column;
+  }
+  .cadastrar-blog {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 552px) {
+  .title-blog {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 40px;
+  }
+  .title-blog h1 {
+    padding-bottom: 20px;
+  }
+  .slide-blog {
+    width: 100% !important;
+  }
+}
 /* Pages */
 .page-erro {
   display: flex;
