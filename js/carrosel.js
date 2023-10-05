@@ -32,12 +32,15 @@ function initSwiper() {
         slidesPerView: "auto",
         spaceBetween: 24,
         autoplay: {
-          delay: 2000,
+          delay: 8000,
           disableOnInteraction: false,
         },
         pagination: {
           el: ".swiper-pagination-blog-interna",
           clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
         },
       });
     }
