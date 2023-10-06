@@ -1201,9 +1201,10 @@ footer {
 
 .accordion-home {
   // border: 1px solid red;
-  padding-top: 126px;
-  padding-right: 150px;
-  padding-left: 150px;
+  // padding-top: 126px;
+  // padding-right: 150px;
+  // padding-left: 150px;
+  padding-bottom: 80px;
 
   h1 {
     // Perguntas
@@ -3444,7 +3445,7 @@ ul.container {
   }
 
   .accordion-home {
-    padding-top: 80px;
+    // padding-top: 80px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -6344,11 +6345,11 @@ body[data-aos-delay="1000"] [data-aos] {
   border-bottom-right-radius: 4px;
 }
 
-.slide-blog-interna:hover .cards-blog-text {
-  padding-left: 35px;
-  transition: 0.4s;
-  padding-right: 35px;
-}
+// .slide-blog-interna:hover .cards-blog-text {
+//   padding-left: 35px;
+//   transition: 0.4s;
+//   padding-right: 35px;
+// }
 
 .wrapper-blog-interna {
   display: grid;
