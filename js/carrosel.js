@@ -163,6 +163,6 @@ function updateActiveDiv() {
   divs[currentIndex].classList.add("active-bg");
 }
 
-setInterval(updateActiveDiv, 5000);
+setInterval(updateActiveDiv, 2000);
 
 divs[currentIndex].classList.add("active-bg");
