@@ -10088,7 +10088,7 @@ body[data-aos-delay="1000"] [data-aos] {
   }
 }
 .active-bg {
-  transition: 0.7s ease;
+  transition: all 0.8s ease-in-out;
   background-color: #8529e9 !important;
 }
 .active-bg h1 {

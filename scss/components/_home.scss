@@ -4233,8 +4233,6 @@ input[type="radio"] {
 }
 
 .itens-carrosel-fundos {
-  // margin-right: 40px;
-  // background-color: var(--text-main);
   background-color: #f2f1f1;
   padding: 24px;
   border-radius: 4px;
@@ -6507,7 +6505,7 @@ body[data-aos-delay="1000"] [data-aos] {
 }
 
 .active-bg {
-  transition: 0.7s ease;
+  transition: all 0.8s ease-in-out;
   background-color: #8529e9 !important;
 
   h1 {
