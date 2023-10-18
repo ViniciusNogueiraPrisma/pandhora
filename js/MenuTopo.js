@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
 
     // Paginação
-    $('div[class*=paglist] > a').wrap('<li data-aos="fade-up"></li>');
+    $('div[class*=paglist] > a').wrap('<li ></li>');
     $('div[class*=paglist]').wrapInner('<ul class="list-paginacao"></ul>');
     $('li a.navMarcada').parent().addClass('active');
 
@@ -107,15 +107,28 @@ function fechaBoxEmail() {
     window.location.reload();
 }
 
-function filtrarAno() {
-    var ano = $('select[id$=ddlAnoFiltro]').val();
-    ano = parseInt(ano);
-    if (!isNaN(ano)) {
-        efetuarFiltroPorAno(ano);
+
+function filtrarCategoria() {
+    var categoria = $('select[id*=ddlCategoriaFiltro]').val();
+    var ano = $('select[id*=ddlAnoFiltro]').val();
+    ano = parseInt(ano);   
+
+    if (isNaN(ano) && categoria != "Tipo") {
+        efetuarFiltroCategoria(categoria);
     }
-    else {
-        limpaFiltroPorAno();
+    else if (!isNaN(ano) && categoria == "Tipo") {
+        efetuarFiltroAno(ano);
     }
+    else if (!isNaN(ano) && typeof categoria === "undefined") {
+        efetuarFiltroAno(ano);
+    }
+    else if (!isNaN(ano) && categoria != "Tipo") {
+        efetuarFiltroCategoriaAno(categoria, ano);
+    }
+    else if (isNaN(ano) && categoria == "Tipo") {
+        limparFiltro();
+    }
+
 }
 
 
