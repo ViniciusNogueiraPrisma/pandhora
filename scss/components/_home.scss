@@ -5926,7 +5926,7 @@ body {
 
 .overlay-fundos {
   height: 100vh;
-  display: none;
+  // display: none;
 }
 
 .frame-tabela-essencial {
@@ -6180,14 +6180,14 @@ body[data-aos-delay="1000"] [data-aos] {
 
   background-color: white;
   border-radius: 4px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   .cards-blog-img {
     img {
       object-fit: cover;
       height: 250px;
-      border-top-right-radius: 4px;
-      border-top-left-radius: 4px;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
     }
   }
 }
@@ -6197,16 +6197,46 @@ body[data-aos-delay="1000"] [data-aos] {
   padding-bottom: 32px;
   padding-left: 24px;
   padding-right: 24px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1.5px solid rgb(227, 227, 227);
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    border: 1.5px solid var(--text-main);
+
+    h1 {
+      color: var(--text-main);
+      padding-left: 4px;
+    }
+
+    span {
+      color: var(--text-main);
+      padding-left: 4px;
+    }
+
+    a {
+      color: var(--text-main);
+      padding-left: 4px;
+    }
+  }
 
   h1 {
-    font-size: 16px;
+    transition: 0.5s;
+    // Nullam sodales diam id dui dictum ultrices. Ut nibh ligula
+    color: #333333;
+    font-size: 17px;
+    font-family: "Bw Seido Raw";
     font-weight: 700;
-    line-height: 25px;
-    font-family: "Neue Haas Unica W1G";
+    line-height: 22.44px;
+    word-wrap: break-word;
+
     padding-bottom: 8px;
   }
 
   span {
+    transition: 0.5s;
     color: #7c7c7c;
     font-size: 14px;
     font-family: "Neue Haas Unica W1G";
@@ -6214,6 +6244,7 @@ body[data-aos-delay="1000"] [data-aos] {
   }
 
   a {
+    transition: 0.5s;
     color: #333333;
     font-size: 14px;
     font-family: "Neue Haas Unica W1G";
@@ -6518,5 +6549,101 @@ body[data-aos-delay="1000"] [data-aos] {
 
   img {
     filter: brightness(100%);
+  }
+}
+
+.blog-interno-title {
+  display: flex;
+  flex-direction: column;
+  // // text-align: center;
+  // justify-content: center;
+  // align-items: center;
+  padding-top: 40px;
+  padding-bottom: 24px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .text-title-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  h1 {
+    color: #8529e9;
+    font-size: 34px;
+    font-family: "Bw Seido Raw";
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+
+  span {
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+.svg-blog-interno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 398px;
+  }
+}
+
+.full-texts-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 112px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+
+    color: #010101;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-size: 16px;
+    font-family: "Neue Haas Unica W1G";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 900px) {
+  .full-texts-blog {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .blog-interno-title {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

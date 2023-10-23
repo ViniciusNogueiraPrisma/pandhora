@@ -130,6 +130,51 @@ accordion_item.forEach((item) => {
   });
 });
 
+var swiperBlog = null;
+
+function initSwiper() {
+  if (window.innerWidth < 721) {
+    if (swiperBlog === null) {
+      swiperBlog = new Swiper(".mySwiper-blog-interna", {
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination-blog-interna",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+      });
+    }
+  } else {
+    if (swiperBlog !== null) {
+      swiperBlog.destroy(true, true);
+      swiperBlog = null;
+    }
+  }
+}
+
+initSwiper();
+window.addEventListener("resize", initSwiper);
+
+const divs = document.querySelectorAll(".itens-carrosel-fundos");
+let currentIndex = 0;
+
+function updateActiveDiv() {
+  divs[currentIndex].classList.remove("active-bg");
+  currentIndex = (currentIndex + 1) % divs.length;
+  divs[currentIndex].classList.add("active-bg");
+}
+
+setInterval(updateActiveDiv, 2000);
+
+divs[currentIndex].classList.add("active-bg");
+
 function VerifyActive(item, content, content_actived) {
   const icon_item = item.querySelector(".icon");
   const icon_item_active = document.querySelectorAll(".icon");
@@ -153,16 +198,3 @@ function VerifyActive(item, content, content_actived) {
     // content.style.paddingBottom = "24px";
   }
 }
-
-const divs = document.querySelectorAll(".itens-carrosel-fundos");
-let currentIndex = 0;
-
-function updateActiveDiv() {
-  divs[currentIndex].classList.remove("active-bg");
-  currentIndex = (currentIndex + 1) % divs.length;
-  divs[currentIndex].classList.add("active-bg");
-}
-
-setInterval(updateActiveDiv, 2000);
-
-divs[currentIndex].classList.add("active-bg");
